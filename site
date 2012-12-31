@@ -33,10 +33,10 @@ SECTION_MAX_LINKS = 12
 MAIN_MENU = [
   ('', u'Accueil'),
   ('solutions/', u'Solutions'),
+  ('services/', u'Services'),
   ('technologie/', u'Technologie'),
   ('news/', u'Actualité'),
   ('a-propos/', u'A propos'),
-  ('contact/', u'Contact'),
 ]
 
 app = Flask(__name__)
@@ -185,8 +185,8 @@ def home(lang):
 
 @app.route('/<lang>/<path:path>/')
 def page(lang, path=""):
-  page = pages.get_or_404(lang + "/" + path)
-  template = page.meta.get('template', 'page.html')
+  page = pages.get_or_404(lang + "/" + path + "/index")
+  template = page.meta.get('template', '_page.html')
   return render_template(template, lang=lang, page=page)
 
 

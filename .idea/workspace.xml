@@ -2,306 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d788b122-ff42-4162-920d-94db480c64ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NOTES.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/a-propos.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static-old/humans.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/overrides.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/carnet/2010/back-from-djangocong-2010.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/carnet/2010/choisir-son-metier.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/carnet/2011/sudweb.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/carnet/2012/nouveau-site.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/carnet/2012/nouvelles-aventures.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/about-rest-frameworks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/custom-deployment-tasks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/django-with-pip-virtualenv.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/express.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/pil-install.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/python-tab-completion.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2010/symfony-nginx-php-fpm.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2011/clever-settings.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2011/djt.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2011/scrape-and-test-any-webpage-using-phantomjs.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2011/setup-jenkins-github-private-repository-ubuntu.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2012/casperjs-hits-1-0-stable.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2012/dead-easy-yet-powerful-static-website-generator-with-flask.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2012/gandi-standard-ssl-certificate-nginx.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/code/2012/introducing-casperjs-toolkit-phantomjs.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/climbers.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/cross.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/crossing-of-the-berezina-river.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/dark-street.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/euro.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/fishers.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/flying-home.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/last-chance-for-love.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/last-cigarette.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/mantis.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/paris-night-light.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/ray.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/showoff.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/smoke.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/space-mountains.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/steep.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/thau-tot.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/the-biker.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/the-cyclop.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/usual-puppets.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/walking-shadows.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2009/zebra-crossing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/angry-bird.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/kitesurfer.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/soldes-en-arles.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/sunny-plaza.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/temple-of-consumption.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/the-shadow.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/timing-is-everything.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2010/updown-side.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/beach-boy.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/blur.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/bulls-raid.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/cairn.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/cloudy.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/dolce-vita.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/moving-on.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/ovation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/path.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/presqu-ile-de-maguelone.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/reading-desk.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/reflections.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/saint-guilhem-le-desert.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/sandscape.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/thau.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/the-sheriff.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2011/walkers-on-the-moon.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/cadaques.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/communism-is-dead.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/dali-s-cadillac.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/espiguette.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/follow-the-black-dog.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/mystery-door.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/presqu-ile-de-maguelone.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/photography/2012/sunset-shooters.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2008/methodes-et-processus-agiles.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2009/30-symfony-best-practices.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2009/scrum-py.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2010/django-pour-les-developpeurs-symfony-et-reciproquement.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2011/integration-continue-projet-django.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/talks/2012/sudweb-le-web-au-doigt-et-a-l-oeil-avec-casperjs.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/humans.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/carnet/archives.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/carnet/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/carnet/feed.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/carnet/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/carnet/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/code/archives.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/code/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/code/feed.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/code/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/code/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/archives.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/feed.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/photography/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/talks/archives.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/talks/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/talks/feed.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/talks/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/code/2012/casperjs-github-evolution.png" afterPath="$PROJECT_DIR$/static-old/code/2012/casperjs-github-evolution.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/code/2012/casperjs-logo-squared-rounded.png" afterPath="$PROJECT_DIR$/static-old/code/2012/casperjs-logo-squared-rounded.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/code/2012/testsuiteok.png" afterPath="$PROJECT_DIR$/static-old/code/2012/testsuiteok.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/crossdomain.xml" afterPath="$PROJECT_DIR$/static-old/crossdomain.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/code.css" afterPath="$PROJECT_DIR$/static-old/css/code.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static-old/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/favicon.ico" afterPath="$PROJECT_DIR$/static-old/favicon.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/home.jpg" afterPath="$PROJECT_DIR$/static-old/img/home.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/app.js" afterPath="$PROJECT_DIR$/static-old/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/highlight.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/highlight.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/highlight.pack.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/highlight.pack.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/1c.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/1c.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/apache.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/apache.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/avrasm.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/avrasm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/axapta.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/axapta.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/bash.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/bash.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/cmake.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/cmake.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/cpp.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/cpp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/cs.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/cs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/css.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/css.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/delphi.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/delphi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/diff.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/diff.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/django.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/django.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/dos.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/dos.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/erlang-repl.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/erlang-repl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/erlang.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/erlang.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/go.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/go.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/haskell.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/haskell.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/ini.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/ini.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/java.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/java.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/javascript.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/javascript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/lisp.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/lisp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/lua.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/lua.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/mel.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/mel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/nginx.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/nginx.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/objectivec.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/objectivec.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/parser3.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/parser3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/perl.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/perl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/php.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/php.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/profile.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/profile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/python.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/python.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/renderman.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/renderman.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/ruby.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/ruby.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/scala.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/scala.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/smalltalk.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/smalltalk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/sql.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/sql.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/tex.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/tex.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/vala.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/vala.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/vbscript.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/vbscript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/vhdl.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/vhdl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/languages/xml.js" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/languages/xml.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/arta.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/arta.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/ascetic.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/ascetic.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/brown_paper.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/brown_paper.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/brown_papersq.png" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/brown_papersq.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/dark.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/dark.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/default.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/default.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/far.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/far.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/github.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/github.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/idea.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/idea.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/ir_black.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/ir_black.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/magula.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/magula.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/school_book.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/school_book.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/school_book.png" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/school_book.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/solarized_dark.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/solarized_dark.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/solarized_light.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/solarized_light.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/sunburst.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/sunburst.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/vs.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/vs.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/highlight/styles/zenburn.css" afterPath="$PROJECT_DIR$/static-old/js/libs/highlight/styles/zenburn.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/js/libs/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/static-old/js/libs/jquery-1.7.1.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/less/style.less" afterPath="$PROJECT_DIR$/static-old/less/style.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/packed.css" afterPath="$PROJECT_DIR$/static-old/packed.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/packed.js" afterPath="$PROJECT_DIR$/static-old/packed.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/climbers/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/climbers/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/climbers/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/climbers/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/cross/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/cross/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/cross/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/cross/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/crossing-of-the-berezina-river/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/crossing-of-the-berezina-river/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/crossing-of-the-berezina-river/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/crossing-of-the-berezina-river/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/dark-street/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/dark-street/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/dark-street/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/dark-street/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/euro/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/euro/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/euro/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/euro/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/fishers/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/fishers/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/fishers/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/fishers/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/flying-home/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/flying-home/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/flying-home/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/flying-home/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/last-chance-for-love/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/last-chance-for-love/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/last-chance-for-love/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/last-chance-for-love/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/last-cigarette/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/last-cigarette/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/last-cigarette/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/last-cigarette/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/mantis/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/mantis/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/mantis/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/mantis/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/mystery-door/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/mystery-door/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/mystery-door/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/mystery-door/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/paris-night-light/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/paris-night-light/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/paris-night-light/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/paris-night-light/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/ray/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/ray/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/ray/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/ray/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/showoff/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/showoff/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/showoff/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/showoff/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/smoke/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/smoke/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/smoke/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/smoke/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/space-mountains/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/space-mountains/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/space-mountains/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/space-mountains/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/steep/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/steep/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/steep/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/steep/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/thau-tot/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/thau-tot/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/thau-tot/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/thau-tot/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/the-biker/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/the-biker/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/the-biker/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/the-biker/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/the-cyclop/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/the-cyclop/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/the-cyclop/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/the-cyclop/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/usual-puppets/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/usual-puppets/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/usual-puppets/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/usual-puppets/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/walking-shadows/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/walking-shadows/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/walking-shadows/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/walking-shadows/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/zebra-crossing/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/zebra-crossing/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2009/zebra-crossing/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2009/zebra-crossing/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/angry-bird/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/angry-bird/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/angry-bird/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/angry-bird/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/kitesurfer/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/kitesurfer/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/kitesurfer/original.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/kitesurfer/original.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/kitesurfer/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/kitesurfer/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/soldes-en-arles/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/soldes-en-arles/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/soldes-en-arles/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/soldes-en-arles/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/sunny-plaza/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/sunny-plaza/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/sunny-plaza/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/sunny-plaza/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/temple-of-consumption/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/temple-of-consumption/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/temple-of-consumption/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/temple-of-consumption/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/the-shadow/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/the-shadow/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/the-shadow/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/the-shadow/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/timing-is-everything/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/timing-is-everything/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/timing-is-everything/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/timing-is-everything/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/updown-side/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/updown-side/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2010/updown-side/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2010/updown-side/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/beach-boy/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/beach-boy/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/beach-boy/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/beach-boy/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/blur/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/blur/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/blur/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/blur/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/bulls-raid/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/bulls-raid/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/bulls-raid/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/bulls-raid/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/cairn/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/cairn/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/cairn/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/cairn/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/cloudy/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/cloudy/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/cloudy/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/cloudy/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/dolce-vita/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/dolce-vita/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/dolce-vita/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/dolce-vita/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/moving-on/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/moving-on/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/moving-on/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/moving-on/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/ovation/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/ovation/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/ovation/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/ovation/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/path/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/path/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/path/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/path/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/presqu-ile-de-maguelone/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/presqu-ile-de-maguelone/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/presqu-ile-de-maguelone/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/presqu-ile-de-maguelone/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/reading-desk/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/reading-desk/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/reading-desk/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/reading-desk/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/reflections/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/reflections/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/reflections/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/reflections/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/saint-guilhem-le-desert/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/saint-guilhem-le-desert/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/saint-guilhem-le-desert/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/saint-guilhem-le-desert/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/sandscape/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/sandscape/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/sandscape/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/sandscape/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/thau/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/thau/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/thau/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/thau/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/the-sheriff/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/the-sheriff/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/the-sheriff/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/the-sheriff/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/walkers-on-the-moon/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/walkers-on-the-moon/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2011/walkers-on-the-moon/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2011/walkers-on-the-moon/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/cadaques/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/cadaques/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/cadaques/original.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/cadaques/original.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/cadaques/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/cadaques/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/communism-is-dead/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/communism-is-dead/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/communism-is-dead/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/communism-is-dead/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/dali-s-cadillac/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/dali-s-cadillac/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/dali-s-cadillac/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/dali-s-cadillac/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/espiguette/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/espiguette/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/espiguette/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/espiguette/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/follow-the-black-dog/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/follow-the-black-dog/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/follow-the-black-dog/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/follow-the-black-dog/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/mystery-door/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/mystery-door/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/mystery-door/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/mystery-door/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/presqu-ile-de-maguelone/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/presqu-ile-de-maguelone/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/presqu-ile-de-maguelone/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/presqu-ile-de-maguelone/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/sunset-shooters/main.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/sunset-shooters/main.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/photography/2012/sunset-shooters/thumb.jpg" afterPath="$PROJECT_DIR$/static-old/photography/2012/sunset-shooters/thumb.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/robots.txt" afterPath="$PROJECT_DIR$/static-old/robots.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/page.html" afterPath="$PROJECT_DIR$/templates/_page.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/talks/page.html" afterPath="$PROJECT_DIR$/templates/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/custom/connected-city.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/custom/onion.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/a-propos/credits/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/news/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/services/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/solutions/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/technologie/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_base.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/fr/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup2/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup2/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/backup2/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/rs-plugin/assets/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/rs-plugin/css/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/rs-plugin/images/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/rs-plugin/js/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/font/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/backup/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/backup/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rs-plugin/assets/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rs-plugin/css/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rs-plugin/images/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/rs-plugin/js/_notes/dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/page.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/fr/a-propos.md" afterPath="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/slider-images/breaking-wave.jpg" afterPath="$PROJECT_DIR$/static/custom/breaking-wave.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/slider-images/connected-world.jpg" afterPath="$PROJECT_DIR$/static/custom/connected-world.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site" afterPath="$PROJECT_DIR$/site" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/color_scheme.css" afterPath="$PROJECT_DIR$/static/css/color_scheme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/custom.css" afterPath="$PROJECT_DIR$/static/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/rs-responsive.css" afterPath="$PROJECT_DIR$/static/css/rs-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_page.html" afterPath="$PROJECT_DIR$/templates/_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sitemap.xml" afterPath="$PROJECT_DIR$/templates/sitemap.xml" />
     </list>
     <ignored path="abilian.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -321,10 +65,96 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="203" column="45" selection-start="10297" selection-end="10297" vertical-scroll-proportion="71.041664">
+              <folding>
+                <element signature="e#599#624#0" expanded="true" />
+                <element signature="e#900#925#0" expanded="true" />
+                <element signature="e#1150#1175#0" expanded="true" />
+                <element signature="e#1398#1437#0" expanded="true" />
+                <element signature="e#2144#2169#0" expanded="true" />
+                <element signature="e#5364#5389#0" expanded="true" />
+                <element signature="e#5634#5659#0" expanded="true" />
+                <element signature="e#5888#5913#0" expanded="true" />
+                <element signature="e#6147#6172#0" expanded="true" />
+                <element signature="e#6399#6438#0" expanded="true" />
+                <element signature="e#6920#6945#0" expanded="true" />
+                <element signature="e#7189#7214#0" expanded="true" />
+                <element signature="e#7458#7483#0" expanded="true" />
+                <element signature="e#7728#7753#0" expanded="true" />
+                <element signature="e#7998#8023#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="54" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-3.7671232">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.rss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rs-responsive.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/rs-responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="22" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connected-city.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/custom/connected-city.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/services/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/solutions/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="site" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="16" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+            <state line="35" column="26" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#38#51#0" expanded="true" />
               </folding>
@@ -332,105 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/index.html">
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/technologie/index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="274" column="25" selection-start="12540" selection-end="12540" vertical-scroll-proportion="7.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slide_stick01.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/img/slide_stick01.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slide_stick02.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/img/slide_stick02.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slide_stick03.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/img/slide_stick03.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="8" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.6164383">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#10;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overrides.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/overrides.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="2382" selection-end="2493" vertical-scroll-proportion="-5.2083335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NOTES.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NOTES.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1356" column="15" selection-start="30047" selection-end="30047" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -449,16 +184,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/page.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/sitemap.xml" />
-        <option value="$PROJECT_DIR$/templates/_page.html" />
-        <option value="$PROJECT_DIR$/pages/fr/a-propos.md" />
         <option value="$PROJECT_DIR$/NOTES.txt" />
         <option value="$PROJECT_DIR$/biztrap/index.html" />
-        <option value="$PROJECT_DIR$/site" />
+        <option value="$PROJECT_DIR$/static/css/color_scheme.css" />
+        <option value="$PROJECT_DIR$/pages/fr/credits.md" />
+        <option value="$PROJECT_DIR$/templates/_page.html" />
         <option value="$PROJECT_DIR$/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/pages/fr/technologie/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/credits/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/solutions/index.md" />
+        <option value="$PROJECT_DIR$/site" />
+        <option value="$PROJECT_DIR$/pages/fr/services/index.md" />
+        <option value="$PROJECT_DIR$/static/css/rs-responsive.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/_base.html" />
       </list>
     </option>
   </component>
@@ -526,6 +267,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="abilian.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -536,6 +327,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -549,9 +341,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/custom" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/pages/fr/a-propos" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/custom" />
+      <recent name="$PROJECT_DIR$/pages/fr/a-propos/credits" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -760,136 +557,125 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/rs-plugin/js/jquery.themepunch.revolution.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="222" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/page.html">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static-old/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/logo.png">
+    <entry file="file://$PROJECT_DIR$/static/custom/handshake.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="6" selection-start="9663" selection-end="9663" vertical-scroll-proportion="0.5769231">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/socials_icons.png">
+    <entry file="file://$PROJECT_DIR$/static/custom/big-wave.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NOTES.txt">
+    <entry file="file://$PROJECT_DIR$/static/custom/breaking-wave.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/credits/index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/solutions/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="16" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+        <state line="35" column="26" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#38#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
+    <entry file="file://$PROJECT_DIR$/pages/fr/technologie/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="25" selection-start="12540" selection-end="12540" vertical-scroll-proportion="7.125">
+        <state line="4" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide_stick01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide_stick02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slide_stick03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/pages/fr/services/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2382" selection-end="2493" vertical-scroll-proportion="-5.2083335">
+        <state line="6" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/overrides.css">
+    <entry file="file://$PROJECT_DIR$/static/custom/connected-city.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/rs-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="22" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.rss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1356" column="15" selection-start="30047" selection-end="30047" vertical-scroll-proportion="0.0">
+        <state line="203" column="45" selection-start="10297" selection-end="10297" vertical-scroll-proportion="71.041664">
+          <folding>
+            <element signature="e#599#624#0" expanded="true" />
+            <element signature="e#900#925#0" expanded="true" />
+            <element signature="e#1150#1175#0" expanded="true" />
+            <element signature="e#1398#1437#0" expanded="true" />
+            <element signature="e#2144#2169#0" expanded="true" />
+            <element signature="e#5364#5389#0" expanded="true" />
+            <element signature="e#5634#5659#0" expanded="true" />
+            <element signature="e#5888#5913#0" expanded="true" />
+            <element signature="e#6147#6172#0" expanded="true" />
+            <element signature="e#6399#6438#0" expanded="true" />
+            <element signature="e#6920#6945#0" expanded="true" />
+            <element signature="e#7189#7214#0" expanded="true" />
+            <element signature="e#7458#7483#0" expanded="true" />
+            <element signature="e#7728#7753#0" expanded="true" />
+            <element signature="e#7998#8023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.6164383">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="104" column="54" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-3.7671232">
+          <folding />
         </state>
       </provider>
     </entry>

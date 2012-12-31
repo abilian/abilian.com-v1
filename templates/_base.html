@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--  SEO STUFF START HERE -->
+  <title>{{ page.title }}</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <meta name="robots" content="follow, index"/>
+  <!--  SEO STUFF END -->
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  {%- assets filter="cssmin", output="packed.css",
+    "rs-plugin/css/settings.css",
+    "css/rs-responsive.css",
+    "css/bootstrap.css",
+    "css/custom.css",
+    "css/isotope.css",
+    "css/color_scheme.css",
+    "css/font-awesome.css",
+    "css/font-awesome-ie7.css",
+    "css/flexslider.css",
+    "css/jquery.fancybox.css" %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+  {%- endassets %}
+
+  <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic"
+      rel="stylesheet" type="text/css"/>
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="/static/css/IE-fix.css" />
+  <![endif]-->
+</head>
+
+<body>
+<!-- THE LINE AT THE VERY TOP OF THE PAGE -->
+<div class="top_line"></div>
+<!-- HEADER AREA -->
+<header>
+  <div class="container">
+    <div class="row">
+      <!-- HEADER: LOGO AREA -->
+      <div class="span4 logo">
+        <a class="logo" href="/fr/">
+          <img alt="logo" title="bizstrap" src="/static/img/logo.png">
+        </a>
+      </div>
+
+      <div id="top-nav">
+        {#
+        <div class="lang-switch">
+          <a href="/en/">English</a>
+          ›
+        </div>
+        #}
+        <div class="menu-top-nav-container">
+          <ul class="menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+              <a href="/fr/a-propos/contact/">Contact</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+              <a href="/fr/a-propos/jobs/">Jobs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {#
+      <!-- HEADER: SOCIAL ICONS -->
+      <ul class="socials unstyled">
+        <li><a class="twitter" href="https://www.twitter.com/abilianhq"></a>
+        </li>
+        <li><a class="facebook" href="http://www.facebook.com/abilian.corp"></a>
+        </li>
+      </ul>
+      #}
+    </div>
+  </div>
+  <!-- HEADER: PRIMARY SITE NAVIGATION -->
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="buttons-container"></div>
+          <div class="nav-collapse">
+            <ul class="nav nav-pills">
+              {% for slug, label in menu %}
+                <li class="single"><a href="/fr/{{ slug }}">{{ label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT AREA -->
+<div class="main-content">
+  <div class="container">
+
+    {% block main %}{% endblock %}
+
+    <div class="row show-grid" style="margin-bottom: 20px;">
+      <div class="span12 grey-box">
+        <div class="hero-block3">
+          <div class="row show-grid">
+            <div class="span9">
+              <div class="hero-content-3">
+                <h2>Un projet ? Une question ?</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                  libero magna. Sed et quam lacus. Fusce condimentum eleifend enim
+                  a feugiat. Pellentesque viverra vehicula sem ut volutpat.
+                  Integer sed arcu massa.</p>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="tour-btn">
+                <a href="/fr/a-propos/contact/" class="btn btn-warning">Contactez-nous!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER STARTS HERE -->
+<footer id="footer">
+  <div class="footer-top"></div>
+  <div class="footer-wrapper">
+    <div class="container">
+      <div class="row show-grid">
+        <div class="span12">
+          <div class="row show-grid">
+            <!-- FOOTER: LOGO -->
+            <div class="span4">
+              <img alt="" class="footer-logo" src="/static/img/grey_logo.png"/>
+              <!-- FOOTER: ADDRESS -->
+              <address class="address">
+                <p><i class="icon-map-marker icon-large"></i>
+                  Abilian SAS<br>
+                  23, avenue d'Italie<br>
+                  <i>&nbsp;</i>C/o EIT ICT Labs<br>
+                  75013 Paris - France</p>
+
+                <p><i class="icon-envelope icon-large"></i>Mel:
+                  <a href="mailto:contact@abilian.com">contact@abilian.com</a></p>
+
+                <p><i class="icon-phone icon-large"></i>Phone: +33 663 041 277</p>
+
+              </address>
+            </div>
+
+            <!-- FOOTER: ABOUT US -->
+            <div class="span4 footer-center">
+              <h4 class="center-title">A propos d'Abilian</h4>
+
+              <p>Abilian developpe des technologies et des solutions open source
+                innovantes dans le domaine de la collaboration et des réseaux
+                sociaux d'entreprise.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                libero magna. Sed et quam lacus. Fusce condimentum eleifend enim
+                a feugiat. Pellentesque viverra vehicula sem ut volutpat.</p>
+            </div>
+
+            <!-- FOOTER: NAVIGATION LINKS -->
+            <div class="span4 footer-right">
+              <h4 class="center-title">Navigate</h4>
+              <ul class="footer-navigate">
+                {% for slug, label in menu %}
+                  <li><a href="/fr/{{ slug }}">{{ label }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row show-grid">
+        <!-- FOOTER: COPYRIGHT TEXT -->
+        <div class="span12">
+          <p>Copyright 2013 Abilian SAS. <a href="/fr/a-propos/credits/">Credits</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+{%- assets filter="uglifyjs", output="packed.js",
+    "js/bootstrap.js",
+    "js/jquery.flexslider-min.js",
+    "js/jquery.isotope.js",
+    "js/jquery.fancybox.pack.js?v=2.1.0",
+    "rs-plugin/js/jquery.themepunch.plugins.min.js",
+    "rs-plugin/js/jquery.themepunch.revolution.min.js",
+    "js/revolution.custom.js",
+    "js/custom.js" %}
+  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{%- endassets %}
+
+</body>
+</html>

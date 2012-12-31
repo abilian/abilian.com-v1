@@ -1,5 +1,50 @@
 /*Custom CSS*/
 
+#top-nav {
+    top: 0;
+    right: 0;
+    width: 100%;
+    font: 12px "Open Sans",sans-serif;
+}
+#top-nav .lang-switch {
+    float: right;
+    padding: 8px 12px 7px;
+    background-color: #E1E1E1;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+#top-nav .menu {
+    float: right;
+    padding: 10px;
+    padding-right: 20px;
+}
+#top-nav .menu li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+#top-nav .menu li {
+    float: left;
+    margin-left: 13px;
+    padding-left: 13px;
+    border-left: 1px solid #EDEDED;
+}
+#top-nav ul.menu {
+    list-style: none;
+}
+
+.footer-wrapper a {
+    color: #ffffff;
+}
+.footer-wrapper a:hover {
+    color: #ffffff;
+}
+
+
 /*Custom Landscapes Start*/
 
 .tweets-slide .slides li p{ color: #fff; padding: 0; margin: 0;}
@@ -233,7 +278,7 @@
         width: 210px;
     }
     .tour-btn {
-    padding: 51px 35px 35px;
+    padding: 51px 0 35px;
     }
     .logo {
         margin: 23px 10px;
@@ -1004,7 +1049,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     color: #333333;
     background-color: #ffffff;

@@ -177,24 +177,30 @@ a:hover {
     background: transparent url("../img/portfolio_toggles.png") top left no-repeat;
     border-radius: 5px;
 }
+
 .portfolio-switch li.collapsed a {
     background-position: 0 -31px;
     background-color: #cccccc;
 }
+
 .portfolio-switch li.collapsed a:hover {
     background-color: #2773ae;
 }
-.portfolio-switch li.collapsed a:hover, .portfolio-switch li.collapsed a.active  {
+
+.portfolio-switch li.collapsed a:hover, .portfolio-switch li.collapsed a.active {
     background-position: 0 -31px;
 }
+
 .portfolio-switch li.simple a {
     background-position: 0 0;
     background-color: #cccccc;
 }
+
 .portfolio-switch li.simple a:hover {
     background-color: #2773ae;
     background-position: 0 0;
 }
+
 .portfolio-switch li a.active {
     background-color: #2773ae;
 }
@@ -211,32 +217,33 @@ a:hover {
 ---------------------------------------------------------------------- */
 
 .price-table-object .btn-primary {
-color: white;
-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-background-color: #006DCC;
-background-image: -moz-linear-gradient(top, #08C, #04C);
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
-background-image: -webkit-linear-gradient(top, #08C, #04C);
-background-image: -o-linear-gradient(top, #08C, #04C);
-background-image: linear-gradient(to bottom, #08C, #04C);
-background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-border-color: #04C #04C #002A80;
-border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #006DCC;
+    background-image: -moz-linear-gradient(top, #08C, #04C);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
+    background-image: -webkit-linear-gradient(top, #08C, #04C);
+    background-image: -o-linear-gradient(top, #08C, #04C);
+    background-image: linear-gradient(to bottom, #08C, #04C);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .price-table-object .btn:hover {
-color: #333;
-text-decoration: none;
-background-color: #E6E6E6;
-background-position: 0 -15px;
--webkit-transition: background-position 0.1s linear;
--moz-transition: background-position 0.1s linear;
--o-transition: background-position 0.1s linear;
-transition: background-position 0.1s linear;
+    color: #333;
+    text-decoration: none;
+    background-color: #E6E6E6;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
 }
+
 .price-table-object .btn-primary:hover, .price-table-object .btn-primary:active, .price-table-object .btn-primary.active, .price-table-object .btn-primary.disabled, .price-table-object .btn-primary[disabled] {
-color: white;
-background-color: #04C;
+    color: white;
+    background-color: #04C;
 }

@@ -1,62 +1,49 @@
-<article lang="{{ page.lang or "en" }}" class="{{ page.section }}" itemscope itemtype="http://schema.org/{{ item_type or "BlogPosting" }}">
-    <link itemprop="url" href="{{ url_for("page", lang=lang, path=page.path) }}">
-    <header>
-        <h2><a itemprop="name" href="{{ url_for("page", lang=lang, path=page.path) }}">{{ page.title }}</a></h2>
-    {%- if page.subtitle -%}
-        <h3>{{ page.subtitle }}</h3>
-    {%- endif -%}
-    </header>
-    {% if not page.published %}
-        <div style="background:orange;color:#fff;padding:5px 10px">⚠ This content is not published</div>
-    {% endif %}
-    <section>
-        {%- if page.type == "photo" %}
-        <aside class="help">
-            Navigate using <kbd>j</kbd> and <kbd>k</kbd> keys;
-            <kbd>v</kbd> key for toggling the large version
-        </aside>
-        <ul class="controls">
-            <li><a class="clearroom" href="" title="View on white">View on white</a></li>
-            <li><a class="greyroom" href="" title="View on grey">View on grey</a></li>
-            <li><a class="darkroom" href="" title="View on black">View on black</a></li>
+{% extends "_base.html" %}
+
+{% block main %}
+  <div class="row show-grid">
+    <div class="span12">
+      <!-- BREADCRUMBS -->
+      <div id="breadcrumb">
+        <ul>
+          <li class="home"><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li>About Us (Right Sidebar)</li>
         </ul>
-        <figure class="photo">
-            <a href="/static/{{ page.path }}/main.jpg" title="{{ page.title }} — Click the picture to view it large" class="view">
-                <img src="/static/{{ page.path }}/main.jpg" alt="{{ page.title }} by Nicolas Perriault" data-fullsrc="/static/{{ page.path }}/original.jpg"/></a>
-            <figcaption>
-            {%- if page.summary|trim %}
-                {{- page.summary|trim }}
-            {% endif %}
-            {% if page.summary|trim and page.image_link %}
-                —
-            {% endif %}
-            {%- if page.image_link %}
-                <a href="{{ page.image_link }}">View it on 500px</a>
-            {%- endif %}
-            </figcaption>
-        </figure>
-        {%- endif %}
-        {{ page.html|safe }}
-    </section>
-    <aside>
-        <p>
-            <span class="article-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">Nicolas Perriault</span> —
-            </span>
-            <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date }}</time>
-            {% if section %}— in <a href="{{ url_for("section", section=section) }}" itemprop="genre">{{ section|capitalize }}</a>{% endif %}
-            — <a href="{{ url_for("page", lang=lang, path=page.path) }}">Permalink</a>
-            — <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">License</a>.
-        </p>
-    </aside>
-    <hr>
-    <nav>
-        {% if page.prev -%}
-            <a class="prev" href="{{ url_for("page", lang=lang, path=page.prev.path) }}">{{ page.prev.title }}</a>
-        {%- endif %}
-        {% if page.prev and page.next %}|{% endif %}
-        {% if page.next -%}
-            <a class="next" href="{{ url_for("page", lang=lang, path=page.next.path) }}">{{ page.next.title }}</a>
-        {%- endif %}
-    </nav>
-</article>
+      </div>
+      <div class="row show-grid clear-both">
+        <!-- BEGIN ARTICLE CONTENT AREA -->
+        <div class="span9 main-column two-columns-right">
+          <article>
+            {{ page.html|safe }}
+          </article>
+        </div>
+        <!-- END ARTICLE CONTENT AREA -->
+
+
+        <!-- BEGIN RIGHT-SIDEBAR -->
+        <div id="left-sidebar" class="span3 sidebar">
+          <!-- RIGHT-SIDEBAR: SIDEBAR NAVIGATION -->
+          <div class="side-nav sidebar-block">
+            <h2>Pages</h2>
+            <ul>
+              <li><a href="3_columns_about.html">About Us (both sidebars)</a>
+              </li>
+              <li><a href="left_column_about.html">About Us (left sidebar)</a>
+              </li>
+              <li class="active"><a href="right_column_about.html">About Us
+                (right sidebar)</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="our_team_one_col.html">Our Team</a></li>
+              <li><a href="our_team.html">Our Team (Large blocks)</a></li>
+              <li><a href="philosophy.html">Philosophy</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- END RIGHT-SIDEBAR -->
+      </div>
+    </div>
+  </div>
+  <hr>
+{% endblock %}
