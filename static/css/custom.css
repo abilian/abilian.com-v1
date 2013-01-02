@@ -37,11 +37,22 @@
     list-style: none;
 }
 
-.footer-wrapper a {
+#footer a {
     color: #ffffff;
 }
-.footer-wrapper a:hover {
+#footer a:hover {
     color: #ffffff;
+}
+#footer {
+    font-size: 12px;
+}
+#footer h4 {
+    font-size: 16px;
+}
+
+.icon-verylarge:before {
+    vertical-align: top;
+    font-size: 3em;
 }
 
 
@@ -1109,7 +1120,7 @@ p {
     color: #666666;
     margin: 0;
     line-height: 18px;
-    padding: 0 0 20px;
+    padding: 0 0 12px;
 }
 .team-member p {
     color: #333333;
@@ -2525,7 +2536,7 @@ div.alert {
     color: #CBCBCB;
     font-size: 18px;
     margin-bottom: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 .footer-wrapper .span4 {
     margin-bottom: 30px;

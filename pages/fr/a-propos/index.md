@@ -2,10 +2,14 @@ title: A propos d'Abilian
 
 # A propos d'Abilian
 
-## Notre métier
+## Mission / notre métier
 
 Abilian est un éditeur de logiciels open source innovants dans le domaine de la
-collaboration et des réseaux sociaux d'entreprise.
+collaboration émergente et des réseaux sociaux d'entreprise.
+
+## Modèle économique
+
+Notre modèle économique est celui d’un **éditeur open source**: nous développons une plateforme open source, en collaboration ouverte avec une communauté de contributeurs, et nous assurons à nos clients, DSI de grands groupes ou d’administration, PME utilisatrices du Cloud, la garantie du bon fonctionnement de versions qualifiées et maintenues du logiciel.
 
 ## Histoire
 
@@ -18,8 +22,13 @@ du Pôle Systematic Paris Region, et du CNLL.
 
 ## Méthodologie
 
+## Partenaires
+
 ## Labels et organisations professionnelles
 
+<div class="post-img" style="float: right; margin-left: 20px;">
+<img alt="logo JEI" src="/static/custom/logo-jei.jpg">
+</div>
 Abilian est une Jeune Entreprise Innovante, qui consacre plus de 15% de son
 chiffre d'affaire annuel à de la recherche & développement.
 

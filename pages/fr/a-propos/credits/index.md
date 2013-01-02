@@ -14,6 +14,8 @@ conformité avec leurs licences respectives:
 
 - "big-wave-2.jpg": CC-BY, by <http://www.flickr.com/photos/mikebaird/>.
 
+- "lights.jpg": CC-BY, by <http://www.flickr.com/photos/pagedooley/>
+
 Les autres photographies et illustrations proviennent de banques d'images, et
 ne peuvent pas être réutilisées sans l'accord de leurs ayant-droits.
 

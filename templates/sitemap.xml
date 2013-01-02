@@ -12,7 +12,7 @@
     <url>
         <loc>{{ BASE_URL }}/{{ page.path }}/</loc>
         <lastmod>{{ page.date }}</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     {%- endfor %}
