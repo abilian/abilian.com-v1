@@ -1,21 +1,22 @@
 #!/usr/bin/env python
 # coding=utf-8
-from pprint import pprint
 
 import codecs
 import locale
 import os
 import re
-
-from argh import *
+from pprint import pprint
+from unicodedata import normalize
 from datetime import date, datetime
 from fabric.api import local
-from flask import Flask, render_template
+from argh import *
+
+from flask import Flask, render_template, redirect, url_for
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
-from unicodedata import normalize
+
 
 # Configuration
 DEBUG = True
@@ -136,7 +137,7 @@ def url_generator():
 
 @app.route('/')
 def index():
-  return "OK" # TODO
+  return redirect(url_for(".home", lang='fr'))
 
 
 @app.route('/<lang>/')
@@ -251,7 +252,7 @@ def post(section, title=None, filename=None):
 
 
 @command
-def serve(server='127.0.0.1', port=5000, debug=DEBUG):
+def serve(server='127.0.0.1', port=5001, debug=DEBUG):
   """ Serves this site.
   """
   asset_manager.config['ASSETS_DEBUG'] = debug

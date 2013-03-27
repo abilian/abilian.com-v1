@@ -1067,7 +1067,7 @@ body {
 }
 h1, h2, h3 {
     font-weight: normal;
-    margin: 0 0 10px;
+    margin: 10px 0 10px;
 }
 h4, h5, h6 {
     margin: 0;
@@ -1083,9 +1083,12 @@ h2 {
     font-size: 18px;
     color: #666666;
     line-height: 22px;
+    margin: 10px 0;
 }
+
 h3 {
     font-size: 16px;
+    font-style: italic;
     line-height: 22px;
     color: #666666;
 }
@@ -1118,7 +1121,7 @@ h6 {
 p {
     font-family: Arial, sans-serif;
     color: #666666;
-    margin: 0;
+    margin: 10px 0;
     line-height: 18px;
     padding: 0 0 12px;
 }
@@ -1136,12 +1139,6 @@ form label {
     color: #898989;
     font-family: Arial, sans-serif;
     font-size: 12px;
-}
-h2 {
-    font-size: 18px;
-    line-height: 22px;
-    color: #666666;
-    margin: 0 0 10px;
 }
 blockquote {
     background: url("../img/quotes.png") no-repeat scroll 5px -2px #FBFBFB;

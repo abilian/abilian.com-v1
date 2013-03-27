@@ -12,13 +12,15 @@ Pour tout autre demande: [contact@abilian.com](mailto:contact@abilian.com).
 
 Pour un contact direct avec l'un de nos collaborateurs: prenom.nom@abilian.com.
 
+
 ## Par téléphone
 
 Vous préférez la chaleur de la voix humaine ? Appelez-nous au +33 6 63 04 12 77.
 
+
 ## Dans le monde réel
 
-Vous êtes vraiment accro aux contacts humain ? Venez nous rendre visite dans
+Rien ne remplace les contacts "IRL" (dans la vraie vie). Pour nous rendre visite,  dans
 nos bureau au 23, avenue d'Italie, 75013, Paris, France (demandez Abilian à
 l'accueil).
 

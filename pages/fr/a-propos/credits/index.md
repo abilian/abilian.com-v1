@@ -25,4 +25,4 @@ Le design de ce site est basé sur le thème [bizStrap](https://wrapbootstrap.co
 
 ## Technologie
 
-Ce site utilise les technologies suivantes: [Flask](), [Frozen-Flask]().
+Ce site utilise le gestionnaire de contenu Web [Abilian CMS](/)

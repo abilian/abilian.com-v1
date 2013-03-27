@@ -2,6 +2,8 @@ title: Services
 
 # Services
 
+Abilian accompagne ses clients dans le développement de
+
 Du service: services professionnels – conseil, développements spécifiques, configuration, formation – autour de la plateforme, en collaboration et non en substitution des intégrateurs et des conseils en management.
 
 Du support: assurance d’obtenir des réponses selon un SLA, que ce soit en phase de développement ou en phase de support, à toute question d’ordre technique portant sur la plateforme.

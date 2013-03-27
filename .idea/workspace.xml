@@ -2,30 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d788b122-ff42-4162-920d-94db480c64ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/custom/logo-jei.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/pourquoi/index.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/big-wave.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/breaking-wave.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/connected-city.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/connected-world.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/onion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/custom/woman-with-a-mac.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/thumb.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/fr/technologie/index.md" afterPath="$PROJECT_DIR$/pages/fr/technologies/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/fr/a-propos/jobs/index.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_base.html" afterPath="$PROJECT_DIR$/templates/_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_page.html" afterPath="$PROJECT_DIR$/templates/_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/abilian.com.iml" afterPath="$PROJECT_DIR$/.idea/abilian.com.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/custom.css" afterPath="$PROJECT_DIR$/static/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/a-propos/index.md" afterPath="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" afterPath="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/a-propos/credits/index.md" afterPath="$PROJECT_DIR$/pages/fr/a-propos/credits/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/a-propos/index.md" afterPath="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/pourquoi/index.md" afterPath="$PROJECT_DIR$/pages/fr/pourquoi/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/services/index.md" afterPath="$PROJECT_DIR$/pages/fr/services/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/solutions/index.md" afterPath="$PROJECT_DIR$/pages/fr/solutions/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fr/technologies/index.md" afterPath="$PROJECT_DIR$/pages/fr/technologies/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site" afterPath="$PROJECT_DIR$/site" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/custom.css" afterPath="$PROJECT_DIR$/static/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_base.html" afterPath="$PROJECT_DIR$/templates/_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sitemap.xml" afterPath="$PROJECT_DIR$/templates/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="abilian.com.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364387894166" ignored="false" />
+    <file path="/index.md" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364401241374" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/apps/communities/models.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360342881452" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/templates/admin/crm_permissions.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360339924924" ignored="false" />
+    <file path="/crm_permissions.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360339898419" ignored="false" />
+    <file path="/models.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360516695939" ignored="false" />
+    <file path="/dummy.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360342993823" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/commands/manage.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360344066594" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/apps/communities/views.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360343765756" ignored="false" />
+    <file path="/views.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360343764619" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/services/security/service.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360343904448" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/templates/social/home.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360494589339" ignored="false" />
+    <file path="$PROJECT_DIR$/../extranet-spr/extranet_spr/apps/crm/generated.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360409575959" ignored="false" />
+    <file path="$PROJECT_DIR$/../pyqt-sandbox/test1.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360410340781" ignored="false" />
+    <file path="/test1.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360410337726" ignored="false" />
+    <file path="$PROJECT_DIR$/../pyqt-sandbox/test2.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360415432989" ignored="false" />
+    <file path="$PROJECT_DIR$/../pycr/pycr/models.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1360516713785" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/main.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364304197219" ignored="false" />
+    <file path="/main.py" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364304132330" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/templates/home_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307106455" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/templates/_base_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307104160" ignored="false" />
+    <file path="/_base_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307103722" ignored="false" />
+    <file path="/home_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307076509" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/templates/_page_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364303751209" ignored="false" />
+    <file path="/_page_fr.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364303751209" ignored="false" />
+    <file path="/programme.md" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307334988" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/pages/fr/programme.md" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364307334988" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/pages/fr/lieu.md" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364304253056" ignored="false" />
+    <file path="/lieu.md" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364304251385" ignored="false" />
+    <file path="$PROJECT_DIR$/../lemooc2013/static/custom.css" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364305792169" ignored="false" />
+    <file path="/_base.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364400705377" ignored="false" />
+    <file path="/custom.css" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364394777965" ignored="false" />
+    <file path="/_page.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364393883073" ignored="false" />
+    <file path="/a.dummy" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364400662908" ignored="false" />
+    <file path="/site" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364400671234" ignored="false" />
+    <file path="/index.html" changelist="d788b122-ff42-4162-920d-94db480c64ac" time="1364400713303" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,70 +77,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="40" selection-start="10407" selection-end="10415" vertical-scroll-proportion="-2.26">
-              <folding>
-                <element signature="e#929#954#0" expanded="true" />
-                <element signature="e#1180#1205#0" expanded="true" />
-                <element signature="e#1452#1491#0" expanded="true" />
-                <element signature="e#1520#1572#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jei.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/custom/clients/jei.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="65" selection-start="5222" selection-end="5222" vertical-scroll-proportion="-1.2739726">
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cap-digital.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/custom/clients/cap-digital.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="systematic.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/custom/clients/systematic.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eit-ict-labs.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/custom/clients/eit-ict-labs.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="handshake.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/custom/handshake.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sitemap.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="9" selection-start="552" selection-end="552" vertical-scroll-proportion="-11.25">
+            <state line="202" column="51" selection-start="7126" selection-end="7126" vertical-scroll-proportion="-3.8333333">
               <folding />
             </state>
           </provider>
@@ -114,16 +89,82 @@
       <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/credits/index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="68" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+            <state line="25" column="3" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/contact/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2466" column="18" selection-start="51885" selection-end="51885" vertical-scroll-proportion="0.0">
+            <state line="1124" column="0" selection-start="23979" selection-end="23979" vertical-scroll-proportion="-0.16581632">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="250" column="61" selection-start="11942" selection-end="11942" vertical-scroll-proportion="-4.2916665">
+              <folding>
+                <element signature="e#4114#4156#0" expanded="true" />
+                <element signature="e#4386#4441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/jobs/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="16" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/solutions/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="55" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fr/technologies/index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="374" column="14" selection-start="17448" selection-end="17448" vertical-scroll-proportion="-5.4166665">
               <folding />
             </state>
           </provider>
@@ -139,25 +180,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/_page.html" />
-        <option value="$PROJECT_DIR$/pages/fr/technologie/index.md" />
-        <option value="$PROJECT_DIR$/static/css/rs-responsive.css" />
-        <option value="$PROJECT_DIR$/templates/sitemap.xml" />
-        <option value="$PROJECT_DIR$/pages/fr/solutions/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/technologies/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/services/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/entreprise-social-networking/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/entreprise-connectee/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
-        <option value="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" />
-        <option value="$PROJECT_DIR$/static/css/custom.css" />
-        <option value="$PROJECT_DIR$/site" />
         <option value="$PROJECT_DIR$/pages/fr/a-propos/credits/index.md" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/pages/fr/technologies/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/contact/index.md" />
+        <option value="$PROJECT_DIR$/dummy.py" />
+        <option value="$PROJECT_DIR$/pages/fr/services/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/technologie/index.md" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/index.md" />
+        <option value="$PROJECT_DIR$/templates/_page.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/pages/fr/pourquoi/index.md" />
+        <option value="$PROJECT_DIR$/site" />
+        <option value="$PROJECT_DIR$/pages/fr/solutions/index.md" />
         <option value="$PROJECT_DIR$/templates/_base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/pages/fr/a-propos/jobs/index.md" />
+        <option value="$PROJECT_DIR$/static/css/custom.css" />
       </list>
     </option>
   </component>
@@ -192,7 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,50 +245,6 @@
               <option name="myItemId" value="abilian.com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.3 virtualenv at ~/envs/static &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.3 virtualenv at ~/envs/static &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.3 virtualenv at ~/envs/static &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python2.7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -265,7 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,85 +280,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a-propos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a-propos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="credits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="abilian.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -458,9 +398,9 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -495,6 +435,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="d788b122-ff42-4162-920d-94db480c64ac" name="Default" comment="" />
       <created>1356614581076</created>
       <updated>1356614581076</updated>
     </task>
@@ -504,24 +445,24 @@
     <frame x="0" y="22" width="1241" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3246951" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24937238" sideWeight="0.6707504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2669456" sideWeight="0.6753049" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Pomodoro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Pomodoro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -557,6 +498,9 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -582,7 +526,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/site</url>
-          <line>150</line>
+          <line>151</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -590,103 +534,122 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/img/slider07.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/slider01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/contact/index.md">
+    <entry file="file://$PROJECT_DIR$/templates/_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="47" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+        <state line="48" column="2" selection-start="1590" selection-end="1590" vertical-scroll-proportion="-24.375">
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/envs/dev/lib/python2.7/site-packages/flower/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1669" column="0" selection-start="33147" selection-end="33147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/overrides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/pourquoi/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="302" selection-start="3553" selection-end="3553" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="980" selection-end="980" vertical-scroll-proportion="-6.923077">
+        <state line="37" column="34" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#37#62#0" expanded="true" />
+            <element signature="e#38#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/envs/static/lib/python2.7/site-packages/flaskext/flatpages/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pages/fr/solutions/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="8" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.0">
+        <state line="5" column="55" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/pages/fr/technologies/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2466" column="18" selection-start="51885" selection-end="51885" vertical-scroll-proportion="0.0">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sitemap.xml">
+    <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="552" selection-end="552" vertical-scroll-proportion="-11.25">
+        <state line="374" column="14" selection-start="17448" selection-end="17448" vertical-scroll-proportion="-5.4166665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/credits/index.md">
+    <entry file="file://$PROJECT_DIR$/templates/_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="68" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+        <state line="202" column="51" selection-start="7126" selection-end="7126" vertical-scroll-proportion="-3.8333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="40" selection-start="10407" selection-end="10415" vertical-scroll-proportion="-2.26">
+        <state line="250" column="61" selection-start="11942" selection-end="11942" vertical-scroll-proportion="-4.2916665">
           <folding>
-            <element signature="e#929#954#0" expanded="true" />
-            <element signature="e#1180#1205#0" expanded="true" />
-            <element signature="e#1452#1491#0" expanded="true" />
-            <element signature="e#1520#1572#0" expanded="true" />
+            <element signature="e#4114#4156#0" expanded="true" />
+            <element signature="e#4386#4441#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/custom/clients/systematic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/custom/handshake.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/custom/clients/cap-digital.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/custom/clients/eit-ict-labs.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/custom/clients/jei.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_base.html">
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="65" selection-start="5222" selection-end="5222" vertical-scroll-proportion="-1.2739726">
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/jobs/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/credits/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="3" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fr/a-propos/contact/index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1124" column="0" selection-start="23979" selection-end="23979" vertical-scroll-proportion="-0.16581632">
+          <folding />
         </state>
       </provider>
     </entry>

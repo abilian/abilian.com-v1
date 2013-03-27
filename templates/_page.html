@@ -3,6 +3,8 @@
 {% block main %}
   <div class="row show-grid">
     <div class="span12">
+
+      {#
       <!-- BREADCRUMBS -->
       <div id="breadcrumb">
         <ul>
@@ -11,16 +13,18 @@
           <li>About Us (Right Sidebar)</li>
         </ul>
       </div>
+       #}
+
       <div class="row show-grid clear-both">
         <!-- BEGIN ARTICLE CONTENT AREA -->
-        <div class="span9 main-column two-columns-right">
+        <div class="span12 main-column two-columns-right">
           <article>
             {{ page.html|safe }}
           </article>
         </div>
         <!-- END ARTICLE CONTENT AREA -->
 
-
+{#
         <!-- BEGIN RIGHT-SIDEBAR -->
         <div id="left-sidebar" class="span3 sidebar">
           <!-- RIGHT-SIDEBAR: SIDEBAR NAVIGATION -->
@@ -42,6 +46,7 @@
           </div>
         </div>
         <!-- END RIGHT-SIDEBAR -->
+#}
       </div>
     </div>
   </div>
