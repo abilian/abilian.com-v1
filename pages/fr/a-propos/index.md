@@ -4,13 +4,12 @@ title: A propos d'Abilian
 
 ## Métier
 
-Abilian est un éditeur de logiciels open source innovants dans le domaine de la
-collaboration émergente et des réseaux sociaux d'entreprise.
+Abilian est un éditeur de [logiciels open source innovants](/fr/solutions/) dans le domaine de la collaboration émergente et des réseaux sociaux d'entreprise.
 
 ## Modèle économique
 
 Notre modèle économique est celui d’un **éditeur open source**: nous
-développons une plateforme open source, en collaboration ouverte avec une
+développons une [plateforme open source](/fr/technologies/), en collaboration ouverte avec une
 communauté de contributeurs, et nous assurons à nos clients - DSI de grands
 groupes ou d’administration, PME utilisatrices du Cloud - la garantie du bon
 fonctionnement de versions qualifiées et maintenues du logiciel. Nous
