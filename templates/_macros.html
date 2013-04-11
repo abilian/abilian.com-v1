@@ -1,4 +1,4 @@
-{% macro m_sidebar(recent_news) %}
+{% macro m_sidebar(recent_news, with_images=False) %}
   <!-- BEGIN RIGHT-SIDEBAR -->
   <div id="right-sidebar" class="span3 sidebar">
     <div class="sidebar-news-widget sidebar-block">
@@ -6,10 +6,12 @@
       <ul>
         {% for item in recent_news %}
           <li>
+            {% if with_images %}
             <a class="photo"
                 href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
               <img alt="" src="{{ url_for("image", path=item.image, h=200) }}"/>
             </a>
+            {% endif %}
 
             <p>
               <a href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">{{ item.title }}</a>
