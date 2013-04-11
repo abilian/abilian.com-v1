@@ -2,15 +2,34 @@
   <!-- BEGIN RIGHT-SIDEBAR -->
   <div id="right-sidebar" class="span3 sidebar">
     <div class="sidebar-news-widget sidebar-block">
+
+      <h2>Réseautage</h2>
+
+      <ul class="social-box">
+        <li><a href="/fr/feed/" title="RSS"
+            target="_blank"><i class="icon-rss icon-3x"></i></a></li>
+        <li><a href="/fr/a-propos/contact/" title="Phone"
+            target="_blank"><i class="icon-phone-sign icon-3x"></i></a></li>
+        <li><a href="http://twitter.com/abilianhq" title="Twitter"
+            target="_blank"><i class="icon-twitter-sign icon-3x"></i></a></li>
+        <li><a href="http://github.com/abilian" title="Github"
+            target="_blank"><i class="icon-github-sign icon-3x"></i></a></li>
+        <li><a href="http://www.facebook.com/abilian.corp" title="Facebook"
+            target="_blank"><i class="icon-facebook-sign icon-3x"></i></a></li>
+        <li><a href="http://www.linkedin.com/company/abilian/" title="LinkedIn"
+            target="_blank"><i class="icon-linkedin-sign icon-3x"></i></a></li>
+      </ul>
+
       <h2>Actualité récente</h2>
       <ul>
         {% for item in recent_news %}
           <li>
             {% if with_images %}
-            <a class="photo"
-                href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
-              <img alt="" src="{{ url_for("image", path=item.image, h=200) }}"/>
-            </a>
+              <a class="photo"
+                  href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
+                <img alt=""
+                    src="{{ url_for("image", path=item.image, h=200) }}"/>
+              </a>
             {% endif %}
 
             <p>

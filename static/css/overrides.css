@@ -52,3 +52,30 @@ p {
 .sidebar-news-widget ul .photo {
   margin: 10px 0;
 }
+
+.blog-posts article h2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.sidebar-news-widget ul.socials {
+  float: right;
+  margin-top: 0;
+  text-align: center;
+}
+
+ul.social-box {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.social-box li {
+  margin: 0 0 0 6px;
+  display: inline-block;
+  border-bottom: 0;
+}
+
+ul.social-box li a {
+  color: #888;
+  text-decoration: none;
+}
