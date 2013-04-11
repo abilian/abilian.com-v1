@@ -277,59 +277,32 @@
   </div>
 </div>
 
-{#
-<hr>
-<div class="row main-block">
-  <div class="span12">
-    <!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO LIST -->
-    <div class="row show-grid hero-list">
-      <div class="span3">
-        <div class="image-wrapper">
-          <img alt="" src="/static/img/ruler.png"/>
-        </div>
-        <h2>Clean Design</h2>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT POSTS BLOACK (ORIGINALLY DESIGNED FOR HOME PAGE) -->
+<div class="main-block block-posts">
+  <h2>Actualités</h2>
 
-        <p>Modern, clean design to give your business a highly professional
-          appearance.
-          <a href="/static/#">Learn more&nbsp;&raquo;</a>
-        </p>
-      </div>
-      <div class="span3">
-        <div class="image-wrapper">
-          <img alt="" src="/static/img/equaliser.png"/>
-        </div>
-        <h2>Flexible Layout</h2>
+  <div class="row show-grid clear-both">
+    <div class="span12">
+      <div class="row show-grid">
+        {% for entry in news %}
+        <div class="span3">
+          {#
+          <a class="block-post-img" href="#">
+            <img alt="" src="img/block_post_img1.jpg" class="img-rounded"/>
+          </a>
+          #}
+          <a class="block-post-title" href="/fr/news/">{{ entry.title }}</a>
 
-        <p>Flexible page layout templates to help you quickly organize your
-          website's content.
-          <a href="/static/#">Learn more&nbsp;&raquo;</a>
-        </p>
-      </div>
-      <div class="span3">
-        <div class="image-wrapper">
-          <img alt="" src="/static/img/direction.png"/>
-        </div>
-        <h2>Quick Shortcuts</h2>
+          <p class="block-post-date">{{ entry.date.strftime("%d/%m/%Y") }}</p>
 
-        <p>Dozens of unique shortcuts to add your own cool and custom flare.
-          <a href="/static/#">Learn more&nbsp;&raquo;</a>
-        </p>
-      </div>
-      <div class="span3">
-        <div class="image-wrapper">
-          <img alt="" src="/static/img/both_arrows.png"/>
+          <p class="block-post-content">{{ entry.abstract }}</p>
+          <a class="block-post-more" href="/fr/news/">En savoir plus&nbsp;&raquo;</a>
         </div>
-        <h2>Responsive</h2>
-
-        <p>Ultra-responsive design so your pages work beautifully on practically
-          any device.
-          <a href="/static/#">Learn more&nbsp;&raquo;</a>
-        </p>
+        {% endfor %}
       </div>
     </div>
   </div>
-  <div class="horizontal-divider span12"></div>
 </div>
-#}
+<hr>
 
 {% endblock %}

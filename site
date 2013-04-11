@@ -7,13 +7,14 @@ import os
 import re
 from pprint import pprint
 from unicodedata import normalize
-from datetime import date, datetime
+import datetime
+import bleach
 from fabric.api import local
 from argh import *
 
 from flask import Flask, render_template, redirect, url_for
 from flask.ext.frozen import Freezer
-from flask.ext.flatpages import FlatPages
+from flask.ext.flatpages import FlatPages, Page
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
 
@@ -50,6 +51,40 @@ asset_manager = AssetManager(app)
 
 ###############################################################################
 # Model helpers
+###############################################################################
+
+# Monkey patch
+Page__init__orig = Page.__init__
+
+def Page__init__(self, path, meta_yaml, body, html_renderer):
+  Page__init__orig(self, path, meta_yaml, body, html_renderer)
+  date = self.meta.get('date')
+
+  if not date:
+    self.meta['date'] = datetime.date.today()
+  elif isinstance(date, str):
+    year = int(date[0:4])
+    month = int(date[5:7])
+    day = int(date[8:10])
+    date = datetime.date(year, month, day)
+    self.meta['date'] = date
+
+  if not self.meta.get('slug'):
+    self.meta['slug'] = self.path.split('/')[-1]
+
+  # Autogenerates abstract if needed
+  if not self.meta.get('abstract'):
+    abstract = bleach.clean(self.html, tags=[], strip=True)
+    print self.html
+    print
+    print abstract
+    print 78 * "="
+    if len(abstract) > 250:
+      abstract = abstract[0:250] + " [...]"
+    self.meta['abstract'] = abstract
+
+Page.__init__ = Page__init__
+
 
 def get_pages(offset=None, limit=None):
   """
@@ -67,7 +102,7 @@ def get_pages(offset=None, limit=None):
 
   # sort by date
   articles = sorted(articles, reverse=True,
-                    key=lambda p: p.meta.get('date', date.today()))
+                    key=lambda p: p.meta.get('date', datetime.date.today()))
 
   if offset and limit:
     return articles[offset:limit]
@@ -94,6 +129,16 @@ def slugify(text, delim=u'-'):
     if word:
       result.append(word)
   return unicode(delim.join(result))
+
+
+def get_news(offset=None, limit=None):
+  all_pages = get_pages()
+  all_news = [ page for page in all_pages if page.path.startswith("fr/news/") ]
+  if offset and len(all_news) > offset:
+    all_news = all_news[offset:]
+  if limit and len(all_news) > limit:
+    all_news = all_news[:limit]
+  return all_news
 
 
 ###############################################################################
@@ -144,7 +189,8 @@ def index():
 def home(lang):
   template = "index.html"
   page = {'title': 'Abilian: connected we work'}
-  return render_template(template, lang=lang, page=page)
+  news = get_news(limit=4)
+  return render_template(template, lang=lang, page=page, news=news)
 
 
 @app.route('/<lang>/<path:path>/')
@@ -154,18 +200,25 @@ def page(lang, path=""):
   return render_template(template, lang=lang, page=page)
 
 
+@app.route('/<lang>/news/')
+def news(lang):
+  all_news = get_news()
+  page = {'title': u'Actualités pour Abilian'}
+  return render_template('news.html', lang=lang, page=page, news=all_news)
+
+
 @app.route('/feed/')
 def feed():
   articles = get_pages(limit=FEED_MAX_LINKS)
-  now = datetime.now()
+  now = datetime.datetime.now()
   return render_template('base.rss', pages=articles, build_date=now)
 
 
 @app.route('/sitemap.xml')
 def sitemap():
-  today = date.today()
+  today = datetime.date.today()
   pprint(get_pages())
-  recently = date(year=today.year, month=today.month, day=1)
+  recently = datetime.date(year=today.year, month=today.month, day=1)
   return render_template('sitemap.xml', pages=get_pages(),
                          today=today, recently=recently)
 
@@ -222,7 +275,7 @@ def post(section, title=None, filename=None):
   """
   if not os.path.exists(os.path.join(FLATPAGES_ROOT, section)):
     raise CommandError(u"Section '%s' does not exist" % section)
-  post_date = datetime.today()
+  post_date = datetime.date.today()
   title = unicode(title) if title else "Untitled Post"
   if not filename:
     filename = u"%s.md" % slugify(title)

@@ -1,27 +1,37 @@
 h2 {
-    font-size: 22px;
-    padding-top: 20px;
+  font-size: 22px;
+  padding-top: 20px;
 }
 
 h3 {
-    font-size: 18px;
-    padding-top: 15px;
+  font-size: 18px;
+  padding-top: 15px;
 }
 
 li p {
-    margin: 5px 0;
-    padding: 0;
+  margin: 5px 0;
+  padding: 0;
 }
 
 p {
-    padding: 0;
+  padding: 0;
 }
 
 .hero-block3 .hero-content-3 h2 {
-    padding-top: 0;
-    padding-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
+/* Blog on home page */
 .block-posts .block-post-content {
+  font-size: 13px;
+}
+
+.block-posts .block-post-date {
+  padding-bottom: 0;
+  font-size: 13px;
+}
+
+.block-posts .block-post-more {
   font-size: 13px;
 }

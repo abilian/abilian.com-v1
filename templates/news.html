@@ -1,0 +1,80 @@
+{% extends "_base.html" %}
+
+{% block main %}
+  <div class="row show-grid">
+    <div class="span12">
+
+      {#
+      <!-- BREADCRUMBS -->
+      <div id="breadcrumb">
+        <ul>
+          <li class="home"><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li>About Us (Right Sidebar)</li>
+        </ul>
+      </div>
+       #}
+
+      <div class="row show-grid clear-both">
+        <div class="span12 main-column two-columns-right">
+          {% for entry in news %}
+            <article>
+              <h2>{{ entry.title }}</h2>
+              {# <img alt="" src="img/blog04.jpg"/> #}
+
+              {{ entry.html|safe }}
+
+              <div class="post-item-panel">
+                <ul>
+                  <li class="date">
+                    <p><i class="icon-calendar"></i>{{ entry.date.strftime("%d/%m/%Y") }}</p>
+                  </li>
+                  {#
+                  <li>
+                    <p><i class="icon-user"></i>by Admin</p>
+                  </li>
+                  <li>
+                    <p><i class="icon-tags"></i><a href="">marketing</a>, <a
+                      href="">SEO</a></p>
+                  </li>
+                  <li class="comments"><p><i
+                      class="icon-comments-alt"></i><span>2 comments</span>
+                  </p></li>
+                  #}
+                </ul>
+              </div>
+            </article>
+            {% if not loop.last %}
+              <hr>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        {#
+        <!-- BEGIN RIGHT-SIDEBAR -->
+        <div id="left-sidebar" class="span3 sidebar">
+          <!-- RIGHT-SIDEBAR: SIDEBAR NAVIGATION -->
+          <div class="side-nav sidebar-block">
+            <h2>Pages</h2>
+            <ul>
+              <li><a href="3_columns_about.html">About Us (both sidebars)</a>
+              </li>
+              <li><a href="left_column_about.html">About Us (left sidebar)</a>
+              </li>
+              <li class="active"><a href="right_column_about.html">About Us
+                (right sidebar)</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="our_team_one_col.html">Our Team</a></li>
+              <li><a href="our_team.html">Our Team (Large blocks)</a></li>
+              <li><a href="philosophy.html">Philosophy</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- END RIGHT-SIDEBAR -->
+#}
+      </div>
+    </div>
+  </div>
+  <hr>
+{% endblock %}
