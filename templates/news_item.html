@@ -6,7 +6,7 @@
   <div class="row show-grid">
     <div class="span12">
 
-{#
+      {#
       <!-- BREADCRUMBS -->
       <div id="breadcrumb">
         <ul>
@@ -19,24 +19,25 @@
 
       <div class="row show-grid clear-both">
         <div class="span9 main-column two-columns-right">
-          {% for entry in news %}
-            <article>
-              <h2><a href="{{ url_for("news_item", lang='fr', slug=entry.slug) }}">{{ entry.title }}</a></h2>
-              {# <img alt="" src="img/blog04.jpg"/> #}
+          <article>
+            <h2><a
+                href="{{ url_for("news_item", lang='fr', slug=page.slug) }}">{{ page.title }}</a>
+            </h2>
+            {# <img alt="" src="img/blog04.jpg"/> #}
 
-              {{ entry.html|safe }}
+            {{ page.html|safe }}
 
-              <div class="post-item-panel">
-                <ul>
-                  <li class="date">
-                    <p><i
-                        class="icon-calendar"></i>{{ entry.date.strftime("%d/%m/%Y") }}
-                    </p>
-                  </li>
-                  <li>
-                    <p><i class="icon-user"></i>par Admin</p>
-                  </li>
-                  {#
+            <div class="post-item-panel">
+              <ul>
+                <li class="date">
+                  <p><i
+                      class="icon-calendar"></i>{{ page.date.strftime("%d/%m/%Y") }}
+                  </p>
+                </li>
+                <li>
+                  <p><i class="icon-user"></i>par Admin</p>
+                </li>
+                {#
                   <li>
                     <p><i class="icon-tags"></i><a href="">marketing</a>, <a
                       href="">SEO</a></p>
@@ -45,13 +46,9 @@
                       class="icon-comments-alt"></i><span>2 comments</span>
                   </p></li>
                   #}
-                </ul>
-              </div>
-            </article>
-            {% if not loop.last %}
-              <hr>
-            {% endif %}
-          {% endfor %}
+              </ul>
+            </div>
+          </article>
         </div>
 
         {{ m_sidebar(recent_news) }}

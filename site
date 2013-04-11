@@ -1,18 +1,22 @@
 #!/usr/bin/env python
 # coding=utf-8
+from StringIO import StringIO
 
 import codecs
 import locale
+import mimetypes
 import os
+from os.path import join
 import re
-from pprint import pprint
 from unicodedata import normalize
 import datetime
+from PIL import Image
 import bleach
 from fabric.api import local
 from argh import *
 
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, make_response, \
+    abort, request
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages, Page
 from flask.ext.markdown import Markdown
@@ -37,7 +41,7 @@ MAIN_MENU = [
   ('solutions/', u'Solutions'),
   ('services/', u'Services'),
   ('technologies/', u'Technologies'),
-  #('news/', u'Actualité'),
+  ('news/', u'Actualité'),
   ('a-propos/', u'A propos'),
 ]
 
@@ -199,34 +203,80 @@ def page(lang, path=""):
 @app.route('/<lang>/news/')
 def news(lang):
   all_news = get_news()
+  recent_news = get_news(limit=5)
   page = {'title': u'Actualités pour Abilian'}
-  return render_template('news.html', lang=lang, page=page, news=all_news)
+  return render_template('news.html', lang=lang, page=page, news=all_news,
+                         recent_news=recent_news)
+
+
+@app.route('/<lang>/news/<slug>')
+def news_item(lang, slug):
+  page = pages.get_or_404(lang + "/news/" + slug)
+  recent_news = get_news(limit=5)
+  return render_template('news_item.html', lang=lang, page=page,
+                         recent_news=recent_news)
+
+
+@app.route('/image/<path:path>')
+def image(path):
+  if '..' in path:
+    abort(500)
+  fd = open(join(app.root_path, "images", path))
+  data = fd.read()
+
+  hsize = int(request.args.get("h", 0))
+  vsize = int(request.args.get("v", 0))
+  if hsize > 1000 or vsize > 1000:
+    abort(500)
+
+  if hsize:
+    image = Image.open(StringIO(data))
+    x, y = image.size
+
+    x1 = hsize
+    y1 = int(1.0 * y * hsize / x)
+    image.thumbnail((x1, y1), Image.ANTIALIAS)
+    output = StringIO()
+    image.save(output, "PNG")
+    data = output.getvalue()
+  if vsize:
+    image = Image.open(StringIO(data))
+    x, y = image.size
+
+    x1 = int(1.0 * x * vsize / y)
+    y1 = vsize
+    image.thumbnail((x1, y1), Image.ANTIALIAS)
+    output = StringIO()
+    image.save(output, "PNG")
+    data = output.getvalue()
+
+  response = make_response(data)
+  response.headers['content-type'] = mimetypes.guess_type(path)
+  return response
+
+
+@app.route('/<lang>/feed/')
+def feed(lang):
+  articles = get_pages(limit=FEED_MAX_LINKS)
+  now = datetime.datetime.now()
+
+  response = make_response(render_template('base.rss',
+                                           pages=articles, build_date=now))
+  response.headers['Content-Type'] = 'text/xml'
+  return response
 
 
 @app.route('/feed/')
-@app.route('/<lang>/feed/')
-def feed(lang=None):
-  articles = get_pages(limit=FEED_MAX_LINKS)
-  now = datetime.datetime.now()
-  return render_template('base.rss', pages=articles, build_date=now)
+def global_feed():
+  return feed('fr')
 
 
 @app.route('/sitemap.xml')
 def sitemap():
   today = datetime.date.today()
-  pprint(get_pages())
   recently = datetime.date(year=today.year, month=today.month, day=1)
   return render_template('sitemap.xml', pages=get_pages(),
                          today=today, recently=recently)
-
-
-#@app.route('/<string:section>/feed/')
-#def feed_section(section):
-#    articles = get_pages(pages, limit=FEED_MAX_LINKS, section=section)
-#    return render_template('%s/feed.rss' % section, pages=articles,
-#        build_date=datetime.now())
-#
-#
 
 
 @app.route('/403.html')
@@ -246,7 +296,8 @@ def error500():
 
 @app.errorhandler(404)
 def page_not_found(error):
-  return render_template('404.html'), 404
+  page = {'title': "Page not found"}
+  return render_template('404.html', page=page), 404
 
 
 ###############################################################################

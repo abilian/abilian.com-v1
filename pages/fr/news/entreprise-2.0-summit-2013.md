@@ -1,5 +1,6 @@
 title: Abilian à l'Entreprise 2.0 Summit Paris 2013
 date: 2013/03/25
+image: e20summit.png
 
 Notre fondateur, Stefane Fermigier, était invité à parler lors de
 l'[Entreprise 2.0 Summit Paris 2013](http://www.e20summit.com/former-conferences/e20-summit-2013.html).

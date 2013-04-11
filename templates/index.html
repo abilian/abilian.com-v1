@@ -284,19 +284,17 @@
   <div class="row show-grid clear-both">
     <div class="span12">
       <div class="row show-grid">
-        {% for entry in news %}
+        {% for item in news %}
         <div class="span3">
-          {#
-          <a class="block-post-img" href="#">
-            <img alt="" src="img/block_post_img1.jpg" class="img-rounded"/>
+          <a class="block-post-img" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
+            <img alt="" src="{{ url_for("image", lang='fr', path=item.image, h=220) }}" class="img-rounded"/>
           </a>
-          #}
-          <a class="block-post-title" href="/fr/news/">{{ entry.title }}</a>
+          <a class="block-post-title" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">{{ item.title }}</a>
 
-          <p class="block-post-date">{{ entry.date.strftime("%d/%m/%Y") }}</p>
+          <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
 
-          <p class="block-post-content">{{ entry.abstract }}</p>
-          <a class="block-post-more" href="/fr/news/">En savoir plus&nbsp;&raquo;</a>
+          <p class="block-post-content">{{ item.abstract }}</p>
+          <a class="block-post-more" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">En savoir plus&nbsp;&raquo;</a>
         </div>
         {% endfor %}
       </div>

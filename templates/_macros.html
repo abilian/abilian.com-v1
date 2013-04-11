@@ -1,0 +1,27 @@
+{% macro m_sidebar(recent_news) %}
+  <!-- BEGIN RIGHT-SIDEBAR -->
+  <div id="right-sidebar" class="span3 sidebar">
+    <div class="sidebar-news-widget sidebar-block">
+      <h2>Actualité récente</h2>
+      <ul>
+        {% for item in recent_news %}
+          <li>
+            <a class="photo"
+                href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
+              <img alt="" src="{{ url_for("image", path=item.image, h=200) }}"/>
+            </a>
+
+            <p>
+              <a href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">{{ item.title }}</a>
+            </p>
+
+            <p class="date"><i
+                class="icon-calendar"></i>{{ item.date.strftime("%d/%m/%Y") }}
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <!-- END RIGHT-SIDEBAR -->
+{% endmacro %}
