@@ -1,4 +1,4 @@
-title: Pourquoi Pourquoi l'entreprise connectée ?
+title: Pourquoi l'entreprise connectée ?
 
 # Pourquoi l'entreprise connectée ?
 
@@ -12,7 +12,7 @@ Abilian se place ainsi à l’intersection de plusieurs tendances lourdes de l�
 
 - L’**Entreprise 2.0**: l’utilisation de plateformes logicielles sociales émergentes dans les entreprise. Blogs, wikis, maintenant réseaux sociaux internes, émergent comme remplacement des outils de collaboration traditionnels que sont le mail et le disque partagé.
 
-- L’**Open Source**: source majeure de disruption dans le marché de l’informatique depuis 2000. L’Open Source permet de diminuer les coûts de développement et de constituer des communautés de contributeurs. Notre conviction est que les valeurs de l’open source sont au fondement même de l’Entreprise 2.0 que nous voyons éclore en ce moment5. Faire du “social business” sans faire de l’open source est en cela une forme d’aberration.
+- L’**Open Source**: source majeure de disruption dans le marché de l’informatique depuis 2000. L’Open Source permet de diminuer les coûts de développement et de constituer des communautés de contributeurs. Notre conviction est que les valeurs de l’open source sont au fondement même de l’Entreprise 2.0 que nous voyons éclore en ce moment. Faire du “social business” sans faire de l’open source est en cela une forme d’aberration.
 
 - La **consumérisation de l’informatique d’entreprise**: l’innovation se déplace de la technique vers les usages, et elle a lieu maintenant majoritairement dans des applications grand public (Google, Facebook, Twitter, applications pour smartphones...) avant de percoler dans les entreprises. Les directions informatiques perdent l’initiative au profit des utilisateurs et des directions métiers. Une façon pour elles de se réinventer est de mettre en place des “App Stores” dans lesquels les métiers peuvent venir piocher en fonction de leurs besoins.
 

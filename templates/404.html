@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "_base.html" %}
 
 {% block extra_head -%}
     <meta name="robots" content="noindex, nofollow">
@@ -10,6 +10,6 @@
 
 The webpage you requested could not be found.
 
-Please try a little harder, or <a href="{{ url_for("contact") }}">tell me</a>.
+Please try a little harder, or <a href="{{ url_for("contact") }}">tell us</a>.
 {% endfilter %}
 {% endblock contents %}

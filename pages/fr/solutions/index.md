@@ -8,6 +8,24 @@ source Abilian Social Business Engine](/fr/technologies/).
 
 ## Solutions horizontales / génériques
 
+### Réseau Social d'Entreprise (RSE)
+
+**Abilian SBE** fournit clef-en-main toutes les fonctions relationnelles et conversationnelles d'un réseau social d'entreprise:
+
+- Groupes
+
+- Graphe social ("amis", "followers"...)
+
+- Micro-messages
+
+- Partage de documents, de photos, de vidéos
+
+- Outils collaboratifs (agrégateurs d'informations, wiki, etc.)
+
+- Applications sociales métiers (Q&A, sondages...)
+
+- ...
+
 ### CRM social
 
 **Abilian CRM** est une plateforme de CRM (Customer Relationship Management) qui intègre pleinement la dimension collaborative et sociale de la gestion de la relation client.
@@ -19,7 +37,7 @@ source Abilian Social Business Engine](/fr/technologies/).
 
 ## Solutions verticales / métiers
 
-Sur la base de sa plateforme et de ses modules horizontaux, Abilian a développé des applications métiers
+Sur la base de sa plateforme et de ses modules horizontaux, Abilian a développé des applications métiers spécifiques aux besoins de plusieurs marchés verticaux.
 
 ### Pour les Pôles de compétitivité
 
@@ -35,9 +53,14 @@ Abilian propose une déclinaison métier de sa plateforme qui intègre les fonct
 
 - Communication interne et externe: gestion des événements (conventions, rencontres d'affaires, conférences thématiques), newsletters...
 
-Nos solutions est sécurisée de façon à limiter les risques d'espionnage sur les projets des Pôles.
+Nos solutions sont sécurisées de façon à limiter les risques d'espionnage sur les projets des Pôles.
 
+### Pour les organisateurs d'événements B2B
+
+On ne peut plus organiser aujourd'hui une conférence ou une rencontre d'affaires sans prendre en compte la dimension sociale.
+
+**Abilian EMS** (Event Management System) et **Abilian BCMS** (Business Convention Management System) sont deux déclinaisons verticales de la plateforme dédiées aux organisateurs de conférences et de rencontres d'affaires B2B.
 
 ### Pour l'enseignement supérieur
 
-Abilian développe actuellement une plateforme de **MOOC** (*Massive Open Online Course*) open source basée sur sa plateforme.
+Abilian développe actuellement une plateforme de **MOOC** (*Massive Open Online Course*) open source basée sur sa plateforme Abilian SBE.

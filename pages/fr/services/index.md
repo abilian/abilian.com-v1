@@ -27,3 +27,7 @@ Nous proposons des contrats de support et de maintenance:
 ## Cloud
 
 Nous proposons sous forme de service cloud (SaaS) des instances métiers préconfigurées de notre plateforme. Avec le cloud, vous vous concentrez sur votre métier, nous nous occupons de la technique !
+
+## Recherche et développement
+
+Sur la base de notre plateforme et dans [nos domaines d'expertise](/fr/technologies/), nous sommes ouverts à des collaborations sur des projets de R&D.
