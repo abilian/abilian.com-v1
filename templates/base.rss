@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <title>{% block title %}Nicolas Perriault{% endblock %}</title>
+        <title>{% block title %}Abilian{% endblock %}</title>
         <link>{{ BASE_URL }}</link>
         <description>{% block description %}Nicolas Perriault's personal website.{% endblock %}</description>
         <language>{% block lang %}en-us{% endblock %}</language>

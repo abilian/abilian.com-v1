@@ -75,10 +75,6 @@ def Page__init__(self, path, meta_yaml, body, html_renderer):
   # Autogenerates abstract if needed
   if not self.meta.get('abstract'):
     abstract = bleach.clean(self.html, tags=[], strip=True)
-    print self.html
-    print
-    print abstract
-    print 78 * "="
     if len(abstract) > 250:
       abstract = abstract[0:250] + " [...]"
     self.meta['abstract'] = abstract
@@ -208,7 +204,8 @@ def news(lang):
 
 
 @app.route('/feed/')
-def feed():
+@app.route('/<lang>/feed/')
+def feed(lang=None):
   articles = get_pages(limit=FEED_MAX_LINKS)
   now = datetime.datetime.now()
   return render_template('base.rss', pages=articles, build_date=now)
