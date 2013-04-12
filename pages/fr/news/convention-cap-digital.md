@@ -1,6 +1,7 @@
 title: Abilian EMS utilisé pour la convention d'affaires de Cap Digital
 date: 2013/04/03
 image: capdigital.png
+published: true
 
 Le 3 avril, [Cap Digital](http://www.capdigital.com/) organisait dans le cadre
 de sa journée "Croissance PME" une [convention d'affaires](http://convention.capdigital.com/croissance-pme-2013/home/) entre ses membres.

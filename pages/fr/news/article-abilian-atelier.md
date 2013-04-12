@@ -1,6 +1,7 @@
 title: Un article sur Abilian sur le site de l'Atelier
 date: 2013/03/25
 image: logo-atelier.png
+published: true
 
 Suite à une interview effectuée lors de l'Entreprise 2.0 Summit, au cours de laquelle notre fondateur, Stefane Fermigier, participait en tant qu'orateur, l'Atelier BNP Paribas a publié [l'article suivant](http://www.atelier.net/trends/articles/enterprise-20-projets-open-source-tendre-vers-developpement-de-mini-applications-communautaires).
 

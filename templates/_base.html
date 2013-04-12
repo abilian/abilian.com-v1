@@ -11,7 +11,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  {%- assets filter="cssmin", output="packed.css",
+  {%- assets filters="cssmin", output="css/packed.css",
     "rs-plugin/css/settings.css",
     "css/rs-responsive.css",
     "css/bootstrap.css",
@@ -280,7 +280,7 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-{%- assets filter="uglifyjs", output="packed.js",
+{%- assets filters="closure_js", output="js/packed.js",
     "js/bootstrap.js",
     "js/jquery.flexslider-min.js",
     "js/jquery.isotope.js",

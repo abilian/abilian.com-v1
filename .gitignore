@@ -2,6 +2,14 @@
 
 /build
 /env
+/tmp
 
 .webassets-cache
 .idea
+
+error.log
+.DS_Store
+static/css/packed.css
+static/js/packed.js
+static/packed.css
+static/packed.js

@@ -1,6 +1,7 @@
 title: Abilian est co-organisateur de la conférence Le MOOC 2013
 date: 2013/04/11
 image: lemooc2013.png
+published: true
 
 Abilian, avec Inria et les universités Paris Diderot et UMPC, organise un
 workshop baptisé ["Le MOOC"](http://www.lemooc.com/) sur les MOOC, les cours

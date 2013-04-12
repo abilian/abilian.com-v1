@@ -4,9 +4,11 @@ from StringIO import StringIO
 
 import codecs
 import locale
+from logging import FileHandler
 import mimetypes
 import os
 from os.path import join
+from pprint import pprint
 import re
 import traceback
 from unicodedata import normalize
@@ -25,9 +27,11 @@ from flask.ext.assets import Environment as AssetManager
 
 
 # Configuration
-DEBUG = True
 BASE_URL = 'http://abilian.com'
+DEBUG = True
 ASSETS_DEBUG = DEBUG
+# FIXME later
+#ASSETS_DEBUG = True
 FLATPAGES_AUTO_RELOAD = True
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'pages'
@@ -49,13 +53,14 @@ MAIN_MENU = [
 ]
 
 app = Flask(__name__)
+mod = Blueprint('mod', __name__, url_prefix='/<lang_code>')
+
 app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
 markdown_manager = Markdown(app)
 asset_manager = AssetManager(app)
 
-mod = Blueprint('mod', __name__, url_prefix='/<lang_code>')
 
 ###############################################################################
 # Model helpers
@@ -179,7 +184,8 @@ def pull_lang_code(endpoint, values):
     g.lang_code = m.group(1)
   else:
     g.lang_code = 'fr'
-  assert g.lang_code in ALLOWED_LANGS
+  if not g.lang_code in ALLOWED_LANGS:
+    abort(404)
 
 
 @mod.url_defaults
@@ -351,13 +357,22 @@ def build():
 def serve(server='127.0.0.1', port=5001, debug=DEBUG):
   """ Serves this site.
   """
+  if not debug:
+    import logging
+    file_handler = FileHandler("error.log")
+    file_handler.setLevel(logging.WARNING)
+    app.logger.addHandler(file_handler)
+
   asset_manager.config['ASSETS_DEBUG'] = debug
-  if debug:
-    app.debug = True
+  app.debug = debug
   app.run(host=server, port=port, debug=debug)
+
+
+def prod():
+  serve(debug=False)
 
 
 if __name__ == '__main__':
   parser = ArghParser()
-  parser.add_commands([build, serve])
+  parser.add_commands([build, serve, prod])
   parser.dispatch()
