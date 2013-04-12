@@ -1,10 +1,10 @@
 .PHONY: all
 
 run:
-	./site serve
+	./main.py serve
 
 all:
-	./site build
+	./main.py build
 
 clean:
 	rm -rf build

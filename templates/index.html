@@ -286,15 +286,15 @@
       <div class="row show-grid">
         {% for item in news %}
         <div class="span3">
-          <a class="block-post-img" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
-            <img alt="" src="{{ url_for("image", lang='fr', path=item.image, h=220) }}" class="img-rounded"/>
+          <a class="block-post-img" href="{{ url_for(".news_item", slug=item.slug) }}">
+            <img alt="" src="{{ url_for("image", path=item.image, h=220) }}" class="img-rounded"/>
           </a>
-          <a class="block-post-title" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">{{ item.title }}</a>
+          <a class="block-post-title" href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
 
           <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
 
           <p class="block-post-content">{{ item.abstract }}</p>
-          <a class="block-post-more" href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">En savoir plus&nbsp;&raquo;</a>
+          <a class="block-post-more" href="{{ url_for(".news_item", slug=item.slug) }}">En savoir plus&nbsp;&raquo;</a>
         </div>
         {% endfor %}
       </div>

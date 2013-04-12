@@ -26,14 +26,14 @@
           <li>
             {% if with_images %}
               <a class="photo"
-                  href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">
+                  href="{{ url_for(".news_item", slug=item.slug) }}">
                 <img alt=""
                     src="{{ url_for("image", path=item.image, h=200) }}"/>
               </a>
             {% endif %}
 
             <p>
-              <a href="{{ url_for("news_item", lang='fr', slug=item.slug) }}">{{ item.title }}</a>
+              <a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
             </p>
 
             <p class="date"><i

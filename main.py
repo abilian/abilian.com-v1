@@ -8,6 +8,7 @@ import mimetypes
 import os
 from os.path import join
 import re
+import traceback
 from unicodedata import normalize
 import datetime
 from PIL import Image
@@ -16,7 +17,7 @@ from fabric.api import local
 from argh import *
 
 from flask import Flask, render_template, redirect, url_for, make_response, \
-    abort, request
+    abort, request, Blueprint, g
 from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages, Page
 from flask.ext.markdown import Markdown
@@ -35,6 +36,8 @@ FLATPAGES_ROOT = 'pages'
 FEED_MAX_LINKS = 25
 SECTION_MAX_LINKS = 12
 
+ALLOWED_LANGS = ['fr']
+
 MAIN_MENU = [
   ('', u'Accueil'),
   ('pourquoi/', u"Pourquoi Abilian ?"),
@@ -52,6 +55,7 @@ freezer = Freezer(app)
 markdown_manager = Markdown(app)
 asset_manager = AssetManager(app)
 
+mod = Blueprint('mod', __name__, url_prefix='/<lang_code>')
 
 ###############################################################################
 # Model helpers
@@ -156,16 +160,36 @@ def to_rfc2822(dt):
 
 
 ###############################################################################
-# Context processors
+# Preprocessing
 
 @app.context_processor
-def inject_ga():
-  return dict(BASE_URL=BASE_URL)
+def inject_context_variables():
+  return dict(BASE_URL=BASE_URL, menu=MAIN_MENU)
 
 
-@app.context_processor
-def inject_menu():
-  return dict(menu=MAIN_MENU)
+@app.url_defaults
+def add_language_code(endpoint, values):
+  values.setdefault('lang_code', g.lang_code)
+
+
+@app.url_value_preprocessor
+def pull_lang_code(endpoint, values):
+  m = re.match("/(..)/", request.path)
+  if m:
+    g.lang_code = m.group(1)
+  else:
+    g.lang_code = 'fr'
+  assert g.lang_code in ALLOWED_LANGS
+
+
+@mod.url_defaults
+def add_language_code(endpoint, values):
+  values.setdefault('lang_code', g.lang_code)
+
+
+@mod.url_value_preprocessor
+def pull_lang_code(endpoint, values):
+  g.lang_code = values.pop('lang_code')
 
 
 ###############################################################################
@@ -178,43 +202,11 @@ def url_generator():
 
 
 ###############################################################################
-# Routes
+# Global (app-level) routes
 
 @app.route('/')
 def index():
-  return redirect(url_for(".home", lang='fr'))
-
-
-@app.route('/<lang>/')
-def home(lang):
-  template = "index.html"
-  page = {'title': 'Abilian: connected we work'}
-  news = get_news(limit=4)
-  return render_template(template, lang=lang, page=page, news=news)
-
-
-@app.route('/<lang>/<path:path>/')
-def page(lang, path=""):
-  page = pages.get_or_404(lang + "/" + path + "/index")
-  template = page.meta.get('template', '_page.html')
-  return render_template(template, lang=lang, page=page)
-
-
-@app.route('/<lang>/news/')
-def news(lang):
-  all_news = get_news()
-  recent_news = get_news(limit=5)
-  page = {'title': u'Actualités pour Abilian'}
-  return render_template('news.html', lang=lang, page=page, news=all_news,
-                         recent_news=recent_news)
-
-
-@app.route('/<lang>/news/<slug>')
-def news_item(lang, slug):
-  page = pages.get_or_404(lang + "/news/" + slug)
-  recent_news = get_news(limit=5)
-  return render_template('news_item.html', lang=lang, page=page,
-                         recent_news=recent_news)
+  return redirect(url_for("mod.home", lang_code='fr'))
 
 
 @app.route('/image/<path:path>')
@@ -255,28 +247,19 @@ def image(path):
   return response
 
 
-@app.route('/<lang>/feed/')
-def feed(lang):
-  articles = get_pages(limit=FEED_MAX_LINKS)
-  now = datetime.datetime.now()
-
-  response = make_response(render_template('base.rss',
-                                           pages=articles, build_date=now))
-  response.headers['Content-Type'] = 'text/xml'
-  return response
-
-
 @app.route('/feed/')
 def global_feed():
-  return feed('fr')
+  return feed()
 
 
 @app.route('/sitemap.xml')
 def sitemap():
   today = datetime.date.today()
   recently = datetime.date(year=today.year, month=today.month, day=1)
-  return render_template('sitemap.xml', pages=get_pages(),
-                         today=today, recently=recently)
+  response = make_response(render_template('sitemap.xml', pages=get_pages(),
+                           today=today, recently=recently))
+  response.headers['Content-Type'] = 'text/xml'
+  return response
 
 
 @app.route('/403.html')
@@ -301,9 +284,57 @@ def page_not_found(error):
 
 
 ###############################################################################
+# Localized (mod-level) routes
+
+@mod.route('/')
+def home():
+  template = "index.html"
+  page = {'title': 'Abilian: connected we work'}
+  news = get_news(limit=4)
+  return render_template(template, page=page, news=news)
+
+
+@mod.route('/<path:path>/')
+def page(path=""):
+  page = pages.get_or_404(g.lang_code + "/" + path + "/index")
+  template = page.meta.get('template', '_page.html')
+  return render_template(template, page=page)
+
+
+@mod.route('/news/')
+def news():
+  all_news = get_news()
+  recent_news = get_news(limit=5)
+  page = {'title': u'Actualités pour Abilian'}
+  return render_template('news.html', page=page, news=all_news,
+                         recent_news=recent_news)
+
+
+@mod.route('/news/<slug>')
+def news_item(slug):
+  page = pages.get_or_404(g.lang_code + "/news/" + slug)
+  recent_news = get_news(limit=5)
+  return render_template('news_item.html', page=page,
+                         recent_news=recent_news)
+
+
+@mod.route('/feed/')
+def feed():
+  articles = get_pages(limit=FEED_MAX_LINKS)
+  now = datetime.datetime.now()
+
+  response = make_response(render_template('base.rss',
+                                           pages=articles, build_date=now))
+  response.headers['Content-Type'] = 'text/xml'
+  return response
+
+
+app.register_blueprint(mod)
+
+
+###############################################################################
 # Commands
 
-@command
 def build():
   """ Builds this site.
   """
@@ -317,35 +348,6 @@ def build():
   print("Done.")
 
 
-@command
-def post(section, title=None, filename=None):
-  """ Create a new empty post.
-  """
-  if not os.path.exists(os.path.join(FLATPAGES_ROOT, section)):
-    raise CommandError(u"Section '%s' does not exist" % section)
-  post_date = datetime.date.today()
-  title = unicode(title) if title else "Untitled Post"
-  if not filename:
-    filename = u"%s.md" % slugify(title)
-  year = post_date.year
-  pathargs = [section, str(year), filename, ]
-  filepath = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                          FLATPAGES_ROOT, '/'.join(pathargs))
-  if os.path.exists(filepath):
-    raise CommandError("File %s exists" % filepath)
-  content = '\n'.join([
-    u"title: %s" % title,
-    u"date: %s" % post_date.strftime("%Y-%m-%d"),
-    u"published: false\n\n",
-  ])
-  try:
-    codecs.open(filepath, 'w', encoding='utf8').write(content)
-    print(u'Created %s' % filepath)
-  except Exception, error:
-    raise CommandError(error)
-
-
-@command
 def serve(server='127.0.0.1', port=5001, debug=DEBUG):
   """ Serves this site.
   """
@@ -357,5 +359,5 @@ def serve(server='127.0.0.1', port=5001, debug=DEBUG):
 
 if __name__ == '__main__':
   parser = ArghParser()
-  parser.add_commands([build, post, serve, ])
+  parser.add_commands([build, serve])
   parser.dispatch()
