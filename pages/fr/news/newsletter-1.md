@@ -14,7 +14,7 @@ Vous avez souhaité être tenu au courant des projets et des activités de la so
 
 - La société a été créée en novembre dernier, et nous travaillons depuis d'arrache-pied sur les projets de nos premiers clients, ainsi que le développement de notre plateforme d'Entreprise 2.0 et des applications métiers qui vont avec.
 
-- A ce sujet, vous pouvez retrouver (sur [Speaker Deck](https://speakerdeck.com/sfermigier/pitch-abilian-mai-2013) ou sur [SlideShare](http://www.slideshare.net/sfermigier/pitch-abilian-mai-2013)) une présentation de la société, des défis auxquels elle répond pour ses clients, et des technologies qu'elle emploie pour ce faire.
+- A ce sujet, vous pouvez retrouver ([sur Speaker Deck](https://speakerdeck.com/sfermigier/pitch-abilian-mai-2013) ou [sur SlideShare](http://www.slideshare.net/sfermigier/pitch-abilian-mai-2013)) une présentation de la société, des défis auxquels elle répond pour ses clients, et des technologies qu'elle emploie pour ce faire.
 
 - Nous avons mis en ligne une première version de notre site le mois dernier:
   [www.abilian.com](http://www.abilian.com/). Il est encore incomplet mais nous espérons qu'il vous donnera une première idée de nos ambitions.
