@@ -59,8 +59,10 @@ Nos solutions sont sécurisées de façon à limiter les risques d'espionnage su
 
 On ne peut plus organiser aujourd'hui une conférence ou une rencontre d'affaires sans prendre en compte la dimension sociale.
 
-**Abilian EMS** (Event Management System) et **Abilian BCMS** (Business Convention Management System) sont deux déclinaisons verticales de la plateforme dédiées aux organisateurs de conférences et de rencontres d'affaires B2B.
+**Abilian EMS** (*Event Management System*) et **Abilian BCMS** (*Business Convention Management System*) sont deux déclinaisons verticales de la plateforme dédiées aux organisateurs de conférences et de rencontres d'affaires B2B.
 
 ### Pour l'enseignement supérieur
 
-Abilian développe actuellement une plateforme de **MOOC** (*Massive Open Online Course*) open source basée sur sa plateforme Abilian SBE.
+Abilian développe actuellement [une plateforme de **MOOC**](/fr/solutions/le-mooc/) (*Massive Open Online Course*) open source basée sur Abilian SBE.
+
+<i class="icon-info-sign"></i> [Plus d'informations sur Le MOOC d'Abilian](/fr/solutions/le-mooc/).
