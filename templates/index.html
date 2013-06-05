@@ -277,18 +277,22 @@
   </div>
 </div>
 
+<hr>
+
 <!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT POSTS BLOACK (ORIGINALLY DESIGNED FOR HOME PAGE) -->
 <div class="main-block block-posts">
-  <h2>Actualités</h2>
+  <h2 style="font-size: 2.5em; margin-bottom: 40px;">Actualités</h2>
 
   <div class="row show-grid clear-both">
     <div class="span12">
       <div class="row show-grid">
         {% for item in news %}
         <div class="span3">
+          {#
           <a class="block-post-img" href="{{ url_for(".news_item", slug=item.slug) }}">
             <img alt="" src="{{ url_for("image", path=item.image, h=220) }}" class="img-rounded"/>
           </a>
+           #}
           <a class="block-post-title" href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
 
           <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>

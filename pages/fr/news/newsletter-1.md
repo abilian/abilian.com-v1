@@ -1,4 +1,4 @@
-title: Abilian Newsletter #1
+title: 'Abilian Newsletter #1'
 date: 2013/05/02
 published: true
 image: news.png
