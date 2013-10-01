@@ -5,6 +5,8 @@ body {
 
 h1 {
   font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -25,6 +27,11 @@ li p {
 p {
   padding: 0;
   line-height: 1.5em;
+}
+
+ul li {
+  font-family: Arial, sans-serif;
+  color: #555;
 }
 
 /* Hero block */

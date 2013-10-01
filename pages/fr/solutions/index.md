@@ -55,6 +55,9 @@ Abilian propose une déclinaison métier de sa plateforme qui intègre les fonct
 
 Nos solutions sont sécurisées de façon à limiter les risques d'espionnage sur les projets des Pôles.
 
+<i class="icon-info-sign"></i> [Plus d'informations sur Abilian SICS-PC](/fr/solutions/sics-pc/).
+
+
 ### Pour les organisateurs d'événements B2B
 
 On ne peut plus organiser aujourd'hui une conférence ou une rencontre d'affaires sans prendre en compte la dimension sociale.

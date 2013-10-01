@@ -1,0 +1,6 @@
+This is the code for the abilian.com website.
+
+WARNING: this contains non-open source components (bought from third parties)
+as well as non-CC content.
+
+Don't reuse this code and assume this is an open source project !

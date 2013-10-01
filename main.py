@@ -53,7 +53,7 @@ MAIN_MENU = [
 ]
 
 app = Flask(__name__)
-mod = Blueprint('mod', __name__, url_prefix='/<lang_code>')
+mod = Blueprint('mod', __name__, url_prefix='/<string(length=2):lang_code>')
 
 app.config.from_object(__name__)
 pages = FlatPages(app)
@@ -213,6 +213,26 @@ def url_generator():
 @app.route('/')
 def index():
   return redirect(url_for("mod.home", lang_code='fr'))
+
+
+@app.route('/<path:path>')
+def catch_all(path):
+  print path
+  if path.endswith('.php') or '.php/' in path:
+    return redirect(url_for("index"))
+  elif path.startswith('a/') or path.startswith('info/'):
+    return redirect(url_for("index"))
+  elif re.match(r'.*\.html/', path) or re.match(r'.*\.html$', path):
+    return redirect(url_for("index"))
+  elif path.startswith('robots.txt'):
+    return redirect(url_for("robots_txt"))
+  else:
+    abort(404)
+
+
+@app.route('/robots.txt')
+def robots_txt():
+  return ""
 
 
 @app.route('/image/<path:path>')

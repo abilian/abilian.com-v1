@@ -30,7 +30,10 @@ Thématique Logiciel Libre du Pôle Systematic Paris Region, et du CNLL.
 <img alt="logo JEI" height="120" width="120" src="/static/custom/logo-jei.jpg">
 </div>
 -->
+
+Abilian est membre du pôle de compétitivité [Systematic](http://www.systematic-paris-region.org/).
+
 Abilian est une Jeune Entreprise Innovante, qui consacre plus de 15% de son
-chiffre d'affaire annuel à de la recherche & développement.
+chiffre d'affaire annuel à de la recherche &amp; développement.
 
 Abilian est soutenue par l'[EIT ICT Labs](http://www.eitictlabs.eu/).

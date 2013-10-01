@@ -1081,7 +1081,7 @@ h1 {
 }
 h2 {
     font-size: 18px;
-    color: #666666;
+    color: #555;
     line-height: 22px;
     margin: 10px 0;
 }
@@ -1090,26 +1090,26 @@ h3 {
     font-size: 16px;
     font-style: italic;
     line-height: 22px;
-    color: #666666;
+    color: #555;
 }
 h4 {
     font-size: 14px;
     line-height: 22px;
     font-weight: bold;
-    color: #666666;
+    color: #555;
     font-family: Arial, sans-serif;
 }
 h5 {
     font-size: 12px;
     line-height: 22px;
     font-weight: bold;
-    color: #666666;
+    color: #555;
     font-family: Arial, sans-serif;
 }
 h6 {
     font-size: 11px;
     line-height: 22px;
-    color: #666666;
+    color: #555;
     font-family: Arial, sans-serif;
 }
 .clear-both {
@@ -1120,7 +1120,7 @@ h6 {
 }
 p {
     font-family: Arial, sans-serif;
-    color: #666666;
+    color: #555;
     margin: 10px 0;
     line-height: 18px;
     padding: 0 0 12px;
@@ -1180,7 +1180,7 @@ blockquote .autor {
     font-style: normal;
     font-weight: bold;
     text-align: right;
-    color: #666666;
+    color: #555;
 }
 .large-quote {
     background: url("../img/testimonials_block_bg.gif") repeat scroll left top transparent;
@@ -1264,7 +1264,7 @@ ul.icons {
     margin-left: 0;
 }
 .head_phone {
-    color: #666666;
+    color: #555;
     font-family: 'Open Sans',Arial,sans-serif;
     font-size: 18px;
     margin-top: 25px;
@@ -1307,7 +1307,7 @@ ul.icons {
 }
 .nav-pills-portfolio > li > a {
     border-radius: 5px 5px 5px 5px;
-    color: #666666;
+    color: #555;
     font-size: 18px;
 }
 .nav-pills-portfolio {
@@ -1392,7 +1392,7 @@ ul.icons {
 }
 .navbar .nav > li a i {
     display: block;
-    color: #666666;
+    color: #555;
     font-size: 12px;
     font-weight: normal;
     height: 27px;
@@ -1595,7 +1595,7 @@ input.btn {
     font-size: 16px;
 }
 .portfolio-grid-1 .hp-wrapper .bottom-block p {
-    color: #666666;
+    color: #555;
     font-family: 'Open Sans', sans-serif, Arial;
 }
 .hover-shade {
@@ -1638,7 +1638,7 @@ input.btn {
     z-index: 1;
 }
 .testimonials-block p {
-    color: #666666;
+    color: #555;
     font-family: Georgia;
     font-size: 16px;
     font-style: italic;
@@ -1699,7 +1699,7 @@ input.btn {
 }
 .block-posts .block-post-content {
     margin: 0 0 2px;
-    color: #666666;
+    color: #555;
     padding: 0;
     line-height: 18px;
 }
@@ -1912,7 +1912,7 @@ input.btn {
 .comment-body p {
     padding: 10px 12px;
     font-size: 14px;
-    color: #666666;
+    color: #555;
 }
 form .error {
     position: relative;
@@ -1924,16 +1924,16 @@ form .error {
 }
 .team-member h4 {
     margin: 5px 0 0 0;
-    color: #666666;
+    color: #555;
     font-weight: normal;
 }
 .team-member em {
-    color: #666666;
+    color: #555;
 }
 .team-member .experience {
     padding-top: 0;
     padding-bottom: 10px;
-    color: #666666;
+    color: #555;
 }
 .team-member .photo {
     margin-bottom: 10px;
@@ -2044,7 +2044,7 @@ div.alert {
     background: transparent url("../img/note_stick_bg.png") top left no-repeat;
 }
 .note-stick h2, .note-stick p {
-    color: #666666;
+    color: #555;
 }
 .alert-stick {
     background: transparent url("../img/alert_stick_bg.png") top left no-repeat;
@@ -2110,7 +2110,7 @@ div.alert {
 }
 .accordion .accordion-toggle, .toggle-box a {
     background: url("../img/collapse_btn.png") no-repeat scroll left 10px transparent;
-    color: #666666;
+    color: #555;
     display: block;
     font-size: 18px;
     height: 25px;
@@ -2266,12 +2266,12 @@ div.alert {
     width: 100%;
     border-bottom: 1px solid #cccccc;
     text-align: right;
-    color: #666666;
+    color: #555;
     margin-top: -19px;
 }
 .text-divider2:hover, .text-divider4:hover {
     text-decoration: none;
-    color: #666666;
+    color: #555;
 }
 .text-divider3 {
     border-top: 1px dashed #cccccc;
@@ -2283,7 +2283,7 @@ div.alert {
     width: 100%;
     border-bottom: 1px dashed #cccccc;
     text-align: right;
-    color: #666666;
+    color: #555;
     margin-top: -19px;
 }
 .text-divider5, .text-divider6 {
@@ -2305,7 +2305,7 @@ div.alert {
 }
 .nav-tabs a {
     font-size: 14px;
-    color: #666666;
+    color: #555;
 }
 .buttons-example .ex, .buttons-example .btn-group {
     margin-bottom: 20px;
@@ -2320,7 +2320,7 @@ div.alert {
 .back-to-portfolio {
     background: url("../img/arrow_left.gif") no-repeat scroll 13px 12px #F5F5F5;
     border-radius: 3px 3px 3px 3px;
-    color: #666666;
+    color: #555;
     display: block;
     font-size: 16px;
     padding: 7px 20px 7px 33px;
@@ -2332,7 +2332,7 @@ div.alert {
 }
 .item-details li {
     font-size: 14px;
-    color: #666666;
+    color: #555;
     margin-bottom: 5px;
 }
 .item-details li .title {
@@ -2343,7 +2343,7 @@ div.alert {
     margin-bottom: 9px;
 }
 .item-details .website i {
-    color: #666666;
+    color: #555;
 }
 .item-details .tags p {
     padding-bottom: 0;
@@ -2469,7 +2469,7 @@ div.alert {
     padding-bottom: 4px;
 }
 .bannercontainer .small {
-    color: #666666;
+    color: #555;
     font-family: Open Sans, Arial, sans-serif;
     white-space: normal;
 }
@@ -2505,7 +2505,7 @@ div.alert {
     background-color: #898989;
 }
 .footer-wrapper {
-    background-color: #666666;
+    background-color: #555;
     padding-top: 17px;
 }
 .footer-bottom {
