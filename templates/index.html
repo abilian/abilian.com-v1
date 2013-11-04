@@ -1,310 +1,188 @@
 {% extends "_base.html" %}
 
-{% block main %}
-<!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) -->
-<div class="bannercontainer">
-  <div class="banner">
-    <ul>
-      <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) - SLIDE 1 [SLIDE STYLE=BOXFADE] -->
-      <li class="slide1" data-transition="boxfade" data-slotamount="5"
-          data-masterspeed="300">
-        <img alt="" src="/static/custom/slides/connected-world.jpg"/>
+{% block jumbotron %}
+  <section class="jumbotron">
+    <div class="container">
+      <h1>Solutions collaboratives pour votre compétitivité</h1>
 
-        {#
-        <div class="caption sft carousel-caption" data-x="110" data-y="110"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none;">
-          <p class="middle">Beautiful, clean, ultra-responsive & highly
-            flexible</p>
-
+      <div class="row">
+        <div class="col-md-8">
+          <h2>
+            Abilian dynamise les relations entre vos collaborateurs, vos
+            partenaires, votre écosystème</h2>
         </div>
-        #}
-        <div class="caption sfl carousel-caption" data-x="98" data-y="141"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Votre organisation</p>
-        </div>
-        <div class="caption sfl carousel-caption" data-x="98" data-y="191"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">travaille-t-elle réellement en réseau ?</p>
-        </div>
-        <div class="caption sfb carousel-caption" data-x="111" data-y="247"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; width: 436px;">
-          <p class="small" style="width: 436px; font-size: 18px; color: black;">
-            51% des responsables interrogés considèrent le passage
-            à l'Entreprise 2.0 comme "impératif" ou "très important". (Source: AIIM.)
-          </p>
-        </div>
-      </li>
-
-{#
-      <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) - SLIDE 2 [SLIDE STYLE=LEFT] -->
-      <li class="slide2" data-transition="slideleft" data-slotamount="10"
-          data-masterspeed="300">
-        <img alt="" src="/static/custom/slides/big-wave.jpg"/>
-
-        <div class="caption sft carousel-caption" data-x="472" data-y="69"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none;">
-          <p class="middle">Êtes-vous prêt pour le déluge des données ?</p>
-
-        </div>
-        <div class="caption sfr carousel-caption" data-x="462" data-y="107"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">L'entreprise collaborative</p>
-        </div>
-        <div class="caption sfl carousel-caption" data-x="462" data-y="156"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">est une réalité ajourd'hui</p>
-        </div>
-        <div class="caption sfl carousel-caption" data-x="462" data-y="205"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">mobile devices</p>
-        </div>
-        <div class="caption sfb carousel-caption" data-x="474" data-y="262"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; width: 436px;">
-          <p class="small">.</p>
-        </div>
-      </li>
-#}
-      <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) - SLIDE 3 [SLIDE STYLE=SLIDE DOWN] -->
-      <li class="slide3" data-transition="slidedown" data-slotamount="1"
-          data-masterspeed="300">
-        <img alt="" src="/static/custom/slides/woman-with-a-mac.jpg"/>
-
-        {#
-        <div class="caption sft carousel-caption" data-x="43" data-y="184"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0;">
-          <p class="middle">Create beautiful pages quickly and easily...</p>
-        </div>
-        #}
-        <div class="caption sfl carousel-caption" data-x="0" data-y="228"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none; padding-left: 0;">
-          <p class="big">Travaillons connectés !</p>
-        </div>
-
-        <div class="caption sfb carousel-caption" data-x="0" data-y="281"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0; width: 100%;">
-          <p class="small">AVEC le BYOD, vos utilisateurs attendent toujours plus de vos plateformes collaboratives. Avec Abilian, vous répondez à leurs attentes en toute sérennité.</p>
-        </div>
-      </li>
-
-      {#
-      <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) - SLIDE 4 [SLIDE STYLE=BOXFADE] -->
-      <li class="slide4" data-transition="boxfade" data-slotamount="5"
-          data-masterspeed="300">
-        <img alt="" src="/static/img/slider07.png"/>
-
-        <div class="caption sft carousel-caption" data-x="45" data-y="78"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none;">
-          <p class="middle">Slap the page with a Sticky Note!</p>
-
-        </div>
-        <div class="caption sfl carousel-caption" data-x="26" data-y="107"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Got a special message</p>
-        </div>
-        <div class="caption sfl carousel-caption" data-x="26" data-y="160"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">you want to stand out on a</p>
-        </div>
-        <div class="caption sfl carousel-caption" data-x="26" data-y="214"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">particular web page?</p>
-        </div>
-        <div class="caption sfb carousel-caption" data-x="42" data-y="265"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; width: 436px;">
-          <p class="small">When you have a special message on a particular web
-            page that you want to get a across to your visitors then slap that
-            page with one of bizstrap's exclusive sticky notes. You'll find that
-            website visitors simply can't resist them.</p>
-        </div>
-        <div class="caption sfl carousel-caption stick1" data-x="450"
-            data-y="52" data-speed="1400" data-start="1000"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick01.png"/>
-        </div>
-        <div class="caption sfl carousel-caption stick2" data-x="607"
-            data-y="52" data-speed="1400" data-start="1500"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick02.png"/>
-        </div>
-        <div class="caption sfl carousel-caption stick3" data-x="764"
-            data-y="52" data-speed="1400" data-start="2000"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick03.png"/>
-        </div>
-        <div class="caption sfl carousel-caption stick4" data-x="450"
-            data-y="208" data-speed="1400" data-start="2500"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick04.png"/>
-        </div>
-        <div class="caption sfl carousel-caption stick5" data-x="607"
-            data-y="208" data-speed="1400" data-start="3000"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick05.png"/>
-        </div>
-        <div class="caption sfl carousel-caption stick6" data-x="764"
-            data-y="208" data-speed="1400" data-start="3500"
-            data-easing="easeInExpo" style="background: none;">
-          <img alt="" src="/static/img/slide_stick06.png"/>
-        </div>
-      </li>
-
-      <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) - SLIDE 5 [SLIDE STYLE=SLOTFADE HORIZONTAL] -->
-      <li class="slide5" data-transition="slotfade-horizontal"
-          data-masterspeed="300" data-slotamount="20">
-        <img alt="" src="/static/custom/slides/connected-city.jpg"/>
-
-        <div class="caption sft carousel-caption" data-x="468" data-y="71"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0;">
-          <p class="middle">Smart, very smart indeed!</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="105"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">The Smart Choice for</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="154"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Building Your</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="205"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Business Website</p>
-        </div>
-        <div class="caption sfb carousel-caption" data-x="480" data-y="268"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0;">
-          <p class="small">Affordable, effective and easy-to-use bizstrap is the
-            smart choice for building and managing your business website. Smart,
-            very smart indeed!</p>
-        </div>
-      </li>
-
-      <li class="slide5" data-transition="slotfade-horizontal"
-          data-masterspeed="300" data-slotamount="20">
-        <img alt="" src="/static/custom/slides/onion.jpg"/>
-
-        <div class="caption sft carousel-caption" data-x="468" data-y="71"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0;">
-          <p class="middle">Smart, very smart indeed!</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="105"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">The Smart Choice for</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="154"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Building Your</p>
-        </div>
-        <div class="caption sfr carousel-caption" data-x="454" data-y="205"
-            data-speed="1000" data-start="1000" data-easing="easeOutBack"
-            style="background: none;">
-          <p class="big">Business Website</p>
-        </div>
-        <div class="caption sfb carousel-caption" data-x="480" data-y="268"
-            data-speed="1000" data-start="1000" data-easing="easeInBack"
-            style="background: none; padding-left: 0;">
-          <p class="small">Affordable, effective and easy-to-use bizstrap is the
-            smart choice for building and managing your business website. Smart,
-            very smart indeed!</p>
-        </div>
-      </li>
-     #}
-
-    </ul>
-    <div class="tp-bannertimer"></div>
-  </div>
-</div>
-
-<div class="row main-block">
-  <div class="span12">
-    <div class="row">
-      <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - HERO BLOCK 1 (TEXT BLOCK)] -->
-      <div class="span6 home-block hero-block-1">
-        <h1>Connected, we work!</h1>
-
-        <h2>Solutions pour l'entreprise connectée</h2>
-
-        <p>
-          Abilian est un éditeur de <a href="/fr/technologies/">logiciels open source</a>
-          qui propose des solutions innovantes pour votre entreprise ou
-          votre organisation, dans les domaines de la
-          <a href="/fr/pourquoi/">collaboration émergente (entreprise 2.0)</a>,
-          des processus métiers et de la gestion de l'information.
-        </p>
-
-        <p>
-          Avec les <a href="/fr/solutions/">solutions Abilian</a>, votre entreprise est
-          plus créative, plus réactive, plus ouverte, en un mot, plus compétitive.
-        </p>
-      </div>
-
-      <!-- MAIN CONTENT AREA: SPACER BETWEEN HERO BLOCK 1 AND HEREO BLOCK 2 -->
-      <div class="span1"></div>
-
-      <!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 2 -->
-      <div class="span5 home-block">
-        <div class="grey-box hero-block-2">
-          <h2><a href="/fr/solutions/">Solutions pour un monde connecté</a></h2>
-
-          <p>{# <img alt="" src="/static/img/release_icon.png"/> #}Nous avons des solutions pour dynamiser votre communauté et fluidifier la collaboration entre vos collaborateurs. </p>
-          <a href="/fr/solutions/" class="btn btn-primary"><i class="icon-shopping-cart"></i>Voir nos solutions</a>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-danger pull-right" href="/fr/solutions/"
+              role="button">
+            Voir nos solutions
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+{% endblock %}
 
-<hr>
 
-<!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT POSTS BLOACK (ORIGINALLY DESIGNED FOR HOME PAGE) -->
-<div class="main-block block-posts">
-  <h2 style="font-size: 2.5em; margin-bottom: 40px;">Actualités</h2>
+{% block main %}
 
-  <div class="row show-grid clear-both">
-    <div class="span12">
-      <div class="row show-grid">
-        {% for item in news %}
-        <div class="span3">
-          {#
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - HERO BLOCK 1 (TEXT BLOCK)] -->
+        <div class="col-md-6 home-block hero-block-1">
+          <h1>Connected, we work!</h1>
+
+          <h2>Solutions pour l'entreprise connectée</h2>
+
+          <p>
+            Abilian est un éditeur de <a href="/fr/technologies/">logiciels open
+            source</a>
+            qui propose des solutions innovantes pour votre entreprise ou
+            votre organisation, dans les domaines de la
+            <a href="/fr/pourquoi/">collaboration émergente (entreprise 2.0)</a>,
+            des processus métiers et de la gestion de l'information. </p>
+
+          <p>
+            Avec les <a href="/fr/solutions/">solutions Abilian</a>, votre
+            entreprise est
+            plus créative, plus réactive, plus ouverte, en un mot, plus
+            compétitive. </p>
+        </div>
+
+        <!-- MAIN CONTENT AREA: SPACER BETWEEN HERO BLOCK 1 AND HEREO BLOCK 2 -->
+        <div class="col-md-1"></div>
+
+        <!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 2 -->
+        <div class="col-md-5 home-block">
+          <div class="grey-box hero-block-2">
+            <h2><a href="/fr/solutions/">Solutions pour un monde connecté</a>
+            </h2>
+
+            <p>{# <img alt="" src="/static/img/release_icon.png"/> #}Nous avons
+              des solutions pour dynamiser votre communauté et fluidifier la
+              collaboration entre vos collaborateurs. </p>
+            <a href="/fr/solutions/" class="btn btn-primary"><i
+                class="icon-shopping-cart"></i>Voir nos solutions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2>Pourquoi Abilian ?</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          toto
+        </div>
+
+        <div class="col-md-4">
+          toto
+        </div>
+
+        <div class="col-md-4">
+          toto
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2 style="font-size: 2.5em; margin-bottom: 40px;">Actualités</h2>
+
+      <div class="row show-grid clear-both">
+        <div class="col-md-12">
+          <div class="row show-grid">
+            {% for item in news %}
+              <div class="col-md-3">
+                {#
           <a class="block-post-img" href="{{ url_for(".news_item", slug=item.slug) }}">
             <img alt="" src="{{ url_for("image", path=item.image, h=220) }}" class="img-rounded"/>
           </a>
            #}
-          <a class="block-post-title" href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+                <a class="block-post-title"
+                    href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
 
-          <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
+                <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
 
-          <p class="block-post-content">{{ item.abstract }}</p>
-          <a class="block-post-more" href="{{ url_for(".news_item", slug=item.slug) }}">En savoir plus&nbsp;&raquo;</a>
+                <p class="block-post-content">{{ item.abstract }}</p>
+                <a class="block-post-more"
+                    href="{{ url_for(".news_item", slug=item.slug) }}">En
+                  savoir
+                  plus&nbsp;&raquo;</a>
+              </div>
+            {% endfor %}
+          </div>
         </div>
-        {% endfor %}
       </div>
     </div>
-  </div>
-</div>
-<hr>
+  </section>
+
+
+  <!-- MAIN CONTENT AREA -->
+  <section>
+    <div class="container">
+      <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12 grey-box">
+          <div class="hero-block3">
+            <div class="row show-grid">
+              <div class="col-md-9">
+                <div class="hero-content-3">
+                  <h2>Un projet ? Une question ?</h2>
+
+                  <p>
+                    Nous sommes une petite équipe agile, et nous aimons partager
+                    nos connaissances et en acquérir de nouvelles par le contact
+                    humain. Alors, n'hésitez-pas, nous n'avons peut-être pas la
+                    réponse à toutes vos questions, mais ça ne vous coûtera
+                    qu'un
+                    seul clic de les poser ! </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="tour-btn">
+                  <a href="/fr/a-propos/contact/" class="btn btn-warning">Contactez-nous!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="references">
+    <div class="container">
+      <h2>Références et labels</h2>
+
+      <div class="row">
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/jei.png">
+        </div>
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/cap-digital.png">
+        </div>
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/systematic.png">
+        </div>
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/eit-ict-labs.png">
+        </div>
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/my-startup.png">
+        </div>
+        <div class="col-md-2">
+          <img alt="" src="/static/custom/clients/open-source.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="map"></div>
 
 {% endblock %}

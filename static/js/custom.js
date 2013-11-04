@@ -255,3 +255,5 @@ $cjq(window).bind('resize', function() {
     $cjq(".follow_img").css('margin-top', Math.floor(((height_li - $cjq(".follow_img").outerHeight(true)) / 2) + 1));
   }
 });
+
+

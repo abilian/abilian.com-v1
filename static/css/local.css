@@ -1,0 +1,213 @@
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 950px;
+  }
+}
+
+body {
+  padding-top: 0;
+  color: #151515;
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #266D7F;
+}
+
+a:hover {
+  color: #00A2CC;
+}
+
+section {
+  border-bottom: 1px solid #d7dcdd;
+  padding: 30px 0;
+}
+
+/* *********************************************************************** */
+/* Typography overrides */
+/* *********************************************************************** */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Open Sans", sans-serif !important;
+}
+
+blockquote p {
+  font-size: 100%;
+  font-style: italic;
+  font-weight: inherit;
+}
+
+/* *********************************************************************** */
+
+.top-line {
+  height: 5px;
+  background-color: #0083a5;
+}
+
+.navbar-nav {
+  margin-top: 17px;
+}
+
+.navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ********************************************************************** */
+
+.jumbotron {
+  background-color: #0083a5;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 2px #0b4f65;
+}
+
+.jumbotron h2 {
+  color: #c9dee5;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron h2 {
+    font-size: 17px;
+  }
+}
+
+.jumbotron .btn {
+  margin-top: 25px;
+  padding: 10px 40px;
+  font-size: 22px;
+}
+
+/* ********************************************************************** */
+/* References */
+/* ********************************************************************** */
+
+section#references {
+  padding: 15px 0;
+}
+
+section#references .logo {
+  width: 20%;
+}
+
+/* ********************************************************************** */
+/* Footer */
+/* ********************************************************************** */
+
+#footer {
+  margin: 0;
+  font-size: 13px;
+}
+
+#footer h4 {
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #4CDAFF;
+}
+
+#footer a {
+  color: #4CDAFF;
+}
+
+.footer-middle {
+  color: #dadada;
+  padding: 20px 0 30px;
+  background: #585f69;
+}
+
+.footer-bottom {
+  padding-top: 5px;
+  background-color: black;
+  color: lightgrey;
+}
+
+.footer-logo {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.fa {
+  color: #dadada;
+}
+
+/* ********************************************************************** */
+/* Icons */
+/* ********************************************************************** */
+.fa-rss-square:hover {
+  color: #fe9900;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-github-square:hover {
+  color: #171516;
+}
+
+.fa-twitter-square:hover {
+  color: #00acee;
+}
+
+.fa-linkedin-square:hover {
+  color: #1a84bc;
+}
+
+.fa-phone-square:hover {
+  color: #9F0E1D;
+}
+
+/* ********************************************************************** */
+/* news / sidebar */
+/* ********************************************************************** */
+#sidebar {
+  margin-top: 25px;
+}
+
+#sidebar .widget {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 25px;
+  background: #f3f3f3;
+}
+
+#sidebar h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+#sidebar ul.social-box li {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  border-bottom: 0;
+}
+
+#sidebar ul.social-box li a {
+  color: #888;
+  text-decoration: none;
+}
+
+#sidebar .date {
+  margin-top: -8px;
+  font-style: italic;
+}

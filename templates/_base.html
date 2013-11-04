@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--  SEO STUFF START HERE -->
+  <meta charset="utf-8">
+
   <title>{{ page.title }}</title>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
@@ -11,331 +12,89 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  {#
-  {%- assets filters="cssmin", output="css/packed.css",
-    "rs-plugin/css/settings.css",
-    "css/rs-responsive.css",
-    "css/bootstrap.css",
-    "css/custom.css",
-    "css/isotope.css",
-    "css/color_scheme.css",
-    "css/font-awesome.min.css",
-    "css/font-awesome-ie7.min.css",
-    "css/flexslider.css",
-    "css/jquery.fancybox.css",
-    "css/overrides.css"
-    %}
-    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
-  {%- endassets %}
-  #}
+  <!-- Bootstrap core CSS -->
+  <link href="/static/bs3/css/bootstrap.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/static/rs-plugin/css/settings.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/rs-responsive.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/custom.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/isotope.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/color_scheme.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/font-awesome-ie7.min.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/flexslider.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/jquery.fancybox.css?lang_code=fr">
-    <link rel="stylesheet" type="text/css" href="/static/css/overrides.css?lang_code=fr">
-
+  <!-- Add custom CSS here -->
+  <link href="/static/css/modern-business.css" rel="stylesheet">
+  <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/css/local.css" rel="stylesheet">
 
   <link
       href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic"
       rel="stylesheet" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic'
+      rel='stylesheet' type='text/css'>
+
   <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="/static/css/IE-fix.css" />
   <![endif]-->
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/fr/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="RSS"
+      href="/fr/feed/"/>
 </head>
 
+
 <body>
-<!-- THE LINE AT THE VERY TOP OF THE PAGE -->
-<div class="top_line"></div>
-<!-- HEADER AREA -->
-<header>
+
+<div class="top-line"></div>
+
+<nav class="navbar navbar-default" role="navigation">
   <div class="container">
-    <div class="row">
-      <!-- HEADER: LOGO AREA -->
-      <div class="span4 logo">
-        <a class="logo" href="/fr/">
-          <img alt="logo" title="bizstrap" src="/static/img/logo.png">
-        </a>
-      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+      <a class="navbar-brand" href="/fr/"><img
+          src="/static/custom/abilian-logo-new.png" alt="Abilian"
+          style="height: 50px;"></a>
+    </div>
 
-      <div id="top-nav">
-        {#
-        <div class="lang-switch">
-          <a href="/en/">English</a>
-          ›
-        </div>
-        #}
-        <div class="menu-top-nav-container">
-          <ul class="menu">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="/fr/a-propos/contact/">Contact</a>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="/fr/a-propos/jobs/">Jobs</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {#
-      <!-- HEADER: SOCIAL ICONS -->
-      <ul class="socials unstyled">
-        <li><a class="twitter" href="https://www.twitter.com/abilianhq"></a>
-        </li>
-        <li><a class="facebook" href="http://www.facebook.com/abilian.corp"></a>
-        </li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% for slug, label in menu %}
+          <li><a href="/fr/{{ slug }}">{{ label }}</a></li>
+        {% endfor %}
       </ul>
-      #}
     </div>
   </div>
-  <!-- HEADER: PRIMARY SITE NAVIGATION -->
-  <div class="container">
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="buttons-container"></div>
-          <div class="nav-collapse">
-            <ul class="nav nav-pills">
-              {% for slug, label in menu %}
-                <li class="single"><a href="/fr/{{ slug }}">{{ label }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+</nav>
 
-<!-- MAIN CONTENT AREA -->
-<div class="main-content">
-  <div class="container">
+<div class="clearfix"></div>
 
-    {% block main %}{% endblock %}
+{% block jumbotron %}{% endblock %}
 
-    <div class="row show-grid" style="margin-bottom: 20px;">
-      <div class="span12 grey-box">
-        <div class="hero-block3">
-          <div class="row show-grid">
-            <div class="span9">
-              <div class="hero-content-3">
-                <h2>Un projet ? Une question ?</h2>
+{% block main %}{% endblock %}
 
-                <p>
-                  Nous sommes une petite équipe agile, et nous aimons partager
-                  nos connaissances et en acquérir de nouvelles par le contact
-                  humain. Alors, n'hésitez-pas, nous n'avons peut-être pas la
-                  réponse à toutes vos questions, mais ça ne vous coûtera qu'un
-                  seul clic de les poser !
-                </p>
-              </div>
-            </div>
-            <div class="span3">
-              <div class="tour-btn">
-                <a href="/fr/a-propos/contact/" class="btn btn-warning">Contactez-nous!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="main-block clients" style="margin-bottom: 0;">
-      <div class="title-wrapper">
-        <h2>Références et labels</h2>
-      </div>
-      <div class="row show-grid">
-        <div class="span12">
-          <div id="clients" class="row show-grid isotope" style="position: relative; overflow-x: hidden; overflow-y: hidden; height: 125px; ">
-            <div class="span3 clear-both hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px); ">
-              <img alt="" src="/static/custom/clients/jei.png">
-            </div>
-            <div class="span2 hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(160px, 0px, 0px); ">
-              <img alt="" src="/static/custom/clients/cap-digital.png">
-            </div>
-            <div class="span2 hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(320px, 0px, 0px); ">
-              <img alt="" src="/static/custom/clients/systematic.png">
-            </div>
-            <div class="span2 hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(480px, 0px, 0px); ">
-              <img alt="" src="/static/custom/clients/eit-ict-labs.png">
-            </div>
-            {#
-            <div class="span2 hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(640px, 0px, 0px); ">
-              <img alt="" src="/static/custom/client5.jpg">
-            </div>
-            <div class="span2 hp-wrapper isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(800px, 0px, 0px); ">
-              <img alt="" src="/static/custom/client6.jpg">
-            </div>
-            #}
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- FOOTER STARTS HERE -->
-<footer id="footer">
-  <div class="footer-top"></div>
-  <div class="footer-wrapper">
-    <div class="container">
-      <div class="row show-grid">
-        <div class="span12">
-          <div class="row show-grid">
-            <!-- FOOTER: LOGO -->
-            <div class="span3">
-              <img alt="" class="footer-logo" src="/static/img/grey_logo.png"/>
-              <!-- FOOTER: ADDRESS -->
-              <address class="address">
-                <p><i class="icon-map-marker icon-large"></i>
-                  Abilian SAS<br>
-                  23, avenue d'Italie<br>
-                  <i>&nbsp;</i>C/o EIT ICT Labs<br>
-                  75013 Paris - France</p>
-
-                <p><i class="icon-envelope icon-large"></i>Mel:
-                  <a href="mailto:contact@abilian.com">contact@abilian.com</a>
-                </p>
-
-                <p><i class="icon-phone icon-large"></i>Phone: +33 663 041 277
-                </p>
-
-              </address>
-            </div>
-
-            <!-- FOOTER: ABOUT US -->
-            <div class="span3 footer-center">
-              <h4 class="center-title">A propos d'Abilian</h4>
-
-              <p>
-                Abilian developpe des <a href="/fr/technologies/">technologies</a>
-                et des <a href="/fr/solutions/">solutions</a> open source
-                innovantes dans le domaine de la <a href="/fr/pourquoi/">collaboration émergente</a>
-                ("entreprise 2.0") et des réseaux sociaux d'entreprise.
-              </p>
-
-              <p>Abilian accompagne ses clients avec des <a href="/fr/services/">services</a> à valeur ajoutée
-              pour la réussite de vos projets.</p>
-            </div>
-
-            <div class="span3 footer-center">
-
-              <h4>Restons connectés !</h4>
-
-              <p style="margin-top: 10px; margin-bottom: 15px;">
-                <a href="http://twitter.com/abilianhq"
-                    title="Twitter" target="_blank"><i class="icon-twitter-sign icon-verylarge"></i></a>
-                &nbsp;&nbsp;
-                <a href="http://github.com/abilian"
-                    title="Github" target="_blank"><i class="icon-github-sign icon-verylarge"></i></a>
-                &nbsp;&nbsp;
-                <a href="http://www.facebook.com/abilian.corp"
-                    title="Facebook" target="_blank"><i class="icon-facebook-sign icon-verylarge"></i></a>
-                &nbsp;&nbsp;
-                <a href="http://www.linkedin.com/company/abilian/"
-                    title="LinkedIn" target="_blank"><i class="icon-linkedin-sign icon-verylarge"></i></a>
-              </p>
-
-              <h4>Newsletter</h4>
-
-              <p>Entrez votre adresse email dans le formulaire et nous vous tiendrons
-              informés de notre actualité:</p>
-
-              <form method="post"
-                  action="http://abilian.us6.list-manage2.com/subscribe/post?u=b379f2ac44f89a3686dbc92cd&amp;id=f2b2b6fe80"
-                  class="" style="text-align: center; margin: 10px 0;">
-                <div class="input-append">
-                  <input class="span2"
-                      placeholder="Votre email" name="EMAIL" type="text" style="font-size: 12px;">
-                  <button class="btn" type="submit" style="font-size: 12px;">Go!</button>
-                </div>
-              </form>
-
-            </div>
-
-            <!-- FOOTER: NAVIGATION LINKS -->
-            <div class="span3 footer-right">
-              <h4 class="center-title">Navigation</h4>
-              <ul class="footer-navigate">
-                {% for slug, label in menu %}
-                  <li><a href="/fr/{{ slug }}">{{ label }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row show-grid">
-        <!-- FOOTER: COPYRIGHT TEXT -->
-        <div class="span12">
-          <p>Copyright 2013 Abilian SAS. <a
-              href="/fr/a-propos/credits/">Credits</a>.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- END FOOTER -->
+{% include "_footer.html" %}
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript"
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-{#
-{%- assets
-    "js/bootstrap.js",
-    "js/jquery.flexslider-min.js",
-    "js/jquery.isotope.js",
-    "js/jquery.fancybox.pack.js?v=2.1.0",
-    "rs-plugin/js/jquery.themepunch.plugins.min.js",
-    "rs-plugin/js/jquery.themepunch.revolution.min.js",
-    "js/revolution.custom.js",
-    "js/custom.js" %}
-  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-{%- endassets %}
-#}
-
-  <script type="text/javascript" src="/static/js/bootstrap.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/js/jquery.flexslider-min.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/js/jquery.isotope.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/rs-plugin/js/jquery.themepunch.plugins.min.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/rs-plugin/js/jquery.themepunch.revolution.min.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/js/revolution.custom.js?lang_code=fr"></script>
-  <script type="text/javascript" src="/static/js/custom.js?lang_code=fr"></script>
+<script src="/static/js/jquery.js"></script>
+<script src="/static/bs3/js/bootstrap.js"></script>
+<script src="/static/js/local.js"></script>
 
 <script>
   {# Google Analytics #}
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-32718163-3', 'abilian.com');
   ga('send', 'pageview');
-
-  {# Perfect Audience #}
-  (function() {
-    window._pa = window._pa || {};
-    // _pa.orderId = "TODO"; // OPTIONAL: attach user email or order ID to conversions
-    // _pa.revenue = "TODO"; // OPTIONAL: attach dynamic purchase values to conversions
-    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/5259521d4ae441f74c000017.js";
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-  })();
 </script>
 
 </body>

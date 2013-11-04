@@ -1,9 +1,0 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
-
-
-/* TEAM */
-  Author: Stefane Fermigier
-  Site: http://fermigier.com/
-  Twitter: http://twitter.com/sfermigier
-  Location: Paris, France

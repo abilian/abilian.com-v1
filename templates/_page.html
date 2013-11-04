@@ -1,10 +1,12 @@
 {% extends "_base.html" %}
 
 {% block main %}
-  <div class="row show-grid">
-    <div class="span12">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
 
-      {#
+          {#
       <!-- BREADCRUMBS -->
       <div id="breadcrumb">
         <ul>
@@ -15,16 +17,16 @@
       </div>
        #}
 
-      <div class="row show-grid clear-both">
-        <!-- BEGIN ARTICLE CONTENT AREA -->
-        <div class="span12 main-column two-columns-right">
-          <article>
-            {{ page.html|safe }}
-          </article>
-        </div>
-        <!-- END ARTICLE CONTENT AREA -->
+          <div class="row show-grid clear-both">
+            <!-- BEGIN ARTICLE CONTENT AREA -->
+            <div class="span12 main-column two-columns-right">
+              <article>
+                {{ page.html|safe }}
+              </article>
+            </div>
+            <!-- END ARTICLE CONTENT AREA -->
 
-{#
+            {#
         <!-- BEGIN RIGHT-SIDEBAR -->
         <div id="left-sidebar" class="span3 sidebar">
           <!-- RIGHT-SIDEBAR: SIDEBAR NAVIGATION -->
@@ -47,8 +49,9 @@
         </div>
         <!-- END RIGHT-SIDEBAR -->
 #}
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <hr>
+  </section>
 {% endblock %}

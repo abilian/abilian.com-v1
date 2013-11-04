@@ -43,13 +43,12 @@ SECTION_MAX_LINKS = 12
 ALLOWED_LANGS = ['fr']
 
 MAIN_MENU = [
-  ('', u'Accueil'),
-  ('pourquoi/', u"Pourquoi Abilian ?"),
   ('solutions/', u'Solutions'),
+  ('technologies/', u'Plateforme'),
   ('services/', u'Services'),
-  ('technologies/', u'Technologies'),
   ('news/', u'Actualité'),
   ('a-propos/', u'A propos'),
+  ('pourquoi/', u"Pourquoi Abilian ?"),
 ]
 
 app = Flask(__name__)

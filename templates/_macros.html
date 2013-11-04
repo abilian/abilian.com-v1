@@ -1,37 +1,30 @@
-{% macro m_sidebar(recent_news, with_images=False) %}
-  <!-- BEGIN RIGHT-SIDEBAR -->
-  <div id="right-sidebar" class="span3 sidebar">
-    <div class="sidebar-news-widget sidebar-block">
+{% macro m_sidebar(recent_news) %}
+  <div id="sidebar" class="col-md-4 sidebar">
 
-      <h2>Réseautage</h2>
+    <div class="widget">
+      <h2>Points de contact</h2>
 
       <ul class="social-box">
-        <li><a href="/fr/feed/" title="RSS"
-            target="_blank"><i class="icon-rss icon-3x"></i></a></li>
-        <li><a href="/fr/a-propos/contact/" title="Phone"
-            target="_blank"><i class="icon-phone-sign icon-3x"></i></a></li>
+        <li><a href="/fr/feed/" title="RSS" target="_blank"><i
+            class="fa fa-rss-square fa-5x"></i></a></li>
+        <li><a href="/fr/a-propos/contact/" title="Phone" target="_blank"><i
+            class="fa fa-phone-square fa-5x"></i></a></li>
         <li><a href="http://twitter.com/abilianhq" title="Twitter"
-            target="_blank"><i class="icon-twitter-sign icon-3x"></i></a></li>
+            target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a></li>
         <li><a href="http://github.com/abilian" title="Github"
-            target="_blank"><i class="icon-github-sign icon-3x"></i></a></li>
+            target="_blank"><i class="fa fa-github-square fa-5x"></i></a></li>
         <li><a href="http://www.facebook.com/abilian.corp" title="Facebook"
-            target="_blank"><i class="icon-facebook-sign icon-3x"></i></a></li>
+            target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a></li>
         <li><a href="http://www.linkedin.com/company/abilian/" title="LinkedIn"
-            target="_blank"><i class="icon-linkedin-sign icon-3x"></i></a></li>
+            target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a></li>
       </ul>
+    </div>
 
+    <div class="widget">
       <h2>Actualité récente</h2>
       <ul>
         {% for item in recent_news %}
           <li>
-            {% if with_images %}
-              <a class="photo"
-                  href="{{ url_for(".news_item", slug=item.slug) }}">
-                <img alt=""
-                    src="{{ url_for("image", path=item.image, h=200) }}"/>
-              </a>
-            {% endif %}
-
             <p>
               <a href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
             </p>

@@ -3,10 +3,9 @@
 {% from "_macros.html" import m_sidebar %}
 
 {% block main %}
-  <div class="row show-grid">
-    <div class="span12">
-
-{#
+  <section>
+    <div class="container">
+      {#
       <!-- BREADCRUMBS -->
       <div id="breadcrumb">
         <ul>
@@ -17,11 +16,13 @@
       </div>
 #}
 
-      <div class="row show-grid clear-both">
-        <div class="span9 main-column two-columns-right blog-posts">
+      <div class="row clear-both">
+        <div class="col-md-8 main-column two-columns-right blog-posts">
           {% for entry in news %}
             <article>
-              <h2><a href="{{ url_for(".news_item", slug=entry.slug) }}">{{ entry.title }}</a></h2>
+              <h2><a
+                  href="{{ url_for(".news_item", slug=entry.slug) }}">{{ entry.title }}</a>
+              </h2>
               {# <img alt="" src="img/blog04.jpg"/> #}
 
               {{ entry.html|safe }}
@@ -54,9 +55,8 @@
           {% endfor %}
         </div>
 
-        {{ m_sidebar(recent_news, with_images=True) }}
+        {{ m_sidebar(recent_news) }}
       </div>
     </div>
-  </div>
-  <hr>
+  </section>
 {% endblock %}

@@ -3,13 +3,19 @@
 /build
 /env
 /tmp
+/data
+/dist
+/whoosh_index
+/website/static2
 
 .webassets-cache
 .idea
+.DS_Store
+.vagrant
+.vagrant*
+.tox
 
 error.log
-.DS_Store
-static/css/packed.css
-static/js/packed.js
-static/packed.css
-static/packed.js
+packed.css
+packed.js
+

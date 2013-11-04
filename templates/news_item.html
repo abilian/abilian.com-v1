@@ -3,9 +3,8 @@
 {% from "_macros.html" import m_sidebar %}
 
 {% block main %}
-  <div class="row show-grid">
-    <div class="span12">
-
+  <section>
+    <div class="container">
       {#
       <!-- BREADCRUMBS -->
       <div id="breadcrumb">
@@ -16,9 +15,8 @@
         </ul>
       </div>
 #}
-
-      <div class="row show-grid clear-both">
-        <div class="span9 main-column two-columns-right">
+      <div class="row">
+        <div class="col-md-8">
           <article>
             <h2><a
                 href="{{ url_for(".news_item", slug=page.slug) }}">{{ page.title }}</a>
@@ -54,6 +52,5 @@
         {{ m_sidebar(recent_news) }}
       </div>
     </div>
-  </div>
-  <hr>
+  </section>
 {% endblock %}
