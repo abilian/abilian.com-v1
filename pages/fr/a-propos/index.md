@@ -37,3 +37,10 @@ Abilian est une Jeune Entreprise Innovante, qui consacre plus de 15% de son
 chiffre d'affaire annuel à de la recherche &amp; développement.
 
 Abilian est soutenue par l'[EIT ICT Labs](http://www.eitictlabs.eu/).
+
+## Abilian en video
+
+Retrouvez notre CEO interviewé lors de l'Open World Forum 2013:
+
+<iframe width="640" height="480" src="//www.youtube.com/embed/RoTrT0aYCNs" frameborder="0" allowfullscreen></iframe>
+
