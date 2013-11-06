@@ -1,57 +1,11 @@
 {% extends "_base.html" %}
 
 {% block main %}
-  <section>
+  <section class="single-column">
     <div class="container">
-      <div class="row">
-        <div class="span12">
-
-          {#
-      <!-- BREADCRUMBS -->
-      <div id="breadcrumb">
-        <ul>
-          <li class="home"><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li>About Us (Right Sidebar)</li>
-        </ul>
-      </div>
-       #}
-
-          <div class="row show-grid clear-both">
-            <!-- BEGIN ARTICLE CONTENT AREA -->
-            <div class="span12 main-column two-columns-right">
-              <article>
-                {{ page.html|safe }}
-              </article>
-            </div>
-            <!-- END ARTICLE CONTENT AREA -->
-
-            {#
-        <!-- BEGIN RIGHT-SIDEBAR -->
-        <div id="left-sidebar" class="span3 sidebar">
-          <!-- RIGHT-SIDEBAR: SIDEBAR NAVIGATION -->
-          <div class="side-nav sidebar-block">
-            <h2>Pages</h2>
-            <ul>
-              <li><a href="3_columns_about.html">About Us (both sidebars)</a>
-              </li>
-              <li><a href="left_column_about.html">About Us (left sidebar)</a>
-              </li>
-              <li class="active"><a href="right_column_about.html">About Us
-                (right sidebar)</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="our_team_one_col.html">Our Team</a></li>
-              <li><a href="our_team.html">Our Team (Large blocks)</a></li>
-              <li><a href="philosophy.html">Philosophy</a></li>
-              <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- END RIGHT-SIDEBAR -->
-#}
-          </div>
-        </div>
-      </div>
+      <article>
+        {{ page.html|safe }}
+      </article>
     </div>
   </section>
 {% endblock %}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation xmlns="http://developer.apple.com/schemas/APXL" version="36" xmlns:plugin="http://developer.apple.com/schemas/APXL">
+	<metadata>
+		<application-name>Keynote</application-name>
+		<application-version>update3-20030829_1</application-version>
+		<time-stamp>Sat Oct  1 00:00:00 2011</time-stamp>
+	</metadata>
+<theme slide-size="99 99">
+<master-slides>
+<master-slide id="master-slide-1" name="Blank">
+<drawables>
+<title stroke-width="1" size="644 150" visibility="hidden" vertical-alignment="middle" location="78 16" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+</title>
+<body stroke-width="1" size="644 352" bullet-indentation="0 20 48 75 102 130" visibility="hidden" vertical-alignment="middle" location="78 170" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+</body>
+<page-number stroke-width="1" size="39 23" visibility="hidden" vertical-alignment="middle" location="380 570" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+<text-attributes paragraph-alignment="center" tab-stops="L 66" font-size="14" font-name="GillSans"/>
+</page-number>
+</drawables>
+<background-fill-style fill-type="color" fill-color="1 1 1"/>
+<prototype-bullets>
+<bullet level="0" marker-type="none" spacing="0">
+<content paragraph-alignment="center" tab-stops="L 75" font-size="64" font-name="GillSans"/>
+</bullet>
+<bullet level="1" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="2" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="3" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="4" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="5" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+</prototype-bullets>
+<transition-style type="none" duration="0"/>
+<thumbnails>
+<thumbnail byte-size="360" size="60 45" file="thumbs/mt3.tiff"/>
+</thumbnails>
+</master-slide>
+</master-slides>
+</theme>
+<slide-list>
+<slide id="slide-1" master-slide-id="master-slide-1">
+<drawables><shape path="M 89.236656 46.426228 C 93.176491 46.638512 97.076256 44.541954 100.000000 40.077473 C 105.790260 31.220728 105.515495 16.446360 99.398941 7.088456 L 95.367508 0.921344 C 89.236656 -8.447499 79.585266 -8.856743 73.793587 0.000000 C 70.871262 4.468858 69.503128 10.441195 69.633362 16.459492 C 58.135857 9.607387 44.945339 12.780672 36.056740 26.351381 L 0.000000 81.487724 L 12.100006 100.000000 L 48.162460 44.857094 C 54.050030 35.875607 63.831642 36.297985 70.059822 45.791569 C 76.263672 55.304855 76.547028 70.280556 70.676636 79.286125 L 69.882370 80.496353 L 81.969490 98.984558 L 82.768051 97.772141 C 91.649498 84.188301 93.730331 64.023727 89.236656 46.426228 Z" transformation="0.698760 0.000000 0.000000 0.456940 26.169001 2.917000" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<shape path="M 53.570572 89.237122 C 53.360470 93.175354 55.452698 97.076378 59.921654 100.000000 C 68.772026 105.790009 83.553284 105.510956 92.911392 99.394676 L 99.076454 95.367714 C 108.449875 89.238548 108.850388 79.581856 100.000000 73.793266 C 95.524483 70.868210 89.560768 69.502991 83.537949 69.636086 C 90.398964 58.137630 87.227791 44.946262 73.648041 36.055176 L 18.510498 0.000000 L 0.000000 12.103781 L 55.135372 48.157532 C 64.123627 54.049141 63.696865 63.833206 54.205242 70.059677 C 44.691750 76.264687 29.717894 76.548035 20.705580 70.673599 L 19.488762 69.879372 L 1.002342 81.970268 L 2.219159 82.761635 C 15.805488 91.642708 35.977077 93.727737 53.570572 89.237122 Z" transformation="0.456930 0.000000 0.000000 0.698790 50.957001 26.332001" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<shape path="M 10.767799 53.572910 C 6.829339 53.354053 2.926655 55.450748 0.000000 59.924274 C -5.786047 68.775032 -5.512701 83.559135 0.599642 92.913261 L 4.632558 99.082970 C 10.762075 108.456802 20.417889 108.850754 26.205368 100.000000 C 29.133451 95.530846 30.501612 89.562500 30.364222 83.541618 C 41.863327 90.402931 55.054028 87.229431 63.937031 73.657837 L 100.000000 18.511307 L 87.892662 0.000000 L 51.832561 55.153091 C 45.950626 64.128601 36.167442 63.701820 29.943470 54.203239 C 23.740967 44.691517 23.451880 29.717022 29.318068 20.723991 L 30.118067 19.504934 L 18.029339 1.015511 L 17.229340 2.236755 C 8.354919 15.808357 6.271199 35.974258 10.767799 53.572910 Z" transformation="0.698750 0.000000 0.000000 0.456910 3.414000 51.063004" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<shape path="M 46.428257 10.761767 C 46.644928 6.823419 44.543900 2.922277 40.074848 0.000000 C 31.226471 -5.790175 16.442703 -5.515406 7.086580 0.602487 L 0.917009 4.633857 C -8.445679 10.761767 -8.857130 20.415873 0.000000 26.204617 C 4.469054 29.126894 10.435088 30.497873 16.458023 30.363352 C 9.599055 41.864990 12.779043 55.052452 26.348156 63.942364 L 81.495659 100.000000 L 100.000000 87.894447 L 44.859055 51.838230 C 35.874989 45.949310 36.299568 36.163544 45.793571 29.939749 C 55.302891 23.737421 70.279259 23.451204 79.291771 29.327244 L 80.506432 30.118633 L 98.995445 18.028818 L 97.780792 17.237429 C 84.194168 8.353249 64.022141 6.268157 46.428257 10.761767 Z" transformation="0.456920 0.000000 0.000000 0.698770 2.917000 3.134000" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<title visibility="hidden" vertical-alignment="tracks-master"/>
+<body visibility="hidden" vertical-alignment="tracks-master"/>
+</drawables>
+<transition-style type="inherited"/>
+<thumbnails>
+<thumbnail byte-size="360" size="60 45" file="thumbs/st0.tiff"/>
+</thumbnails>
+<bullets>
+<bullet level="0" marker-type="inherited">
+<content paragraph-alignment="center" tab-stops="L 75" font-size="64" font-name="GillSans"/>
+</bullet>
+</bullets>
+</slide>
+</slide-list>
+<ui-state>
+<number key="BGShowUIStateNotesVisible">0</number>
+<reference key="BGShowUIStateActiveSlide" id-ref="slide-1"/>
+<array key="BGShowUIStateSelectedSlides">
+<reference id-ref="slide-1"/>
+</array>
+<array key="BGShowUIStateSelectedBulletPoints"/>
+<number key="BGShowUIStateMasterNavigatorHeight">0</number>
+<array key="BGShowUIStateSelectedDrawables"/>
+<string key="BGShowUIStateCanvasOrigin">{0, 0}</string>
+<string key="BGShowUIStateWindowSize">24 195 960 637 0 0 1280 832 </string>
+</ui-state>
+</presentation>

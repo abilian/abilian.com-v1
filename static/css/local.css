@@ -32,6 +32,21 @@ section {
   padding: 51px 0 35px;
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar-nav li a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 /* *********************************************************************** */
 /* Typography overrides */
 /* *********************************************************************** */
@@ -41,6 +56,12 @@ body {
   color: #151515;
   font-family: "Lato", "Open Sans", sans-serif;
   font-size: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .single-column {
+    font-size: 16px;
+  }
 }
 
 a {

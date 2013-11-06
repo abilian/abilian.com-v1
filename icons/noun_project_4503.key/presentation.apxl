@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation xmlns="http://developer.apple.com/schemas/APXL" version="36" xmlns:plugin="http://developer.apple.com/schemas/APXL">
+	<metadata>
+		<application-name>Keynote</application-name>
+		<application-version>update3-20030829_1</application-version>
+		<time-stamp>Sat Oct  1 00:00:00 2011</time-stamp>
+	</metadata>
+<theme slide-size="100 100">
+<master-slides>
+<master-slide id="master-slide-1" name="Blank">
+<drawables>
+<title stroke-width="1" size="644 150" visibility="hidden" vertical-alignment="middle" location="78 16" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+</title>
+<body stroke-width="1" size="644 352" bullet-indentation="0 20 48 75 102 130" visibility="hidden" vertical-alignment="middle" location="78 170" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+</body>
+<page-number stroke-width="1" size="39 23" visibility="hidden" vertical-alignment="middle" location="380 570" opacity="1" stroke-color="g1">
+<styles>
+<fill-style fill-type="none"/>
+<dash-style pattern="none"/>
+<shadow-style opacity="0" radius="0"/>
+</styles>
+<text-attributes paragraph-alignment="center" tab-stops="L 66" font-size="14" font-name="GillSans"/>
+</page-number>
+</drawables>
+<background-fill-style fill-type="color" fill-color="1 1 1"/>
+<prototype-bullets>
+<bullet level="0" marker-type="none" spacing="0">
+<content paragraph-alignment="center" tab-stops="L 75" font-size="64" font-name="GillSans"/>
+</bullet>
+<bullet level="1" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="2" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="3" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="4" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+<bullet level="5" marker-type="character" spacing="18">
+<content paragraph-head-indent="5" paragraph-first-line-indent="5" tab-stops="L 45" font-size="32" font-name="GillSans"/>
+<character-bullet-style size-technique="relative" size="1.71429">
+<bullet-characters tab-stops="L 66" font-size="8" font-name="GillSans">+</bullet-characters>
+</character-bullet-style>
+</bullet>
+</prototype-bullets>
+<transition-style type="none" duration="0"/>
+<thumbnails>
+<thumbnail byte-size="360" size="60 45" file="thumbs/mt3.tiff"/>
+</thumbnails>
+</master-slide>
+</master-slides>
+</theme>
+<slide-list>
+<slide id="slide-1" master-slide-id="master-slide-1">
+<drawables><shape path="M 11.000000 89.000000 L 11.000000 0.000000 L 0.000000 0.000000 L 0.000000 100.000000 L 100.000000 100.000000 L 100.000000 89.000000 Z" transformation="1.000000 0.000000 0.000000 1.000000 0.000000 0.000000" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<shape path="M 70.255890 10.686743 L 80.624161 22.027069 L 58.992691 59.136654 L 34.721092 31.711267 L 0.000000 89.384598 L 8.694829 100.000000 L 36.227997 54.245396 L 60.629570 81.828880 L 89.688606 32.085297 L 100.000000 43.504669 L 100.000000 0.000000 Z" transformation="0.738600 0.000000 0.000000 0.518680 19.139999 18.066000" stroke-color="0 0 0 1" stroke-width="1">
+<styles>
+<fill-style fill-type="color" fill-color="0.000000 0.000000 0.000000 1.000000" />
+<dash-style pattern="none" />
+</styles></shape>
+<title visibility="hidden" vertical-alignment="tracks-master"/>
+<body visibility="hidden" vertical-alignment="tracks-master"/>
+</drawables>
+<transition-style type="inherited"/>
+<thumbnails>
+<thumbnail byte-size="360" size="60 45" file="thumbs/st0.tiff"/>
+</thumbnails>
+<bullets>
+<bullet level="0" marker-type="inherited">
+<content paragraph-alignment="center" tab-stops="L 75" font-size="64" font-name="GillSans"/>
+</bullet>
+</bullets>
+</slide>
+</slide-list>
+<ui-state>
+<number key="BGShowUIStateNotesVisible">0</number>
+<reference key="BGShowUIStateActiveSlide" id-ref="slide-1"/>
+<array key="BGShowUIStateSelectedSlides">
+<reference id-ref="slide-1"/>
+</array>
+<array key="BGShowUIStateSelectedBulletPoints"/>
+<number key="BGShowUIStateMasterNavigatorHeight">0</number>
+<array key="BGShowUIStateSelectedDrawables"/>
+<string key="BGShowUIStateCanvasOrigin">{0, 0}</string>
+<string key="BGShowUIStateWindowSize">24 195 960 637 0 0 1280 832 </string>
+</ui-state>
+</presentation>
