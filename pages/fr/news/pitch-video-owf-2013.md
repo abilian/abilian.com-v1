@@ -9,6 +9,6 @@ Regardez la vidéo de 4 minutes ci-dessous pour tout savoir de la transformation
 numérique des entreprises, du *social business*, et de la stratégie d'Abilian
 pour devenir un des acteurs majeurs du secteur:
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/RoTrT0aYCNs" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="450" src="//www.youtube.com/embed/RoTrT0aYCNs" frameborder="0" allowfullscreen></iframe>
 
 

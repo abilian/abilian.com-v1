@@ -138,7 +138,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-indent-left:before          { content: "\f03b"; }
 .icon-indent-right:before         { content: "\f03c"; }
 .icon-facetime-video:before       { content: "\f03d"; }
-.icon-picture:before              { content: "\f03e"; }
+.fa fa-picture-o:before              { content: "\f03e"; }
 
 .icon-pencil:before               { content: "\f040"; }
 .icon-map-marker:before           { content: "\f041"; }

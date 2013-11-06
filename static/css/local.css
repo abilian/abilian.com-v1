@@ -1,8 +1,40 @@
+/* *********************************************************************** */
+/* Layout overrides and home boxes*/
+/* *********************************************************************** */
+
 @media only screen and (min-width: 1025px) {
   .container {
     width: 950px;
   }
 }
+
+section {
+  border-bottom: 1px solid #d7dcdd;
+  padding: 30px 0;
+}
+
+.grey-box {
+  margin-top: 25px;
+  background-color: #fbfbfb;
+  border: 1px solid #ececec;
+  border-top-color: #f5f5f5;
+  border-bottom-color: #dfdfdf;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px #CCCCCC;
+  padding: 15px 20px;
+}
+
+.grey-box h2 {
+  margin-top: 0;
+}
+
+.tour-btn {
+  padding: 51px 0 35px;
+}
+
+/* *********************************************************************** */
+/* Typography overrides */
+/* *********************************************************************** */
 
 body {
   padding-top: 0;
@@ -19,17 +51,9 @@ a:hover {
   color: #00A2CC;
 }
 
-section {
-  border-bottom: 1px solid #d7dcdd;
-  padding: 30px 0;
-}
-
-/* *********************************************************************** */
-/* Typography overrides */
-/* *********************************************************************** */
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Open Sans", sans-serif !important;
+  font-weight: normal;
+  color: #333;
 }
 
 blockquote p {
@@ -38,6 +62,8 @@ blockquote p {
   font-weight: inherit;
 }
 
+/* *********************************************************************** */
+/* Navbar */
 /* *********************************************************************** */
 
 .top-line {
@@ -58,6 +84,19 @@ blockquote p {
 }
 
 /* ********************************************************************** */
+/* Home stuff */
+/* *********************************************************************** */
+
+.home-icon {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* ********************************************************************** */
+/* Jumbotron */
+/* *********************************************************************** */
 
 .jumbotron {
   background-color: #0083a5;
@@ -75,28 +114,65 @@ blockquote p {
   font-size: 21px;
 }
 
-@media screen and (max-width: 768px) {
-  .jumbotron h2 {
-    font-size: 17px;
-  }
-}
-
 .jumbotron .btn {
   margin-top: 25px;
   padding: 10px 40px;
   font-size: 22px;
 }
 
+@media screen and (max-width: 768px) {
+  .jumbotron h2 {
+    font-size: 17px;
+  }
+
+  .jumbotron .btn {
+    margin-top: 25px;
+    padding: 7px 30px;
+    font-size: 17px;
+  }
+}
+
 /* ********************************************************************** */
-/* References */
+/* News section on home
+/* ********************************************************************** */
+
+section#news h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+section#news .post-content {
+  font-size: 13px;
+}
+
+section#news .post-date {
+  padding-bottom: 0;
+  font-size: 13px;
+  margin: 3px 0 10px 0;
+}
+
+section#news .post-more {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ********************************************************************** */
+/* References section */
 /* ********************************************************************** */
 
 section#references {
   padding: 15px 0;
+  background-color: #f5f5f5;
 }
 
 section#references .logo {
   width: 20%;
+}
+
+section#references .img {
+  max-width: 100px;
+  width: 100%;
 }
 
 /* ********************************************************************** */
@@ -108,41 +184,43 @@ section#references .logo {
   font-size: 13px;
 }
 
+#footer a {
+  color: #4CDAFF;
+}
+
 #footer h4 {
+  color: #dadada;
   font-size: 20px;
   display: inline-block;
   padding-bottom: 3px;
   border-bottom: 2px solid #4CDAFF;
 }
 
-#footer a {
-  color: #4CDAFF;
-}
-
-.footer-middle {
+#footer .footer-middle {
   color: #dadada;
   padding: 20px 0 30px;
   background: #585f69;
 }
 
-.footer-bottom {
+#footer .footer-bottom {
   padding-top: 5px;
   background-color: black;
   color: lightgrey;
 }
 
-.footer-logo {
+#footer .footer-logo {
   max-width: 80%;
   margin-bottom: 20px;
 }
 
-.fa {
+#footer .fa {
   color: #dadada;
 }
 
 /* ********************************************************************** */
 /* Icons */
 /* ********************************************************************** */
+
 .fa-rss-square:hover {
   color: #fe9900;
 }
@@ -168,8 +246,14 @@ section#references .logo {
 }
 
 /* ********************************************************************** */
-/* news / sidebar */
+/* News + sidebar */
 /* ********************************************************************** */
+
+article.post .date {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
 #sidebar {
   margin-top: 25px;
 }
@@ -182,7 +266,7 @@ section#references .logo {
 }
 
 #sidebar h2 {
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 12px;

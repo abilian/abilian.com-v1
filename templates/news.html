@@ -17,37 +17,18 @@
 #}
 
       <div class="row clear-both">
-        <div class="col-md-8 main-column two-columns-right blog-posts">
+        <div class="col-md-8">
           {% for entry in news %}
-            <article>
+            <article class="post">
               <h2><a
                   href="{{ url_for(".news_item", slug=entry.slug) }}">{{ entry.title }}</a>
               </h2>
-              {# <img alt="" src="img/blog04.jpg"/> #}
 
+              <div class="date"><i
+                  class="fa fa-calendar"></i> {{ entry.date.strftime("%d/%m/%Y") }}
+              </div>
               {{ entry.html|safe }}
 
-              <div class="post-item-panel">
-                <ul>
-                  <li class="date">
-                    <p><i
-                        class="icon-calendar"></i>{{ entry.date.strftime("%d/%m/%Y") }}
-                    </p>
-                  </li>
-                  <li>
-                    <p><i class="icon-user"></i>par Admin</p>
-                  </li>
-                  {#
-                  <li>
-                    <p><i class="icon-tags"></i><a href="">marketing</a>, <a
-                      href="">SEO</a></p>
-                  </li>
-                  <li class="comments"><p><i
-                      class="icon-comments-alt"></i><span>2 comments</span>
-                  </p></li>
-                  #}
-                </ul>
-              </div>
             </article>
             {% if not loop.last %}
               <hr>

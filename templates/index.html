@@ -8,8 +8,9 @@
       <div class="row">
         <div class="col-md-8">
           <h2>
-            Abilian dynamise les relations entre vos collaborateurs, vos
-            partenaires, votre écosystème</h2>
+            Abilian dynamise les relations entre vos collaborateurs et avec vos
+            partenaires, pour accélérer votre développement et renforcer votre
+            compétitivité </h2>
         </div>
         <div class="col-md-4">
           <a class="btn btn-lg btn-danger pull-right" href="/fr/solutions/"
@@ -24,15 +25,11 @@
 
 
 {% block main %}
-
   <section>
     <div class="container">
       <div class="row">
-        <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - HERO BLOCK 1 (TEXT BLOCK)] -->
-        <div class="col-md-6 home-block hero-block-1">
+        <div class="col-md-6">
           <h1>Connected, we work!</h1>
-
-          <h2>Solutions pour l'entreprise connectée</h2>
 
           <p>
             Abilian est un éditeur de <a href="/fr/technologies/">logiciels open
@@ -49,20 +46,22 @@
             compétitive. </p>
         </div>
 
-        <!-- MAIN CONTENT AREA: SPACER BETWEEN HERO BLOCK 1 AND HEREO BLOCK 2 -->
         <div class="col-md-1"></div>
 
-        <!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 2 -->
-        <div class="col-md-5 home-block">
-          <div class="grey-box hero-block-2">
-            <h2><a href="/fr/solutions/">Solutions pour un monde connecté</a>
-            </h2>
+        <div class="col-md-5">
+          <div class="grey-box">
+            <h2>Nos solutions</h2>
 
-            <p>{# <img alt="" src="/static/img/release_icon.png"/> #}Nous avons
-              des solutions pour dynamiser votre communauté et fluidifier la
-              collaboration entre vos collaborateurs. </p>
-            <a href="/fr/solutions/" class="btn btn-primary"><i
-                class="icon-shopping-cart"></i>Voir nos solutions</a>
+            <ul>
+              <li>Intranet 2.0</li>
+              <li>CRM social</li>
+              <li>Collaboration</li>
+              <li>Réseau social d'entreprise (RSE)</li>
+              <li>Recherche et intelligence des contenus</li>
+            </ul>
+
+            <a href="/fr/solutions/" class="btn btn-primary center-block"><i
+                class="icon-shopping-cart"></i>Plus d'info</a>
           </div>
         </div>
       </div>
@@ -72,59 +71,81 @@
   <section>
     <div class="container">
 
-      <h2>Pourquoi Abilian ?</h2>
+      <h1>Pourquoi utiliser Abilian ?</h1>
 
       <div class="row">
-        <div class="col-md-4">
-          toto
+        <div class="col-sm-4">
+          <img src="/static/img/icons/graph.png" class="home-icon">
+
+          <h3>Pour innover et vendre plus vite</h3>
+
+          <p>TODO</p>
         </div>
 
-        <div class="col-md-4">
-          toto
+        <div class="col-sm-4">
+          <img src="/static/img/icons/groups.png" class="home-icon">
+
+          <h3>Pour mettre en commun les connaissances et les énergies</h3>
+
+          <p>TODO</p>
         </div>
 
-        <div class="col-md-4">
-          toto
+        <div class="col-sm-4">
+          <img src="/static/img/icons/links.png" class="home-icon">
+
+          <h3>Pour mettre en commun les connaissances et les énergies</h3>
+
+          <p>TODO</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="news">
     <div class="container">
 
-      <h2 style="font-size: 2.5em; margin-bottom: 40px;">Actualités</h2>
+      <h1>Actualité</h1>
 
-      <div class="row show-grid clear-both">
-        <div class="col-md-12">
-          <div class="row show-grid">
-            {% for item in news %}
-              <div class="col-md-3">
-                {#
+      <div class="row clear-both">
+        {% for item in news[0:4] %}
+          <div class="col-md-3">
+            {#
           <a class="block-post-img" href="{{ url_for(".news_item", slug=item.slug) }}">
             <img alt="" src="{{ url_for("image", path=item.image, h=220) }}" class="img-rounded"/>
           </a>
            #}
-                <a class="block-post-title"
-                    href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+            <h3><a class="post-title"
+                href="{{ url_for(".news_item", slug=item.slug) }}">{{ item.title }}</a>
+            </h3>
 
-                <p class="block-post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
+            <p class="post-date">{{ item.date.strftime("%d/%m/%Y") }}</p>
 
-                <p class="block-post-content">{{ item.abstract }}</p>
-                <a class="block-post-more"
-                    href="{{ url_for(".news_item", slug=item.slug) }}">En
-                  savoir
-                  plus&nbsp;&raquo;</a>
-              </div>
-            {% endfor %}
+            <p class="post-content">{{ item.abstract }}</p>
+            <a class="post-more"
+                href="{{ url_for(".news_item", slug=item.slug) }}">En
+              savoir
+              plus&nbsp;&raquo;</a>
           </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="container">
+      <h1 style="margin-bottom: 40px;">Le <i>social business</i>, c'est quoi ?
+      </h1>
 
-  <!-- MAIN CONTENT AREA -->
+      <iframe
+          src="http://fast.wistia.net/embed/iframe/u8q7h57hyw?videoFoam=true"
+          allowtransparency="true" frameborder="0" scrolling="no"
+          class="wistia_embed" name="wistia_embed" allowfullscreen
+          mozallowfullscreen webkitallowfullscreen oallowfullscreen
+          msallowfullscreen width="950" height="551"></iframe>
+      <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+    </div>
+  </section>
+
   <section>
     <div class="container">
       <div class="row" style="margin-bottom: 20px;">
@@ -161,22 +182,22 @@
       <h2>Références et labels</h2>
 
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/jei.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/cap-digital.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/systematic.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/eit-ict-labs.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/my-startup.png">
         </div>
-        <div class="col-md-2">
+        <div class="col-xs-2">
           <img alt="" src="/static/custom/clients/open-source.png">
         </div>
       </div>

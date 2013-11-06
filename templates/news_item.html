@@ -3,7 +3,7 @@
 {% from "_macros.html" import m_sidebar %}
 
 {% block main %}
-  <section>
+  <section class="post">
     <div class="container">
       {#
       <!-- BREADCRUMBS -->
@@ -17,35 +17,16 @@
 #}
       <div class="row">
         <div class="col-md-8">
-          <article>
+          <article class="post">
             <h2><a
                 href="{{ url_for(".news_item", slug=page.slug) }}">{{ page.title }}</a>
             </h2>
-            {# <img alt="" src="img/blog04.jpg"/> #}
+
+            <div class="date"><i
+                class="fa fa-calendar"></i> {{ page.date.strftime("%d/%m/%Y") }}
+            </div>
 
             {{ page.html|safe }}
-
-            <div class="post-item-panel">
-              <ul>
-                <li class="date">
-                  <p><i
-                      class="icon-calendar"></i>{{ page.date.strftime("%d/%m/%Y") }}
-                  </p>
-                </li>
-                <li>
-                  <p><i class="icon-user"></i>par Admin</p>
-                </li>
-                {#
-                  <li>
-                    <p><i class="icon-tags"></i><a href="">marketing</a>, <a
-                      href="">SEO</a></p>
-                  </li>
-                  <li class="comments"><p><i
-                      class="icon-comments-alt"></i><span>2 comments</span>
-                  </p></li>
-                  #}
-              </ul>
-            </div>
           </article>
         </div>
 

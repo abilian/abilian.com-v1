@@ -190,7 +190,7 @@
 .icon-facetime-video {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03d;&nbsp;');
 }
-.icon-picture {
+.fa fa-picture-o {
   *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf03e;&nbsp;');
 }
 .icon-pencil {
