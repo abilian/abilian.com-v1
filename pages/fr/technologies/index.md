@@ -1,10 +1,12 @@
 title: Technologies
+jumbotron: j-plateforme.md
+
 
 # Technologies
 
 ## Abilian Social Business Engine (SBE)
 
-Abilian SBE est une plateforme logicielle modulaire open source et “cloud ready” pour applications métiers basés sur la collaboration émergente. En d’autres termes, il s’agit d’un framework de développement et d’exécution, et d’une collection de services et d’applications métiers:
+Abilian SBE est une **plateforme logicielle** modulaire open source et “cloud ready” pour **applications métiers basées** sur la **collaboration émergente**. En d’autres termes, il s’agit d’un framework de développement et d’exécution, et d’une collection de services et d’applications métiers:
 
 - **Le framework** permet de déployer la plateforme aussi bien sur des serveurs “normaux” (Linux, Windows) ou sur du cloud PaaS (ex: Heroku, Dotcloud). Grâce à une architecture à base de plugins et un bus d’événement, elle est facile à étendre par des tiers. Elle se caractérise également par une approche REST qui permet de découpler les services côté serveur de leur consommation par des applications riches (HTML5+JavaScript), mobiles (natives ou HTML5), ou par des applications tierces via des API.
 

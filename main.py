@@ -1,16 +1,11 @@
 #!/usr/bin/env python
 # coding=utf-8
 from StringIO import StringIO
-
-import codecs
 import locale
 from logging import FileHandler
 import mimetypes
-import os
 from os.path import join
-from pprint import pprint
 import re
-import traceback
 from unicodedata import normalize
 import datetime
 from PIL import Image
@@ -24,41 +19,63 @@ from flask.ext.frozen import Freezer
 from flask.ext.flatpages import FlatPages, Page
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
+from markdown import markdown
+from markupsafe import Markup
+
+
+def renderer(text):
+  html = markdown(text)
+  while True:
+    m = re.search(r'\[\[block "(.*)"\]\]', html)
+    if not m:
+      break
+    block = get_blocks(g.lang_code)[m.group(1)]
+    html = html[0:m.start(0)] + unicode(block) + html[m.end(0):]
+  return html
 
 
 # Configuration
-BASE_URL = 'http://abilian.com'
-DEBUG = True
-ASSETS_DEBUG = DEBUG
-# FIXME later
-#ASSETS_DEBUG = True
-FLATPAGES_AUTO_RELOAD = True
-FLATPAGES_EXTENSION = '.md'
-FLATPAGES_ROOT = 'pages'
+class Config:
+  BASE_URL = 'http://abilian.com'
+  DEBUG = True
+  ASSETS_DEBUG = DEBUG
+  # FIXME later
+  #ASSETS_DEBUG = True
+  FLATPAGES_AUTO_RELOAD = True
+  FLATPAGES_EXTENSION = '.md'
+  FLATPAGES_ROOT = 'pages'
+  FLATPAGES_HTML_RENDERER = staticmethod(renderer)
 
-# App configuration
-FEED_MAX_LINKS = 25
-SECTION_MAX_LINKS = 12
+  # App configuration
+  FEED_MAX_LINKS = 25
+  SECTION_MAX_LINKS = 12
 
-ALLOWED_LANGS = ['fr']
+  ALLOWED_LANGS = ['fr']
 
-MAIN_MENU = [
-  ('solutions/', u'Solutions'),
-  ('technologies/', u'Plateforme'),
-  ('services/', u'Services'),
-  ('news/', u'Actualité'),
-  ('a-propos/', u'A propos'),
-  ('pourquoi/', u"Pourquoi Abilian ?"),
-]
+  MAIN_MENU = [
+    ('solutions/', u'Solutions'),
+    ('technologies/', u'Plateforme'),
+    ('services/', u'Services'),
+    ('news/', u'Actualité'),
+    ('a-propos/', u'A propos'),
+    ('pourquoi/', u"Pourquoi Abilian ?"),
+  ]
+
 
 app = Flask(__name__)
 mod = Blueprint('mod', __name__, url_prefix='/<string(length=2):lang_code>')
+asset_manager = AssetManager()
+pages = FlatPages()
+freezer = Freezer()
 
-app.config.from_object(__name__)
-pages = FlatPages(app)
-freezer = Freezer(app)
-markdown_manager = Markdown(app)
-asset_manager = AssetManager(app)
+
+def setup_app(app):
+  app.config.from_object(Config)
+  app.register_blueprint(mod)
+  asset_manager.init_app(app)
+  pages.init_app(app)
+  freezer.init_app(app)
+  markdown_manager = Markdown(app)
 
 
 ###############################################################################
@@ -149,6 +166,27 @@ def get_news(offset=None, limit=None):
   return all_news
 
 
+#
+# Blocks
+#
+class Blocks(object):
+  def __init__(self, lang):
+    self.lang = lang
+
+  def __getitem__(self, key):
+    fn = join(app.root_path, 'blocks', self.lang, key)
+    src = open(fn).read()
+    return Markup(markdown(unicode(src, 'utf8')))
+
+
+def get_blocks(lang):
+  return Blocks(lang)
+
+
+def render_page():
+  blocks = get_blocks(g.lang_code)
+
+
 ###############################################################################
 # Filters
 
@@ -168,7 +206,7 @@ def to_rfc2822(dt):
 
 @app.context_processor
 def inject_context_variables():
-  return dict(BASE_URL=BASE_URL, menu=MAIN_MENU)
+  return dict(BASE_URL=Config.BASE_URL, menu=Config.MAIN_MENU)
 
 
 @app.url_defaults
@@ -183,7 +221,7 @@ def pull_lang_code(endpoint, values):
     g.lang_code = m.group(1)
   else:
     g.lang_code = 'fr'
-  if not g.lang_code in ALLOWED_LANGS:
+  if not g.lang_code in Config.ALLOWED_LANGS:
     abort(404)
 
 
@@ -323,7 +361,11 @@ def home():
 def page(path=""):
   page = pages.get_or_404(g.lang_code + "/" + path + "/index")
   template = page.meta.get('template', '_page.html')
-  return render_template(template, page=page)
+  jumbotron = page.meta.get('jumbotron')
+  if jumbotron:
+    jumbotron = get_blocks(g.lang_code)[jumbotron]
+  print jumbotron
+  return render_template(template, page=page, jumbotron=jumbotron)
 
 
 @mod.route('/news/')
@@ -345,16 +387,13 @@ def news_item(slug):
 
 @mod.route('/feed/')
 def feed():
-  articles = get_pages(limit=FEED_MAX_LINKS)
+  articles = get_pages(limit=Config.FEED_MAX_LINKS)
   now = datetime.datetime.now()
 
   response = make_response(render_template('base.rss',
                                            pages=articles, build_date=now))
   response.headers['Content-Type'] = 'text/xml'
   return response
-
-
-app.register_blueprint(mod)
 
 
 ###############################################################################
@@ -373,7 +412,7 @@ def build():
   print("Done.")
 
 
-def serve(server='127.0.0.1', port=5001, debug=DEBUG):
+def serve(server='127.0.0.1', port=5001, debug=Config.DEBUG):
   """ Serves this site.
   """
   if not debug:
@@ -382,7 +421,7 @@ def serve(server='127.0.0.1', port=5001, debug=DEBUG):
     file_handler.setLevel(logging.WARNING)
     app.logger.addHandler(file_handler)
 
-  asset_manager.config['ASSETS_DEBUG'] = debug
+  #asset_manager.config['ASSETS_DEBUG'] = debug
   app.debug = debug
   app.run(host=server, port=port, debug=debug)
 
@@ -392,6 +431,7 @@ def prod():
 
 
 if __name__ == '__main__':
+  setup_app(app)
   parser = ArghParser()
   parser.add_commands([build, serve, prod])
   parser.dispatch()

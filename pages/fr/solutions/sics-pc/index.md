@@ -34,3 +34,7 @@ La plateforme Abilian comprend notamment les services suivants, accessibles à s
 Abilian SICS-PC peut être déployé sur vos serveurs, chez un de vos prestataires, ou, en mode SaaS, sur nos serveurs sécurisés situés en France.
 
 Dans le cadre de votre projet, Abilian assure la configuration de la plateforme suivant vos besoins spécifiques - terminologie, structure fine des informations collectées, processus, règles d’accès,  fonctions complémentaires -, la mise en production, l’accompagnement des utilisateurs, la maintenance corrective et évolutive de votre application.
+
+## Plus d'information
+
+[>> Téléchargez notre livre blanc](/static/pdf/lb-competitivite.pdf)
