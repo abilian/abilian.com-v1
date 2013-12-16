@@ -1,3 +1,7 @@
+@red-link: #b32017;
+@blue-link: #266D7F;
+
+
 /* *********************************************************************** */
 /* Layout overrides and home boxes*/
 /* *********************************************************************** */
@@ -64,12 +68,13 @@ body {
   }
 }
 
-a {
-  color: #266D7F;
+a, a:hover {
+  color: @blue-link;
 }
 
-a:hover {
-  color: #00A2CC;
+a.cta, a:hover.cta {
+  color: @red-link;
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -328,7 +333,7 @@ article.post .date {
     min-height: 220px;
 
     a {
-      color: #b32017;
+      color: @red-link;
     }
   }
 

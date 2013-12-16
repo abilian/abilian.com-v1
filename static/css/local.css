@@ -52,11 +52,14 @@ body {
     font-size: 16px;
   }
 }
-a {
-  color: #266D7F;
-}
+a,
 a:hover {
-  color: #00A2CC;
+  color: #266d7f;
+}
+a.cta,
+a:hover.cta {
+  color: #b32017;
+  font-weight: bold;
 }
 h1,
 h2,

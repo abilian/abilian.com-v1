@@ -2,7 +2,9 @@ title: Système d'Information Collaboratif et Sécurisé pour les Pôles de Comp
 
 ## Une plateforme conçue pour les Pôles
 
-Abilian SICS-PC (Système d’Information Collaboratif et Sécurisé pour les Pôles de Compétitivité) est un extranet sécurisé dédié au métier des pôles, développé par des experts impliqués dans la vie des pôles depuis plusieurs années, sur la base d’une plateforme open source dédiée à la gestion d’information d’entreprise et à la collaboration émergente.
+Abilian SICS-PC (Système d’Information Collaboratif et Sécurisé pour les Pôles de Compétitivité) est un extranet sécurisé dédié au métier des pôles - et plus généralement des acteurs du soutien a la compétitivité et à l'innovation -, développé par des experts impliqués dans la vie des pôles depuis plusieurs années, sur la base d’une plateforme open source dédiée à la gestion d’information d’entreprise et à la collaboration émergente.
+
+Que vous soyiez un pôle de compétitivité, un cluster, une technopole, un incubateur, un CEEI, une cellule de transfert technologique... nous avons probablement une solution pour vous aider à mieux accomplir votre mission.
 
 ## Un CRM pour mieux gérer votre information métier
 
@@ -37,4 +39,8 @@ Dans le cadre de votre projet, Abilian assure la configuration de la plateforme 
 
 ## Plus d'information
 
-[>> Téléchargez notre livre blanc](/static/pdf/lb-competitivite.pdf)
+<a href="/static/pdf/lb-competitivite.pdf" class="cta">&gt;&gt; Téléchargez notre livre blanc</a>.
+
+Ou consultez la présentation ci-dessous:
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/29247968" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/sfermigier/presentation-abilian-sicspc-plateforme" title="Présentation Abilian SICS-PC - plateforme métier pour les acteurs de l&#x27;innovation et de la compétitivité" target="_blank">Présentation Abilian SICS-PC - plateforme métier pour les acteurs de l&#x27;innovation et de la compétitivité</a> </strong> from <strong><a href="http://www.slideshare.net/sfermigier" target="_blank">Stefane Fermigier</a></strong> </div>
