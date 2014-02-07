@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
+
 from StringIO import StringIO
 import locale
 from logging import FileHandler
@@ -325,6 +326,11 @@ def sitemap():
   return response
 
 
+@app.route('/favicon.ico')
+def favicon():
+  return ''
+
+
 @app.route('/403.html')
 def error403():
   return render_template('403.html', page=dict(title="Fordidden"))
@@ -435,3 +441,12 @@ if __name__ == '__main__':
   parser = ArghParser()
   parser.add_commands([build, serve, prod])
   parser.dispatch()
+
+else:
+  # App will be called from a WSGI server.
+  setup_app(app)
+  import logging
+  file_handler = FileHandler("error.log")
+  file_handler.setLevel(logging.WARNING)
+  app.logger.addHandler(file_handler)
+  #app.debug = True
