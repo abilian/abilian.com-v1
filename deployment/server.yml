@@ -1,0 +1,84 @@
+---
+- hosts: all
+  user: root
+  sudo: True
+
+  vars:
+    host_names: ['www.abilian.com']
+    app_user: web
+    app_group: web
+    app_name: abilian.com
+    app_git: https://github.com/abilian/abilian.com.git
+    app_root: /srv/{{app_name}}
+    app_src: /srv/{{app_name}}/src
+    app_env: /srv/{{app_name}}/env
+
+  tasks:
+    - name: update apt-cache
+      apt: update_cache=yes cache_valid_time=3600
+
+    - name: install common packages
+      apt: pkg={{item}} state=latest
+      with_items:
+        - build-essential
+        - git
+        - imagemagick
+        - libjpeg-dev
+        - libpq-dev
+        - libxslt1-dev
+        - libzmq-dev
+        - python-dev
+        - python-pip
+        - python-virtualenv
+        - virtualenvwrapper
+        - uwsgi
+        - uwsgi-plugin-python
+        - nginx-full
+
+#    - name: update pip using pip
+#      action: pip name=pip state=latest
+
+    - name: create app group
+      group: name={{app_user}}
+
+    - name: create app owner
+      user: name={{app_user}} group={{app_group}}
+
+    - name: create app home
+      file: dest={{app_root}} state=directory owner={{app_user}} group={{app_group}}
+
+
+    - name: create virtualenv
+      command: virtualenv {{app_env}} creates={{app_env}}
+      sudo_user: "{{app_user}}"
+
+    - name: pull sources
+      git: repo={{app_git}} dest={{app_src}}
+      sudo_user: "{{app_user}}"
+
+    - name: install deps
+      pip: requirements={{app_src}}/requirements.txt virtualenv={{app_env}}
+      sudo_user: "{{app_user}}"
+
+
+    - name: remove default nginx host
+      file: path=/etc/nginx/sites-enabled/default state=absent
+      notify:
+        - restart nginx
+
+    - name: write nginx config for our site
+      template: src=nginx-site.conf dest=/etc/nginx/sites-enabled/{{app_name}}.conf
+      notify:
+        - restart nginx
+
+    - name: write uwsgi config for our app
+      template: src=uwsgi-app.ini dest=/etc/uwsgi/apps-enabled/{{app_name}}.ini
+      notify:
+        - restart uwsgi
+
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
+
+    - name: restart uwsgi
+      service: name=uwsgi state=restarted
