@@ -11,24 +11,27 @@ Abilian développe une [plateforme open source](http://docs.abilian.com/en/lates
 
 Nous utilisons les technologies suivantes:
 
-- Côté serveur:
-  - Python
-  - Flask comme framework web (avec une emphase de plus en plus marquée sur les API REST)
-  - SQLAlchemy avec PostgreSQL comme principal back-end
-  - Celery
-  - Redis
+**Côté serveur:**
 
-- Côté client:
-  - HTML5
-  - AngularJS
-  - LESS (ou SASS) pour des CSS modulaires
-  - Bientôt les technos mobiles (Phonegap, Titanium...)
+- Python
+- Flask comme framework web (avec une emphase de plus en plus marquée sur les API REST)
+- SQLAlchemy avec PostgreSQL comme principal back-end
+- Celery
+- Redis
 
-- Principaux outils:
-  - Git pour le contrôle des sources (cf. <https://github.com/abilian>).
-  - Linux (Ubuntu) pour nos serveurs
-  - Ansible pour le devops
-  - Documentation générée avec Sphinx
+**Côté client:**
+
+- HTML5
+- AngularJS
+- LESS (ou SASS) pour des CSS modulaires
+- Bientôt les technos mobiles (Phonegap, Titanium...)
+
+**Principaux outils:**
+
+- Git pour le contrôle des sources (cf. <https://github.com/abilian>).
+- Linux (Ubuntu) pour nos serveurs
+- Ansible pour le devops
+- Documentation générée avec Sphinx
 
 Bien sûr, on ne vous demande pas de tout connaître le premier jour ! Mais vous saurez nous montrer que vous avez déjà les bases de ces technologies (ex: vous ne connaissez pas Flask mais vous avez une certaine expérience sur Django ou Pyramid) et que vous avez l'envie et la capacité de vous intégrer rapidement dans notre équipe et à contribuer à notre projet.
 
