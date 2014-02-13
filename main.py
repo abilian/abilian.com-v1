@@ -59,7 +59,6 @@ class Config:
     ('services/', u'Services'),
     ('news/', u'Actualité'),
     ('a-propos/', u'A propos'),
-    ('pourquoi/', u"Pourquoi Abilian ?"),
   ]
 
 
