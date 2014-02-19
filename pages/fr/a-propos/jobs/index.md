@@ -4,6 +4,11 @@ title: Rejoignez-nous
 
 Pour faire face à l'augmentation de son carnet de commandes et à ses projets de R&D, dans le cadre d'une politique de croissance contrôlée, Abilian recrute sur les profils qui suivent.
 
+## Contexte
+
+Nos locaux sont actuellement placés dans le 13ème à Paris, près de la place d'Italie.
+
+Abilian est signataire de la [Charte Libre Emploi](http://www.educationjobandfloss.org/).
 
 ## Développeu(r/se) full-stack Python / Web
 
@@ -50,5 +55,9 @@ Contactez-nous: <mailto:jobs@abilian.com>
 ## Stagiaire
 
 Nous recherchons aussi des stagiaires avec des compétences sur les mêmes technologies, mais aussi dans les domaines du design Web et de l'UX.
+
+NB: stages rémunérés bien sûr, et destinés logiquement à déboucher sur une embauche en CDI en cas d'accord mutuel.
+
+NB2: nous respectons la [charte des stages étudiants en entreprise](http://travail-emploi.gouv.fr/IMG/pdf/Charte_stages_etudiants_en_entreprise.pdf).
 
 N'hésitez pas à nous contacter: <mailto:jobs@abilian.com>.
