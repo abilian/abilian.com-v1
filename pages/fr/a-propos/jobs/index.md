@@ -1,6 +1,6 @@
 title: Rejoignez-nous
 
-# Rejoignez-nous
+# Rejoignez-nous !
 
 Pour faire face à l'augmentation de son carnet de commandes et à ses projets de R&D, dans le cadre d'une politique de croissance contrôlée, Abilian recrute sur les profils qui suivent.
 
