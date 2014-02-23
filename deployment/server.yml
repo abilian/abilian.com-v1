@@ -55,6 +55,8 @@
     - name: pull sources
       git: repo={{app_git}} dest={{app_src}}
       sudo_user: "{{app_user}}"
+      notify:
+        - restart uwsgi
 
     - name: install deps
       pip: requirements={{app_src}}/requirements.txt virtualenv={{app_env}}
