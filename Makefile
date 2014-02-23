@@ -1,10 +1,7 @@
-.PHONY: all
+.PHONY: run clean deploy push
 
 run:
-	./main.py serve
-
-all:
-	./main.py build
+	./run.py serve
 
 clean:
 	rm -rf build

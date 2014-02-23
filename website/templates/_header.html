@@ -1,0 +1,39 @@
+<div class="top-line"></div>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+      <a class="navbar-brand" href="/{{ lang }}/"><img
+          src="/static/custom/abilian-logo-new.png" alt="Abilian"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% for path, label in menu %}
+          <li><a href="{{ path }}">{{ label }}</a></li>
+        {%- endfor %}
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plus <b
+              class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% for path, label in more_menu %}
+              <li><a href="{{ path }}">{{ label }}</a></li>
+            {%- endfor %}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="clearfix"></div>

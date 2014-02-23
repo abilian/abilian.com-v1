@@ -5,13 +5,17 @@ Localized (mod-level) routes
 
 import datetime
 from flask import Blueprint, render_template, make_response, current_app, g
-from website.models import get_news, pages, get_blocks, get_pages
+
+from .models import get_news, pages, get_blocks, get_pages
 
 
 bp = Blueprint('mod', __name__, url_prefix='/<string(length=2):lang_code>')
 route = bp.route
 
 
+#
+# Preprocessing
+#
 @bp.url_defaults
 def add_language_code(endpoint, values):
   values.setdefault('lang_code', g.lang_code)
@@ -22,6 +26,19 @@ def pull_lang_code(endpoint, values):
   g.lang_code = values.pop('lang_code')
 
 
+@bp.context_processor
+def inject_menu():
+  config = current_app.config
+  menu = config['MAIN_MENU'][g.lang_code]
+  more_menu = config['MORE_MENU'][g.lang_code]
+  return {'lang': g.lang_code,
+          'menu': menu,
+          'more_menu': more_menu}
+
+
+#
+# Routes
+#
 @route('/')
 def home():
   template = "index.html"

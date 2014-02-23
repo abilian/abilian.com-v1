@@ -51,7 +51,8 @@ def to_rfc2822(dt):
 
 @app.context_processor
 def inject_context_variables():
-  return dict(BASE_URL=Config.BASE_URL, menu=Config.MAIN_MENU)
+  config = app.config
+  return dict(BASE_URL=config['BASE_URL'])
 
 
 @app.url_defaults
@@ -66,12 +67,13 @@ def pull_lang_code(endpoint, values):
     g.lang_code = m.group(1)
   else:
     g.lang_code = 'fr'
-  if not g.lang_code in Config.ALLOWED_LANGS:
+  if not g.lang_code in app.config['ALLOWED_LANGS']:
     abort(404)
 
 
 @app.before_request
 def prepare_metadata():
+  print "calling prepare_metadata"
   g.metadata = {
     'DC.title': "Abilian",
     'DC.publisher': "Abilian SAS, proud french tech company",
@@ -101,7 +103,7 @@ def index():
 
 
 @app.route('/<path:path>')
-def catch_all(path):
+def redirects(path):
   if path.endswith('.php') or '.php/' in path:
     return redirect(url_for("index"), code=301)
   elif path.startswith('a/') or path.startswith('info/'):

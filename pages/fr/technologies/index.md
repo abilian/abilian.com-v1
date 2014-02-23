@@ -50,3 +50,10 @@ Pour nos clients qui ont des besoins de stockage de données massifs issues de l
 ## Search, web sémantique et intelligence des données
 
 Pour les projets spécifiques qui nécessitent de tirer partie des technologies les plus récentes d'analyse des contenus et des graphes sociaux générés par les applications, notre équipe dispose de plusieurs années d'expérience du développement d'applications d'intelligence des donnés - NLP / TAL, analyse de graphes, etc. - en utilisant les meilleurs projets open source du domaine : Lucene, Hadoop, Mahout, Scikit-Learn, etc.
+
+
+## Projets open source
+
+La plateforme Abilian est un projet Open Source (licence LGPL) qui vit actuellement sur GitHub: <https://github.com/abilian/>
+
+La documentation (technique) de notre plateforme vit sur: <http://docs.abilian.com/>.
