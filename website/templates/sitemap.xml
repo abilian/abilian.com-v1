@@ -10,7 +10,7 @@
     <!-- all pages -->
     {%- for page in pages %}
     <url>
-        <loc>{{ BASE_URL }}/{{ page.path }}/</loc>
+        <loc>{{ url_for(page) }}</loc>
         <lastmod>{{ page.date }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1</priority>

@@ -2,9 +2,10 @@
 # coding=utf-8
 
 from StringIO import StringIO
+from flask.ext.flatpages import Page
 import locale
 import mimetypes
-from os.path import join
+from os.path import join, split
 import re
 import datetime
 from PIL import Image
@@ -51,8 +52,17 @@ def to_rfc2822(dt):
 
 @app.context_processor
 def inject_context_variables():
+  def url_for(obj, **values):
+    if isinstance(obj, Page):
+      path = obj.path
+      return request.url_root + join(*split(path)[0:-1]) + '/'
+    else:
+      from flask import url_for as url_for_orig
+      return url_for_orig(obj, **values)
+
   config = app.config
-  return dict(BASE_URL=config['BASE_URL'])
+  return dict(BASE_URL=config['BASE_URL'],
+              url_for=url_for)
 
 
 @app.url_defaults
@@ -169,7 +179,7 @@ def sitemap():
   today = datetime.date.today()
   recently = datetime.date(year=today.year, month=today.month, day=1)
   response = make_response(render_template('sitemap.xml', pages=get_pages(),
-                           today=today, recently=recently))
+                                           today=today, recently=recently))
   response.headers['Content-Type'] = 'text/xml'
   return response
 
