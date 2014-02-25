@@ -117,5 +117,5 @@ def get_blocks(lang):
 
 
 def render_page():
-  blocks = get_blocks(g.lang_code)
+  blocks = get_blocks(g.lang)
 

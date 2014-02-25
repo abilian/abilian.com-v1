@@ -101,18 +101,17 @@ def inject_context_variables():
 
 @app.url_defaults
 def add_language_code(endpoint, values):
-  values.setdefault('lang_code', g.lang_code)
+  values.setdefault('lang', g.lang)
 
 
 @app.url_value_preprocessor
-def pull_lang_code(endpoint, values):
+def pull_lang(endpoint, values):
   m = re.match("/(..)/", request.path)
   if m:
-    g.lang_code = m.group(1)
+    g.lang = m.group(1)
   else:
-    g.lang_code = 'fr'
-  g.lang = g.lang_code
-  if not g.lang_code in app.config['ALLOWED_LANGS']:
+    g.lang = 'fr'
+  if not g.lang in app.config['ALLOWED_LANGS']:
     abort(404)
 
 
@@ -143,7 +142,10 @@ def url_generator():
 #
 @app.route('/')
 def index():
-  return redirect(url_for("mod.home", lang_code='fr'))
+  lang = session.get('lang')
+  if not lang:
+    lang = preferred_language()
+  return redirect(url_for("mod.home", lang=lang))
 
 
 @app.route('/<path:path>')

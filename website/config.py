@@ -13,7 +13,7 @@ def renderer(text):
     m = re.search(r'\[\[block "(.*)"\]\]', html)
     if not m:
       break
-    block = get_blocks(g.lang_code)[m.group(1)]
+    block = get_blocks(g.lang)[m.group(1)]
     html = html[0:m.start(0)] + unicode(block) + html[m.end(0):]
   return html
 
