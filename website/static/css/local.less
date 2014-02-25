@@ -1,7 +1,6 @@
 @red-link: #b32017;
 @blue-link: #266D7F;
 
-
 /* *********************************************************************** */
 /* Layout overrides and home boxes*/
 /* *********************************************************************** */
@@ -100,6 +99,10 @@ blockquote p {
 
 .navbar-nav {
   margin-top: 17px;
+
+  img.flag {
+    margin-top: -4px;
+  }
 }
 
 .navbar {
@@ -108,6 +111,11 @@ blockquote p {
   background-color: white;
   font-size: 15px;
   font-weight: bold;
+
+  @media only screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+
 }
 
 /* ********************************************************************** */

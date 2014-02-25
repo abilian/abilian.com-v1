@@ -2,7 +2,6 @@
 # coding=utf-8
 
 from StringIO import StringIO
-from flask.ext.flatpages import Page
 import locale
 import mimetypes
 from os.path import join, split
@@ -11,10 +10,12 @@ import datetime
 from PIL import Image
 
 from flask import Flask, render_template, redirect, url_for, make_response, \
-    abort, request, g
+    abort, request, g, session, current_app
 from flask.ext.frozen import Freezer
 from flask.ext.markdown import Markdown
 from flask.ext.assets import Environment as AssetManager
+from flask.ext.flatpages import Page
+from abilian.i18n import babel
 
 from .config import Config
 from .models import pages, get_pages
@@ -33,7 +34,40 @@ def setup_app(app):
   pages.init_app(app)
   freezer.init_app(app)
   markdown_manager = Markdown(app)
+  setup_babel(app)
 
+
+def setup_babel(app):
+  """
+  Setup custom Babel config.
+  """
+  babel.init_app(app)
+
+  def get_locale():
+    lang = getattr(g, 'lang')
+    if not lang:
+      lang = session.get('lang')
+    if not lang:
+      lang = preferred_language()
+    print lang
+    return lang
+
+  babel.add_translations('website')
+  babel.localeselector(get_locale)
+  #babel.timezoneselector(get_timezone)
+
+
+def preferred_language():
+  langs = request.headers.get('Accept-Language', '').split(',')
+  langs = [lang.strip() for lang in langs]
+  langs = [lang.split(';')[0] for lang in langs]
+  langs = [lang.strip() for lang in langs]
+  for lang in langs:
+    if len(lang) > 2:
+      lang = lang[0:2]
+    if lang in current_app.config['ALLOWED_LANGS']:
+      return lang
+  return 'en'
 
 
 ###############################################################################
@@ -77,13 +111,13 @@ def pull_lang_code(endpoint, values):
     g.lang_code = m.group(1)
   else:
     g.lang_code = 'fr'
+  g.lang = g.lang_code
   if not g.lang_code in app.config['ALLOWED_LANGS']:
     abort(404)
 
 
 @app.before_request
 def prepare_metadata():
-  print "calling prepare_metadata"
   g.metadata = {
     'DC.title': "Abilian",
     'DC.publisher': "Abilian SAS, proud french tech company",
@@ -95,18 +129,18 @@ def prepare_metadata():
   }
 
 
-###############################################################################
-# Freezer helper
-
+#
+# Freezer helper (not used)
+#
 @freezer.register_generator
 def url_generator():
   # URLs as strings
   yield '/fr/'
 
 
-###############################################################################
+#
 # Global (app-level) routes
-
+#
 @app.route('/')
 def index():
   return redirect(url_for("mod.home", lang_code='fr'))

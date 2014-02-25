@@ -33,8 +33,8 @@ class Config:
   FEED_MAX_LINKS = 25
   SECTION_MAX_LINKS = 12
 
-  #ALLOWED_LANGS = ['fr', 'en']
-  ALLOWED_LANGS = ['fr']
+  ALLOWED_LANGS = ['fr', 'en']
+  #ALLOWED_LANGS = ['fr']
 
   MAIN_MENU = {
     'fr': [('/fr/solutions/', u'Solutions'),
@@ -42,22 +42,22 @@ class Config:
            ('/fr/services/', u'Services'),
            ('/fr/news/', u'Actualité'),
            ('/fr/a-propos/', u'A propos'), ],
-    'en': [#('solutions/', u'Solutions'),
-           ('/en/technologies/', u'Platform'),
-           ('/en/services/', u'Services'),
-           ('/en/news/', u'News'),
-           ('/en/about/', u'About'), ],
+    'en': [],
+          # [#('solutions/', u'Solutions'),
+          #  ('/en/technologies/', u'Platform'),
+          #  ('/en/services/', u'Services'),
+          #  ('/en/news/', u'News'),
+          #  ('/en/about/', u'About'), ],
   }
 
   MORE_MENU = {
     'fr': [('/fr/pourquoi/', u"Pourquoi Abilian?"),
            ('/fr/a-propos/jobs/', u"Offres d'emplois"),
            ('/fr/a-propos/contact/', u"Nous contacter"),
-           #('/en/', u"Switch to english"),
            ],
-    'en': [('/en/why/', u"Why Abilian?"),
-           ('/en/about/jobs/', u"Join our team"),
-           ('/en/about/contact/', u"Contact us"),
-           #('/fr/', u"Switch to French"),
-           ],
+    'en': [],
+          # [('/en/why/', u"Why Abilian?"),
+          #  ('/en/about/jobs/', u"Join our team"),
+          #  ('/en/about/contact/', u"Contact us"),
+          #  ],
   }
