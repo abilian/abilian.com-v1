@@ -41,7 +41,7 @@ class Config:
            ('/fr/technologies/', u'Plateforme'),
            ('/fr/services/', u'Services'),
            ('/fr/news/', u'Actualité'),
-           ('/fr/a-propos/', u'A propos'), ],
+          ],
     'en': [],
           # [#('solutions/', u'Solutions'),
           #  ('/en/technologies/', u'Platform'),
@@ -50,11 +50,11 @@ class Config:
           #  ('/en/about/', u'About'), ],
   }
 
-  MORE_MENU = {
-    'fr': [('/fr/pourquoi/', u"Pourquoi Abilian?"),
+  SECONDARY_MENU = {
+    'fr': [('/fr/a-propos/contact/', u"Nous contacter"),
+           ('/fr/a-propos/', u"A propos d'Abilian?"),
            ('/fr/a-propos/jobs/', u"Offres d'emplois"),
-           ('/fr/a-propos/contact/', u"Nous contacter"),
-           ],
+          ],
     'en': [],
           # [('/en/why/', u"Why Abilian?"),
           #  ('/en/about/jobs/', u"Join our team"),

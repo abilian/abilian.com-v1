@@ -5,6 +5,7 @@ Localized (mod-level) routes
 
 import datetime
 from flask import Blueprint, render_template, make_response, current_app, g
+from abilian.i18n import _
 
 from .models import get_news, pages, get_blocks, get_pages
 
@@ -30,10 +31,10 @@ def pull_lang(endpoint, values):
 def inject_menu():
   config = current_app.config
   menu = config['MAIN_MENU'][g.lang]
-  more_menu = config['MORE_MENU'][g.lang]
+  secondary_menu = config['SECONDARY_MENU'][g.lang]
   return {'lang': g.lang,
           'menu': menu,
-          'more_menu': more_menu}
+          'secondary_menu': secondary_menu}
 
 
 #
@@ -41,8 +42,8 @@ def inject_menu():
 #
 @route('/')
 def home():
-  template = "index.html"
-  page = {'title': 'Abilian: connected we work'}
+  template = "index_{}.html".format(g.lang)
+  page = {'title': _('Abilian: connected we work')}
   news = get_news(limit=4)
   return render_template(template, page=page, news=news)
 

@@ -1,5 +1,8 @@
 @red-link: #b32017;
 @blue-link: #266D7F;
+// Note: see http://www.spycolor.com/0083a5
+@deep-cerulean: #0083a5;
+@deeper-cerulean: #004253;
 
 /* *********************************************************************** */
 /* Layout overrides and home boxes*/
@@ -94,11 +97,11 @@ blockquote p {
 
 .top-line {
   height: 5px;
-  background-color: #0083a5;
+  background-color: @deeper-cerulean;
 }
 
 .navbar-nav {
-  margin-top: 17px;
+  padding-top: 27px;
 
   img.flag {
     margin-top: -4px;
@@ -109,13 +112,72 @@ blockquote p {
   margin-top: 0;
   margin-bottom: 0;
   background-color: white;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 
-  @media only screen and (min-width: 992px) {
-    font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+
+  .navbar-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
+  .navbar-toggle {
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 20px;
+  }
+
+}
+
+// Mini navbar
+
+.mini-navbar {
+  width: 100%;
+  height: 40px;
+  font-size: 0.85em;
+  position: relative;
+  background: @deeper-cerulean;
+  color: #bbb;
+
+  a {
+    color: #bbb;
+    display: inline-block;
+    padding: 10px 10px 11px 10px;
+    transition: background 500ms;
+
+  }
+  a:first-child {
+    margin-left: -20px;
+  }
+  a:hover {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  form {
+    width: 250px;
+
+    .form-control {
+      height: 26px;
+      margin: 7px;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: #484848;
+      color: #ccc;
+    }
+    button {
+      height: 26px;
+      margin: 7px;
+      padding: 2px 7px;
+      background: #eee;
+    }
+  }
 }
 
 /* ********************************************************************** */
@@ -134,7 +196,7 @@ blockquote p {
 /* *********************************************************************** */
 
 .jumbotron {
-  background-color: #0083a5;
+  background-color: @deep-cerulean;
   margin-bottom: 0;
 
   h1 {
@@ -349,4 +411,10 @@ article.post .date {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+}
+
+// Transitions
+a .btn {
+  -webkit-transition: background-color 300ms, border-color 300ms;
+  transition: background-color 300ms, border-color 300ms;
 }
