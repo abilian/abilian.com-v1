@@ -61,12 +61,44 @@ body {
   padding-top: 0;
   color: #151515;
   font-family: "Lato", "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-@media screen and (min-width: 769px) {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .single-column {
-    font-size: 16px;
+    font-size: 18px;
+    h1 {
+      font-size: 200%;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    h2 {
+      font-size: 160%;
+      margin-top: 1em;
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .single-column {
+    font-size: 22px;
+    h1 {
+      font-size: 200%;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    h2 {
+      font-size: 160%;
+      margin-top: 1em;
+      margin-bottom: 0.8em;
+    }
   }
 }
 
@@ -77,12 +109,6 @@ a, a:hover {
 a.cta, a:hover.cta {
   color: @red-link;
   font-weight: bold;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Open Sans", sans-serif;
-  font-weight: normal;
-  color: #333;
 }
 
 blockquote p {
@@ -100,14 +126,6 @@ blockquote p {
   background-color: @deeper-cerulean;
 }
 
-.navbar-nav {
-  padding-top: 27px;
-
-  img.flag {
-    margin-top: -4px;
-  }
-}
-
 .navbar {
   margin-top: 0;
   margin-bottom: 0;
@@ -116,20 +134,46 @@ blockquote p {
   font-weight: bold;
 
   border: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgray;
   border-radius: 0;
 
   .navbar-header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  @media only screen and (min-width: 767px) {
+    ul.navbar-nav > li > a {
+      padding-top: 30px;
+      padding-bottom: 28px;
+      line-height: 25px;
+    }
+  }
+
+  .navbar-nav {
+    img.flag {
+      margin-top: -4px;
+    }
+
+    li > a:hover {
+      background-color: lightgray;
+    }
   }
 
   .navbar-toggle {
     margin-top: 20px;
+    border-color: #ddd;
+    .icon-bar {
+      background-color: #ccc;
+    }
   }
 
   @media only screen and (min-width: 992px) {
     font-size: 20px;
+    ul.navbar-nav > li > a {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
   }
 
 }
@@ -168,14 +212,14 @@ blockquote p {
       border: 0;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background: #484848;
-      color: #ccc;
+      background: #bbd0d5;
+      color: #333;
     }
     button {
       height: 26px;
       margin: 7px;
       padding: 2px 7px;
-      background: #eee;
+      background: #bbd0d5;
     }
   }
 }
@@ -414,7 +458,6 @@ article.post .date {
 }
 
 // Transitions
-a .btn {
-  -webkit-transition: background-color 300ms, border-color 300ms;
-  transition: background-color 300ms, border-color 300ms;
+.btn, a {
+  transition: color 1s, background-color 1s, border-color 1s;
 }

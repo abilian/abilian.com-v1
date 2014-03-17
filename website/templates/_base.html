@@ -5,13 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>{{ page.title or g.metadata['DC.title']}}</title>
+  <title>{{ page.title or g.metadata['DC.title'] }}</title>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
   <meta name="robots" content="follow, index"/>
   {% for name, content in g.metadata.items() -%}
-  <meta name="{{ name }}" content="{{ content }}"/>
+    <meta name="{{ name }}" content="{{ content }}"/>
   {% endfor %}
 
   <!-- Bootstrap core CSS -->
@@ -43,7 +43,11 @@
 
 {% block main %}{% endblock %}
 
-{% include "_footer.html" %}
+{% if g.lang == 'en' %}
+  {% include "_footer_en.html" %}
+{% else %}
+  {% include "_footer_fr.html" %}
+{% endif %}
 
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/static/js/jquery.js"></script>

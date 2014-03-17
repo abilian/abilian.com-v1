@@ -1,8 +1,10 @@
 title: Système d'Information Collaboratif et Sécurisé pour les Pôles de Compétitivité
 
+# Abilian SICS-PC
+
 ## Une plateforme conçue pour les Pôles
 
-Abilian SICS-PC (Système d’Information Collaboratif et Sécurisé pour les Pôles de Compétitivité) est un extranet sécurisé dédié au métier des pôles - et plus généralement des acteurs du soutien a la compétitivité et à l'innovation -, développé par des experts impliqués dans la vie des pôles depuis plusieurs années, sur la base d’une plateforme open source dédiée à la gestion d’information d’entreprise et à la collaboration émergente.
+Abilian SICS-PC (*Système d’Information Collaboratif et Sécurisé pour les Pôles de Compétitivité*) est un extranet sécurisé dédié au métier des pôles - et plus généralement des acteurs du soutien a la compétitivité et à l'innovation -, développé par des experts impliqués dans la vie des pôles depuis plusieurs années, sur la base d’une plateforme open source dédiée à la gestion d’information d’entreprise et à la collaboration émergente.
 
 Que vous soyiez un pôle de compétitivité, un cluster, une technopole, un incubateur, un CEEI, une cellule de transfert technologique... nous avons probablement une solution pour vous aider à mieux accomplir votre mission.
 
