@@ -78,7 +78,7 @@ def to_rfc2822(dt):
   if not dt:
     return
   current_locale = locale.getlocale(locale.LC_TIME)
-  locale.setlocale(locale.LC_TIME, "en_US")
+  locale.setlocale(locale.LC_TIME, "C")
   formatted = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
   locale.setlocale(locale.LC_TIME, current_locale)
   return formatted
