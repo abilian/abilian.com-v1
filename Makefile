@@ -15,8 +15,8 @@ clean:
 deploy:
 	ansible-playbook -i deployment/hosts deployment/server.yml
 
-push:
-	rsync -e ssh -avz ./ dedi:/srv/abilian.com/
+#push:
+#	rsync -e ssh -avz ./ dedi:/srv/abilian.com/
 
 
 update-pot:
