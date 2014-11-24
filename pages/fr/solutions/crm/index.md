@@ -2,7 +2,7 @@ title: Abilian CRM
 
 # Un CRM pour mieux gérer votre information métier
 
-Avec Abilian CRM, vous disposez d'une solution dédiée à la gestion de votre “relation client”, et à notamment à la collecte et à la gestion fine des informations sur :
+Avec Abilian CRM, vous disposez d'une solution dédiée à la gestion de votre “relation client”, et notamment à la collecte et à la gestion fine des informations sur :
 
 - Vos prospects, clients, partenaires - les membres de votre écosystème ;
 - Les contacts (personnes physiques) au sein de ces organisations ;

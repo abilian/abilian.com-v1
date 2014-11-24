@@ -1,6 +1,6 @@
 title: Le MOOC par Abilian
 
-Le MOOC (aussi nommé Abilian SLE - Social Learning Engine) est un moteur de MOOC basé sur la plateforme Abilian SBE.
+Le MOOC (aussi nommé Abilian SLE - Social Learning Engine) est un prototype de moteur de MOOC basé sur la plateforme Abilian SBE.
 
 ## Présentation
 
