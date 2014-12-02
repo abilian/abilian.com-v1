@@ -38,7 +38,7 @@ Stefane Fermigier : Eh bien, on est très, très ouverts puisque notre sociét�
 
 Jonathan Le Lous : Très bien. Et un site internet quand même, peut-être?
 
-Stefane Fermigier : Sûr. [Abilian.com](http://www.abilian.com/).
+Stefane Fermigier : Sûr. [Abilian.com](https://www.abilian.com/).
 
 Jonathan Le Lous : Très bien. Mais merci beaucoup, Stefane, et tous mes vœux de réussite pour ce projet qui a bien commencé.
 

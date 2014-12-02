@@ -12,7 +12,7 @@ Abilian est signataire de la [Charte Libre Emploi](http://www.educationjobandflo
 
 ## Développeu(r/se) full-stack Python / Web
 
-Abilian développe une [plateforme open source](http://docs.abilian.com/en/latest/) et des [applications métiers](http://www.abilian.com/fr/solutions/) pour la collaboration et la compétitivité des entreprises.
+Abilian développe une [plateforme open source](http://docs.abilian.com/en/latest/) et des [applications métiers](/fr/solutions/) pour la collaboration et la compétitivité des entreprises.
 
 Nous utilisons les technologies suivantes:
 

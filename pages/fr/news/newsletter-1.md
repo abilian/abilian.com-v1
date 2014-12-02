@@ -17,11 +17,11 @@ Vous avez souhaité être tenu au courant des projets et des activités de la so
 - A ce sujet, vous pouvez retrouver ([sur Speaker Deck](https://speakerdeck.com/sfermigier/pitch-abilian-mai-2013) ou [sur SlideShare](http://www.slideshare.net/sfermigier/pitch-abilian-mai-2013)) une présentation de la société, des défis auxquels elle répond pour ses clients, et des technologies qu'elle emploie pour ce faire.
 
 - Nous avons mis en ligne une première version de notre site le mois dernier:
-  [www.abilian.com](http://www.abilian.com/). Il est encore incomplet mais nous espérons qu'il vous donnera une première idée de nos ambitions.
+  [www.abilian.com](https://www.abilian.com/). Il est encore incomplet mais nous espérons qu'il vous donnera une première idée de nos ambitions.
 
 ### Nos apparitions publiques
 
-- Nous avons participé en mars dernier à la conférence [Enterprise 2.0 Summit](http://www.abilian.com/fr/news/entreprise-2.0-summit-2013) à Paris, au cours de laquelle nous avons effectué une présentation sur le thème: [Open Innovation in Action - Lessons learned about social collaboration from 30 years of open source](http://www.slideshare.net/sfermigier/open-innovation-in-action).
+- Nous avons participé en mars dernier à la conférence [Enterprise 2.0 Summit](https://www.abilian.com/fr/news/entreprise-2.0-summit-2013) à Paris, au cours de laquelle nous avons effectué une présentation sur le thème: [Open Innovation in Action - Lessons learned about social collaboration from 30 years of open source](http://www.slideshare.net/sfermigier/open-innovation-in-action).
 
 - Nous serons les 22 et 23 mai à Berlin à [l'Open IT Summit](http://www.open-it-summit.de/) (événement collocalisé avec LinuxTag) et [au noeud berlinois de l'EIT ICT Labs](http://www.eitictlabs.eu/about-us/nodes-co-location-centres/berlin/) afin de rencontrer des partenaires allemands.
 
