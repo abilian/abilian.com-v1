@@ -3,13 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src {{ request.url_root }} http://stats.abilian.com/ http://fonts.googleapis.com/ http://fonts.gstatic.com http://fast.wistia.net/ 'unsafe-inline'; child-src {{ request.url_root }} http://fast.wistia.net/ http://fast.wistia.com/; object-src {{ request.url_root }}; script-src {{ request.url_root }} http://www.google-analytics.com/analytics.js http://stats.abilian.com/piwik.js http://fast.wistia.net/ 'unsafe-inline'">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>{{ page.title or g.metadata['DC.title'] }}</title>
+  {%- set title=page.title or g.metadata['DC.title'] -%}
+  <title>{{ title }}</title>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
   <meta name="robots" content="follow, index"/>
+
+  <meta property="og:title" content="{{ title }}" />
+{#  <meta property="og:type" content="The type" />#}
+{#  <meta property="og:url" content="http://url.com/" />#}
+{#  <meta property="og:image" content="http://image.jpg" />#}
+
   {% for name, content in g.metadata.items() -%}
     <meta name="{{ name }}" content="{{ content }}"/>
   {% endfor %}
@@ -85,7 +94,6 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//stats.abilian.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
 
