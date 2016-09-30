@@ -13,7 +13,11 @@ clean:
 	find . -name packed.css | xargs rm -f
 
 deploy:
-	ansible-playbook -i deployment/hosts deployment/server.yml
+	git push
+	ssh web@vegeta 'cd /srv/abilian.com/src ; git pull'
+
+#deploy:
+#	ansible-playbook -i deployment/hosts deployment/server.yml
 
 #push:
 #	rsync -e ssh -avz ./ dedi:/srv/abilian.com/
