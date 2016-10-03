@@ -16,6 +16,7 @@ Abilian est signataire de la [Charte Libre Emploi](http://www.educationjobandflo
 
 - [Développeur full-stack python](developpeur-full-stack-python/)
 
+- [Stagiaire UX/UI](stage-ux-ui/)
+
 <!-- - [Stagiaire développement Web](stage-developpement-web.html) -->
 
-- [Stagiaire UX/UI](stage-ux-ui/)
