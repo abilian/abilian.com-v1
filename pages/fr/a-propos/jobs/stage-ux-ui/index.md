@@ -68,9 +68,14 @@ Abilian est signataire de la [Charte Libre Emploi](http://www.educationjobandflo
 
 ## Comment postuler ?
 
-- Nous contacter par mail à jobs@abilian.com pour nous dire ce que vous avez envie de faire.
+Contactez-nous par mail à jobs@abilian.com pour nous dire ce que vous avez envie de faire dans le contexte de cette annonce.
 
-- Un CV complet et un portfolio avec les applications sur lesquelles vous avez déjà travailé (en stage ou au cours de vos études).
+Merci d'inclure:
+
+- Un CV complet.
+- Un portfolio avec les applications sur lesquelles vous avez déjà travaillé lors de vos études.
+- La liste de vos 3 livres préférés sur l'UX et l'UI.
+- La liste de vos 3 applications web préférées.
 
 Notes:
 
