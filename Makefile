@@ -5,6 +5,10 @@ SRC=website
 run:
 	./run.py serve
 
+format:
+	black website
+	isort -rc website
+
 clean:
 	rm -rf build
 	rm -rf ./static/.webassets-cache
@@ -12,9 +16,9 @@ clean:
 	find . -name packed.js | xargs rm -f
 	find . -name packed.css | xargs rm -f
 
-deploy:
-	git push
-	ssh web@vegeta 'cd /srv/abilian.com/src ; git pull'
+#deploy:
+#	git push
+#	ssh web@vegeta 'cd /srv/abilian.com/src ; git pull'
 
 #deploy:
 #	ansible-playbook -i deployment/hosts deployment/server.yml
