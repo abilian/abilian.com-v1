@@ -19,6 +19,11 @@ clean:
 #deploy:
 #	git push
 #	ssh web@vegeta 'cd /srv/abilian.com/src ; git pull'
+#
+
+deploy:
+	ssh web@bulma 'cd /srv/web/abilian.com/src ; git pull'
+
 
 #deploy:
 #	ansible-playbook -i deployment/hosts deployment/server.yml
