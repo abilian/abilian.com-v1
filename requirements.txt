@@ -17,7 +17,7 @@ argh==0.23.1
 argparse==1.2.1
 bleach==1.4
 closure==20121212
-cssmin==0.1.4
+cssmin==0.2.0
 distribute
 fabtools==0.9.4
 feedparser==5.1.3

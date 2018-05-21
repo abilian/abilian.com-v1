@@ -49,7 +49,6 @@ def setup_babel(app):
       lang = session.get('lang')
     if not lang:
       lang = preferred_language()
-    print lang
     return lang
 
   babel.add_translations('website')
