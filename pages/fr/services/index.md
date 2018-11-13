@@ -6,7 +6,7 @@ Abilian accompagne ses clients dans le développement d'applications métiers so
 
 Nous fournissons ainsi des services professionnels – conseil, développements spécifiques, configuration, formation – autour de notre plateforme, en collaboration et non en substitution des intégrateurs et des conseils en management.
 
-Nous proposons également sous forme d'abonnement du support, de la maintenance, et des applications clefs-en-main en mode *cloud*.
+Nous proposons également, sous forme d'abonnement, du support, de la maintenance, et des applications clefs-en-main en mode *cloud*.
 
 ## Conseil
 
