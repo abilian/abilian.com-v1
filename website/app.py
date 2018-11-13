@@ -23,7 +23,6 @@ from .views import bp, feed
 
 app = Flask(__name__)
 asset_manager = AssetManager()
-freezer = Freezer()
 
 
 def setup_app(app):
@@ -31,7 +30,6 @@ def setup_app(app):
     app.register_blueprint(bp)
     asset_manager.init_app(app)
     pages.init_app(app)
-    freezer.init_app(app)
     markdown_manager = Markdown(app)
     setup_babel(app)
 
@@ -125,15 +123,6 @@ def prepare_metadata():
         "twitter:site": "@abilianhq",
         "twitter:card": "summary",
     }
-
-
-#
-# Freezer helper (not used)
-#
-@freezer.register_generator
-def url_generator():
-    # URLs as strings
-    yield "/fr/"
 
 
 #
