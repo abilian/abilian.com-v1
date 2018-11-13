@@ -108,7 +108,7 @@ a:hover {
 h1 a,
 h2 a,
 h3 a,
-.btn a {
+a.btn {
   text-decoration: none;
 }
 a.cta,
