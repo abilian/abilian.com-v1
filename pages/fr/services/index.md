@@ -28,6 +28,10 @@ Nous proposons des contrats de support et de maintenance:
 
 Nous proposons sous forme de service cloud (SaaS) des instances métiers préconfigurées de notre plateforme. Avec le cloud, vous vous concentrez sur votre métier, nous nous occupons de la technique !
 
+## Formation
+
+[Notre catalogue de formations](/fr/services/formations/) repose sur nos nombreuses années d'expériences sur les technologies open source que nous utilisons au quotidien.
+
 ## Recherche et développement
 
 Sur la base de notre plateforme et dans [nos domaines d'expertise](/fr/technologies/), nous sommes ouverts à des collaborations sur des projets de R&D.
