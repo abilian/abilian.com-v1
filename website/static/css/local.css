@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
+}
 /* *********************************************************************** */
 /* Layout overrides and home boxes*/
 /* *********************************************************************** */
@@ -74,7 +86,7 @@ h6 {
 }
 @media screen and (min-width: 993px) {
   .single-column {
-    font-size: 22px;
+    font-size: 20px;
   }
   .single-column h1 {
     font-size: 200%;
@@ -89,7 +101,11 @@ h6 {
 }
 a,
 a:hover {
-  color: #266d7f;
+  color: #266D7F;
+  text-decoration: underline;
+}
+.nav a {
+  text-decoration: none;
 }
 a.cta,
 a:hover.cta {
