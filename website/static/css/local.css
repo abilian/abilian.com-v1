@@ -104,7 +104,11 @@ a:hover {
   color: #266D7F;
   text-decoration: underline;
 }
-.nav a {
+.nav a,
+h1 a,
+h2 a,
+h3 a,
+.btn a {
   text-decoration: none;
 }
 a.cta,
