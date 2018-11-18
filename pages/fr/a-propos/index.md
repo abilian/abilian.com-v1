@@ -23,6 +23,8 @@ fondateur de Nuxeo et à ce titre pionnier depuis 2000 du métier de l'édition 
 logiciels libres en France, également co-fondateur de l'AFUL, du Groupe
 Thématique Logiciel Libre du Pôle Systematic Paris Region, et du CNLL.
 
+[Retrouvez le détail de notre historique](/fr/a-propos/historique/).
+
 ## Labels et organisations professionnelles
 
 <!--
