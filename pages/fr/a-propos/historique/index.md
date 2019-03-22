@@ -48,3 +48,6 @@ Les grandes dates de l'histoire d'Abilian.
 
 - Abilian lance [son offre](/fr/solutions/joinux/) dédiée aux processus d'admission ou de sélection.
 - Abilian est co-organisateur de la conférence [PyParis 2018](http://pyparis.org/): 350 participants à l'EPITA.
+- Abilian développe la nouvelle version du site du [CNLL](https://www.cnll.fr/).
+
+
