@@ -5,39 +5,37 @@ import datetime
 import locale
 import mimetypes
 import re
+from io import BytesIO
 from os.path import join, split
-from StringIO import StringIO
 
-from abilian.i18n import babel
 from flask import Flask, abort, current_app, g, make_response, redirect, \
     render_template, request, session, url_for
-from flask.ext.assets import Environment as AssetManager
-from flask.ext.flatpages import Page
-from flask.ext.frozen import Freezer
-from flask.ext.markdown import Markdown
+from flask_flatpages import Page
+from flaskext.markdown import Markdown
 from PIL import Image
 
 from .config import Config
+from .extensions import asset_manager, babel
 from .models import get_pages, pages
 from .views import bp, feed
 
 app = Flask(__name__)
-asset_manager = AssetManager()
 
 
 def setup_app(app):
     app.config.from_object(Config)
     app.register_blueprint(bp)
+
     asset_manager.init_app(app)
     pages.init_app(app)
-    markdown_manager = Markdown(app)
+    Markdown(app)
     setup_babel(app)
 
 
 def setup_babel(app):
     """
-  Setup custom Babel config.
-  """
+    Setup custom Babel config.
+    """
     babel.init_app(app)
 
     def get_locale():
@@ -48,7 +46,8 @@ def setup_babel(app):
             lang = preferred_language()
         return lang
 
-    babel.add_translations("website")
+    # TODO
+    # babel.add_translations("website")
     babel.localeselector(get_locale)
     # babel.timezoneselector(get_timezone)
 
@@ -83,7 +82,6 @@ def to_rfc2822(dt):
 
 @app.context_processor
 def inject_context_variables():
-
     def url_for(obj, **values):
         if isinstance(obj, Page):
             path = obj.path
@@ -159,7 +157,7 @@ def robots_txt():
 def image(path):
     if ".." in path:
         abort(500)
-    fd = open(join(app.root_path, "images", path))
+    fd = open(join(app.root_path, "images", path), "rb")
     data = fd.read()
 
     hsize = int(request.args.get("h", 0))
@@ -168,23 +166,23 @@ def image(path):
         abort(500)
 
     if hsize:
-        image = Image.open(StringIO(data))
+        image = Image.open(BytesIO(data))
         x, y = image.size
 
         x1 = hsize
         y1 = int(1.0 * y * hsize / x)
         image.thumbnail((x1, y1), Image.ANTIALIAS)
-        output = StringIO()
+        output = BytesIO()
         image.save(output, "PNG")
         data = output.getvalue()
     if vsize:
-        image = Image.open(StringIO(data))
+        image = Image.open(BytesIO(data))
         x, y = image.size
 
         x1 = int(1.0 * x * vsize / y)
         y1 = vsize
         image.thumbnail((x1, y1), Image.ANTIALIAS)
-        output = StringIO()
+        output = BytesIO()
         image.save(output, "PNG")
         data = output.getvalue()
 
