@@ -10,8 +10,6 @@ Pour une demande de partenariat: [bizdev@abilian.com](mailto:bizdev@abilian.com)
 
 Pour tout autre demande: [contact@abilian.com](mailto:contact@abilian.com).
 
-Pour un contact direct avec l'un de nos collaborateurs: prenom.nom@abilian.com.
-
 
 ## Par téléphone
 
