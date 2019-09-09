@@ -6,7 +6,7 @@ title: Migration de Python 2 à Python 3
 
 Python 2 cessera d'être supporté par la communauté Python le 31 décembre 2019.
 
-Si vous disposez d'application Python en production qui utilisent encore Python 2, plusieurs options s'offrent à vous, documentées sur [cette page](https://www.python.org/doc/sunset-python-2/) du site Python.org.
+Si vous disposez d'applications Python en production qui utilisent encore Python 2, plusieurs options s'offrent à vous, documentées sur [cette page](https://www.python.org/doc/sunset-python-2/) du site Python.org.
 
 ## Nos prestations
 
@@ -14,7 +14,7 @@ Fort de notre expérience du développement de nombreuses applicatons Python, et
 
 ### Audit rapide
 
-Nous auditons votre base de code et nous vous proposons une analyse des risques encourus et une estimation de l'effort nécessare, selon plusieurs scénarios.
+Nous auditons votre base de code et nous vous proposons une analyse des risques encourus et une estimation de l'effort nécessaire, selon plusieurs scénarios.
 
 La prestation peut s'effectuer en quelques jours, pour une base de code de taille moyenne (de quelques milliers à quelques dizaines de milliers de lignes de code).
 

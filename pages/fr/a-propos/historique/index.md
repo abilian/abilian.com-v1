@@ -9,7 +9,6 @@ Les grandes dates de l'histoire d'Abilian.
 - Fondation d'Abilian qui s'installe dans les locaux de l'Inria à Paris (avenue d'Italie).
 - Début du développement de la plateforme [Abilian SBE](https://github.com/abilian/abilian-sbe).
 
-
 ## 2013
 
 - Abilian obtient le label JEI (Jeune Entreprise Innovante).
@@ -46,6 +45,7 @@ Les grandes dates de l'histoire d'Abilian.
 
 ## 2018
 
+- Nouveau logo pour Abilian.
 - Abilian lance [son offre](/fr/solutions/joinux/) dédiée aux processus d'admission ou de sélection.
 - Abilian est co-organisateur de la conférence [PyParis 2018](http://pyparis.org/): 350 participants à l'EPITA.
 - Abilian développe la nouvelle version du site du [CNLL](https://www.cnll.fr/).
