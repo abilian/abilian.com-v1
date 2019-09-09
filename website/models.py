@@ -5,7 +5,7 @@ from unicodedata import normalize
 
 import bleach
 from flask import current_app, g
-from flask.ext.flatpages import FlatPages, Page
+from flask_flatpages import FlatPages, Page
 from markdown import markdown
 from markupsafe import Markup
 
@@ -78,17 +78,17 @@ def get_years(pages):
     return years
 
 
-def slugify(text, delim=u"-"):
+def slugify(text, delim="-"):
     """
-  Generates an slightly worse ASCII-only slug.
-  """
+    Generates an slightly worse ASCII-only slug.
+    """
     _punct_re = re.compile(r'[\t !"#$%&\'()*\-/<=>?@\[\\\]^_`{|},.]+')
     result = []
     for word in _punct_re.split(text.lower()):
         word = normalize("NFKD", word).encode("ascii", "ignore")
         if word:
             result.append(word)
-    return unicode(delim.join(result))
+    return delim.join(result)
 
 
 def get_news(offset=None, limit=None):
@@ -105,7 +105,6 @@ def get_news(offset=None, limit=None):
 # Blocks
 #
 class Blocks(object):
-
     def __init__(self, lang):
         self.lang = lang
 
@@ -113,7 +112,7 @@ class Blocks(object):
         app = current_app
         fn = join(app.root_path, "..", "blocks", self.lang, key)
         src = open(fn).read()
-        return Markup(markdown(unicode(src, "utf8")))
+        return Markup(markdown(src))
 
 
 def get_blocks(lang):

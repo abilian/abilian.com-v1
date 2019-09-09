@@ -5,8 +5,8 @@ Localized (mod-level) routes
 
 import datetime
 
-from abilian.i18n import _
 from flask import Blueprint, current_app, g, make_response, render_template
+from flask_babel import _
 
 from .models import get_blocks, get_news, get_pages, pages
 

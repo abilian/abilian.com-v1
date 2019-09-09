@@ -6,7 +6,7 @@ run:
 	./run.py serve
 
 format:
-	black website
+	black website *.py
 	isort -rc website
 
 clean:
