@@ -12,7 +12,7 @@ Markdown==2.3.1
 MarkupSafe==0.18
 Pillow==2.3.0
 PyYAML==3.10
-Werkzeug==0.8.3
+Werkzeug==0.15.3
 argh==0.23.1
 argparse==1.2.1
 bleach==1.4
