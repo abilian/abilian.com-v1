@@ -1,6 +1,8 @@
 About
 -----
 
+**Obsolete: this has been replaced by a Lektor-based project**
+
 This is the code for the abilian.com website.
 
 WARNING: this contains non-open source components (bought from third parties)
