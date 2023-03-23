@@ -7,7 +7,7 @@ Flask-Babel==0.8
 Flask-FlatPages==0.3
 Flask-Markdown==0.3
 Frozen-Flask==0.10
-Jinja2==2.6
+Jinja2==2.11.3
 Markdown==2.3.1
 MarkupSafe==0.18
 Pillow==2.3.0
